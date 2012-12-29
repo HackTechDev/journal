@@ -1,0 +1,89 @@
+/*
+     Plugin PostGuestEditor
+	 Version  : 2.0 (2006/12/05)
+	 Compatibility : Guppy v4.5.x
+	 Licence  : GNU Lesser General Public License
+	 Author   : jérôme CROUX (Djchouix)
+     Web site : http://lebrikabrak.info/
+     E-mail   : jchouix@wanadoo.fr
+*/
+
+/**
+ *  CSS popups
+ */
+ 
+/* Popup Code */
+body.popupCode, body.popupCode legend {
+	background-color:#ECE9D8;
+	color:#000000;
+}
+body.popupCode input#ok, body.popupCode input#cancel {
+	margin-left:5px;
+	width:80px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	background-color:#E0D9AF;
+}
+body.popupCode input#ok:hover, body.popupCode input#cancel:hover {
+	margin-left:5px;
+	width:80px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	background-color:#E8E3C5;
+}
+
+/* Popups Link et Image */
+body.popupLink, body.popupLink legend,
+body.popupImage, body.popupImage legend {
+	background-color:#ECE9D8;
+	color:#000000;
+}
+body.popupLink input#url,
+body.popupImage input#url {
+	width:200px;
+}
+body.popupLink input#ok, body.popupLink input#cancel,
+body.popupImage input#ok, body.popupImage input#cancel {
+	margin-left:5px;
+	width:80px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	background-color:#E0D9AF;
+}
+body.popupLink input#ok:hover, body.popupLink input#cancel:hover,
+body.popupImage input#ok:hover, body.popupImage input#cancel:hover {
+	margin-left:5px;
+	width:80px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	background-color:#E8E3C5;
+}
+
+/* Popup Citation */
+body.popupCitation, body.popupCitation legend {
+	background-color:#ECE9D8;
+	color:#000000;
+}
+body.popupCitation input#author {
+	width:180px;
+}
+body.popupCitation input#ok, body.popupCitation input#cancel {
+	margin-left:5px;
+	width:80px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	background-color:#E0D9AF;
+}
+body.popupCitation input#ok:hover, body.popupCitation input#cancel:hover {
+	margin-left:5px;
+	width:80px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	background-color:#E8E3C5;
+}
+
+/* Popup Smileys */
+body.popupSmileys {
+	background-color:#ECE9D8;
+	color:#000000;
+}

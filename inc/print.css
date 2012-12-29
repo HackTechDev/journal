@@ -1,0 +1,12 @@
+/***********************************************
+ * Feuille de style dédiée à l'impression
+ ***********************************************
+ * Elle permet de masquer 
+ *  l'entête,
+ *  les deux colonnes latérales,
+ *  le pied de page et
+ *  les boîtes sous la partie centrale
+ ***********************************************/
+#headTop, #headBottom, #leftside, #rightside, #foot, #centerBoxes, #endbox, #screen_choice form, .top {
+    display : none;
+}

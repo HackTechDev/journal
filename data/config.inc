@@ -1,0 +1,230 @@
+<?php
+if (stristr($_SERVER["SCRIPT_NAME"], "config.inc")) {
+  header("location:../index.php");
+  die();
+}
+
+$site[0] = stripslashes("GuppY"); // Titre du site pour l'Editorial
+$site[1] = stripslashes("GuppY : the easy and free web portal that requires no database to run"); // Meta Description du site
+$site[2] = stripslashes("guppy, freeguppy, php, gpl, html, web, internet, portal, miniportail"); // Meta Mots-clés du site
+$site[3] = stripslashes("http://localhost/guppy4622/"); // URL du site
+$site[4] = stripslashes("3"); // Nouvelles sur la page d'accueil
+$site[5] = stripslashes("0"); // Activation des news ou pas
+$site[6] = stripslashes("GuppY"); // Meta Titre du site pour les moteurs de recherche
+$site[7] = stripslashes("Index, Follow"); // Meta Méthode d'indexation du site pour les robots
+$site[8] = stripslashes("14 days"); // Meta Délai d'attente du robot avant une prochaine indexation
+$site[9] = stripslashes("GuppY"); // Meta Auteur du site
+$site[10] = stripslashes("GuppY"); // Meta Propriétaire du site
+$site[11] = stripslashes(""); // Meta Adresse e-mail principale de l'auteur du site
+$site[12] = stripslashes("General"); // Meta Catégorie du public visé
+$site[13] = stripslashes("Global"); // Meta Mode de diffusion du site
+$site[14] = stripslashes("2004-2012"); // Meta Copyright de l'auteur du site
+$site[15] = stripslashes("fr"); // Meta language
+$site[16] = stripslashes("http://localhost/guppy4622/"); // Meta Identifier URL
+$site[17] = stripslashes(""); // Slogan défilant langue principale
+$site[18] = stripslashes(""); // Slogan défilant deuxième langue
+$site[19] = stripslashes("E1"); // Format Dates
+$site[20] = stripslashes("5"); // Messages Forum sur la page d'accueil
+$site[21] = stripslashes("26"); // ID du message Livre d'or préféré
+$site[22] = stripslashes("H1"); // Format Heure
+$site[23] = stripslashes("@"); // Séparateur Date & Heure
+$site[24] = stripslashes("N"); // Logo Copyright
+$site[25] = stripslashes("B"); // Position Logo Copyright
+$site[26] = stripslashes(""); // Compression des Pages
+$site[27] = stripslashes("1"); // Temps d'attente popup postage
+$site[28] = stripslashes("progbar1.gif"); // Barre de progression attente popup postage
+$site[29] = stripslashes("240"); // Nombre de caractères des nouvelles en page d'accueil
+$site[30] = stripslashes("0"); // Activation du Blog ou pas
+$site[31] = stripslashes("5"); // Blog sur la page d'accueil
+$site[32] = stripslashes(""); // Icônes validator W3C
+$site['TZ'] = stripslashes("Europe/Paris"); // Fuseau horaire
+
+$page[12] = stripslashes("sml_1"); // Thème smileys
+$page[14] = stripslashes("skin_guppy01"); // Thème skins
+$page[23] = stripslashes("ava_3"); // Thème avatars
+
+$texte[3] = stripslashes("&curren;"); // Puce articles
+
+$lang[0] = stripslashes("fr"); // Langue principale du site
+$lang[1] = stripslashes("en"); // Deuxième langue du site
+
+$user[0] = stripslashes("webmaster"); // Webmaster
+$user[1] = stripslashes("webmaster@guppy.cms"); // e-mail du responsable du site
+$user[2] = stripslashes(""); // Identifiant messagerie instantanée
+$user[3] = stripslashes(""); // e-mail PHP
+$user[4] = stripslashes(""); // Messagerie instantanée
+
+$nom[0] = stripslashes("<!--001-->Accueil"); // Nom de l'accueil langue principale
+$nom[1] = stripslashes("Téléchargements"); // Page des téléchargements langue principale
+$nom[2] = stripslashes("Photos"); // Page des images langue principale
+$nom[3] = stripslashes("Liens"); // Page des liens langue principale
+$nom[4] = stripslashes("Présentation"); // Boite des articles à gauche langue principale
+$nom[5] = stripslashes("Spécial !"); // Boite spéciale langue principale
+$nom[6] = stripslashes("Sondage"); // Sondage langue principale
+$nom[7] = stripslashes("Nouvelles"); // Nouvelles langue principale
+$nom[8] = stripslashes("Visites"); // Compteur langue principale
+$nom[9] = stripslashes("Livre d'or"); // Livre d'or langue principale
+$nom[10] = stripslashes("<!--001-->Welcome"); // Nom de l'accueil deuxième langue
+$nom[11] = stripslashes("Downloads"); // Page des téléchargements deuxième langue
+$nom[12] = stripslashes("Photos"); // Page des images deuxième langue
+$nom[13] = stripslashes("Links"); // Page des liens deuxième langue
+$nom[14] = stripslashes("Introduction"); // Boite des articles à gauche deuxième langue
+$nom[15] = stripslashes("Special !"); // Boite spéciale deuxième langue
+$nom[16] = stripslashes("Poll"); // Sondage deuxième langue
+$nom[17] = stripslashes("News"); // Nouvelles deuxième langue
+$nom[18] = stripslashes("Visits"); // Compteur deuxième langue
+$nom[19] = stripslashes("Guestbook"); // Livre d'or deuxième langue
+$nom[20] = stripslashes("Recherche"); // Recherche langue principale
+$nom[21] = stripslashes("Search"); // Recherche deuxième langue
+$nom[22] = stripslashes("Forum"); // Forum langue principale
+$nom[23] = stripslashes("Forum"); // Forum deuxième langue
+$nom[24] = stripslashes("FAQ"); // FAQ langue principale
+$nom[25] = stripslashes("FAQ"); // FAQ deuxième langue
+$nom[26] = stripslashes("Stats"); // Statistiques langue principale
+$nom[27] = stripslashes("Stats"); // Statistiques deuxième langue
+$nom[28] = stripslashes("Recommander"); // Recommander langue principale
+$nom[29] = stripslashes("Recommend"); // Recommander deuxième langue
+$nom[30] = stripslashes("Technique"); // Boite des articles à droite langue principale
+$nom[31] = stripslashes("Technical"); // Boite des articles à droite deuxième langue
+$nom[32] = stripslashes("Calendrier"); // Boite Calendrier langue principale
+$nom[33] = stripslashes("Calendar"); // Boite Calendrier deuxième langue
+$nom[34] = stripslashes("Préférences"); // Boite préférences utilisateur langue principale
+$nom[35] = stripslashes("Preferences"); // Boite préférences utilisateur deuxième langue
+$nom[36] = stripslashes("Nouvelles des Amis"); // Boite RSS langue principale
+$nom[37] = stripslashes("News of Friends"); // Boite RSS deuxième langue
+$nom[38] = stripslashes("Lettre d'information"); // Boite Newsletter langue principale
+$nom[39] = stripslashes("Newsletter"); // Boite Newsletter deuxième langue
+$nom[40] = stripslashes("Webmaster - Infos"); // Boite Webmaster - Infos langue principale
+$nom[41] = stripslashes("Webmaster - Infos"); // Boite Webmaster - Infos deuxième langue
+$nom[42] = stripslashes("Blog"); // Blog langue principale
+$nom[43] = stripslashes("Blog"); // Blog deuxième langue
+$nom[44] = stripslashes("Menu"); // Boîte Menu langue principale
+$nom[45] = stripslashes("Menu"); // Boîte Menu deuxième langue
+$nom[46] = stripslashes(""); // Boîte Réseaux sociaux langue principale
+$nom[47] = stripslashes(""); // Boîte Réseaux sociaux deuxième langue
+
+$serviz[0] = "on"; // Citations ON
+$serviz[1] = stripslashes("on"); // Choix Page d'accueil-Blog ON / OFF
+$serviz[2] = stripslashes("10"); // Nb de news / page
+// serviz[3] is now in confskin.inc // Boite Articles gauche ON / OFF
+$serviz[4] = stripslashes("10"); // Nb de téléchargements / page
+$serviz[5] = stripslashes("10"); // Nb de liens / page
+$serviz[6] = stripslashes("10"); // Nb de FAQ / page
+$serviz[7] = stripslashes("5"); // Nb de messages Guestbook / page
+$serviz[8] = stripslashes("on"); // Nouvelles ON / OFF
+$serviz[9] = stripslashes("on"); // Photos ON / OFF
+$serviz[10] = stripslashes("on"); // Téléchargements ON / OFF
+$serviz[11] = stripslashes("on"); // Liens ON / OFF
+$serviz[12] = stripslashes("on"); // Livre d'or ON / OFF
+$serviz[13] = stripslashes("on"); // Forum ON / OFF
+$serviz[14] = stripslashes("on"); // FAQ ON / OFF
+$serviz[15] = stripslashes("on"); // Statistiques ON / OFF
+$serviz[16] = stripslashes(""); // Publication Nouvelles RSS ON / OFF
+$serviz[17] = stripslashes("10"); // Nb de messages Forum / page
+$serviz[18] = stripslashes("on"); // Catégories Forum ON / OFF
+$serviz[19] = "on"; // Bannières ON
+$serviz[20] = stripslashes("10"); // Nb de messages Thread / page
+$serviz[21] = stripslashes("on"); // Photorama avancé ON /OFF
+// serviz[22] is in confskin.inc  // Boite Articles droit ON / OFF
+// serviz[23] is in confskin.inc  // Sondage ON / OFF
+$serviz[24] = "on"; // Recherche ON
+$serviz[25] = stripslashes("2"); // Menu dynamique Articles gauche
+$serviz[26] = stripslashes("3"); // Menu dynamique Articles droit
+$serviz[27] = stripslashes("on"); // Billets RSS des amis ON /OFF
+// serviz[28] is in confskin.inc  // Préférences visiteurs
+$serviz[29] = stripslashes("on"); // Réactions aux articles ON / OFF / Ok Admin
+$serviz[30] = stripslashes("5"); // Nb Commentaires blog - Réactions aux articles / page
+$serviz[31] = stripslashes(""); // Pseudo préférences webmaster
+$serviz[32] = stripslashes("on"); // Accès à l'administration rapide
+$serviz[33] = stripslashes("on"); // Compteur de lecture Articles
+$serviz[34] = stripslashes("on"); // Compteur de lecture Threads Forum
+$serviz[35] = stripslashes("on"); // Compteur de Nb de téléchargements
+$serviz[36] = stripslashes("no"); // Newsletter ON / OFF /TEST
+$serviz[37] = stripslashes("10"); // Nb de news publiées
+// $serviz[38] is in confskin.inc  // RSS News ON / OFF
+$serviz[39] = stripslashes("3600"); // Durée Cache RSS
+$serviz[40] = stripslashes(""); // Publication dans livre d'or
+$serviz[41] = stripslashes(""); // Publication dans forum
+$serviz[42] = stripslashes(""); // Option Rédacteur ON / OFF
+$serviz[43] = stripslashes(""); // Avatar préférences webmaster
+$serviz[44] = stripslashes(""); // Mise en maintenance du site
+$serviz[45] = stripslashes(""); // Masquer l'icône Admin
+$serviz[46] = stripslashes("5"); // Nb de messages Agenda / page
+$serviz[47] = stripslashes("on"); // Agenda ON / OFF
+$serviz[48] = stripslashes("10"); // Nb de messages maximum dans Tinymessage
+$serviz[49] = stripslashes("in"); // Choix editeur
+$serviz[50] = stripslashes("10"); // Nb maxi de fichiers dans data/error
+$serviz[51] = stripslashes("50"); // Nb maxi de lignes dans l'anti-spam
+$serviz[52] = stripslashes("10"); // Durée maxi de validité du code anti-spam
+$serviz[53] = stripslashes("on"); // Blog ON / OFF
+$serviz[54] = stripslashes(""); // Publication Blog RSS ON / OFF
+$serviz[55] = stripslashes("10"); // Nb de Blogs / page
+$serviz[56] = stripslashes("5"); // Nb de blogs publiés
+$serviz[57] = stripslashes("on"); // Commentaires sur Blog ON / OFF / Ok Admin
+$serviz[58] = stripslashes("2cols"); // Blog pleine page ON / OFF
+$serviz[59] = stripslashes("3"); // Menu dynamique Blog
+$serviz[60] = stripslashes(""); // Publication Articles RSS ON / OFF
+$serviz[61] = stripslashes("5"); // Nb de billets récents/commentaires / page
+$serviz[62] = stripslashes(""); // Recommander ON/OFF
+$serviz[63] = stripslashes("100%"); // Largeur de l'éditeur
+
+$forum[3] = stripslashes(""); // Forum pleine page ON / OFF
+$forum[4] = stripslashes("12"); // Nombre de catégories
+$forum[5] = stripslashes("1"); // Durée thread up (heures)
+$forum[6] = stripslashes("1"); // Durée thread au top (jours)
+$forum[7] = stripslashes("10-30-60-100"); // Echelle des messages
+$forum[8] = stripslashes("1"); // Durée nouveau
+$forum[9] = stripslashes("on"); // Affichage charte du forum ON / OFF
+
+$supervision[0] = stripslashes(""); // e-mail compteur
+$supervision[1] = stripslashes("1000"); // incrément de compteur pour e-mail
+$supervision[2] = stripslashes("on"); // e-mail publication nouvelle
+$supervision[3] = stripslashes("on"); // e-mail publication livre d'or
+$supervision[4] = stripslashes(""); // e-mail publication forum
+$supervision[5] = stripslashes("standard_2"); // Type d'e-mail PHP
+$supervision[6] = stripslashes("on"); // e-mail réagir aux articles
+$supervision[7] = stripslashes("on"); // e-mail inscription ou résiliation Newsletter
+$supervision[8] = stripslashes("on"); // e-mail publication blog
+$supervision[9] = stripslashes("on"); // e-mail commentaire blog
+$supervision[10] = stripslashes(""); // e-mail publication forum aux modérateurs ON/OFF
+
+$editobox[0] = stripslashes("inc/boxhome"); // Première boite page d'accueil
+$editobox[1] = stripslashes("inc/boxforum"); // Seconde boite page d'accueil
+$editobox[2] = stripslashes("inc/boxnews"); // Troisième boite page d'accueil
+$editobox[3] = stripslashes("inc/boxblog"); // Quatrième boite page d'accueil
+$editobox[4] = stripslashes("inc/boxguest"); // Cinquième boite page d'accueil
+$editobox[5] = stripslashes(""); // Sixième boite page d'accueil
+
+$configlog[0] = stripslashes("10"); // Nombre des messages visibles dans l'admin log
+$configlog[1] = stripslashes(""); // Inclure les logs de la page Index/Accueil
+$configlog[2] = stripslashes(""); // Inclure les logs de la page Nouvelles
+$configlog[3] = stripslashes(""); // Inclure les logs de la page Photos
+$configlog[4] = stripslashes(""); // Inclure les logs de la page Liens
+$configlog[5] = stripslashes(""); // Inclure les logs de la page Téléchargement
+$configlog[6] = stripslashes(""); // Inclure les logs de la page Livre d'or
+$configlog[7] = stripslashes(""); // Inclure les logs de la page FAQ
+$configlog[8] = stripslashes(""); // Inclure les logs de la page Forum
+$configlog[9] = stripslashes(""); // Inclure les logs de la page Stats
+$configlog[10] = stripslashes(""); // Inclure les logs de la page Admin
+$configlog[11] = stripslashes(""); // Inclure les logs de la page Blog
+
+$members[0] = stripslashes(""); // Activation de la zone membres
+$members[1] = stripslashes(""); // Zone membre accès à la section Articles
+$members[2] = stripslashes(""); // Zone membre accès à la section Photo
+$members[3] = stripslashes(""); // Zone membre accès à la section Liens
+$members[4] = stripslashes(""); // Zone membre accès à la section FAQ
+$members[5] = stripslashes(""); // Zone membre accès à la section Forum
+$members[6] = stripslashes(""); // Zone membre accès à la section Statistiques
+$members[7] = stripslashes(""); // Zone membre accès à la section Téléchargement
+$members[8] = stripslashes(""); // Zone membre accès publication Nouvelles
+$members[9] = stripslashes(""); // Zone membre accès publication Livre d'Or
+$members[10] = stripslashes(""); // Zone membre accès publication Forum
+$members[11] = stripslashes(""); // Zone membre accès publication Reactions aux articles
+$members[12] = stripslashes(""); // Zone membre accès à la section Livre d'Or
+$members[13] = stripslashes(""); // Zone membre accès à la section Nouvelles
+$members[14] = stripslashes(""); // Zone membre accès à la section Agenda
+$members[15] = stripslashes(""); // Zone membre accès à la section Blog
+$members[16] = stripslashes(""); // Zone membre accès publication Blog
+$members[17] = stripslashes(""); // Zone membre accès publication Commentaires blog
+$members[18] = stripslashes(""); // Zone membre accès inscription Newsletter
+$members[19] = stripslashes(""); // Inscriptions membres on /off / ok mail / ok webmaster

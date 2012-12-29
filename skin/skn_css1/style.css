@@ -1,0 +1,699 @@
+
+/*  ---------  CSS generated for skn_css1 ----------- */
+
+html { /*  document */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #330099;
+  background: inherit;
+}
+body { /*  corps du document */
+  margin: 0;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #330099;
+  background-color: #D4E6D4;
+
+}
+a { /* lien */
+  color: #0033CC;
+  background: inherit;
+  text-decoration: none;
+}
+a:hover { /* lien survolé */
+  color: #FF3366;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: inherit;
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+p { /* paragraphe */
+  margin: 16px 0;
+  color: inherit;
+  background: inherit;
+}
+hr { /* ligne horizontale */
+  height: 1px;
+  border: 1px solid #B9DFCD;
+  width: 98%;
+}
+ul, ol { /* listes */
+  padding: 0;
+  margin: 0;
+}
+
+h1 { /* titre niveau 1 */
+  font-size: 24px;
+}
+h2 { /* titre niveau 2 */
+  font-size: 18px;
+}
+h3 { /* titre niveau 3 */
+  font-size: 16px;
+}
+h4 { /* titre niveau 4 */
+  font-size: 14px;
+}
+.bordure {
+  border: 1px solid #B9DFCD;
+}
+/******************************************
+* Mise en page des blocks div principaux */
+#screen_choice {
+  z-index: 20;
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  padding: 0px;
+  margin: 0;
+  text-align: right;
+}
+#page{ /* all the page */
+  z-index: 10;
+  padding-top: 8px;
+  color: inherit;
+  background-color: #D4E6D4;
+
+}
+#headTop { /* header top and middle (logo-banner + citation) */
+  z-index: 15;
+  margin: 0;
+  padding: 0 10px;
+  color: inherit;
+  background-color: transparent;
+
+}
+#headBottom { /* header bottom (logo-menu) */
+  margin: 0;
+  padding: 0 4px;
+  color: inherit;
+  background-color: transparent;
+
+}
+#mainContent { /* main page */
+  margin: 0 4px;
+  padding:0;
+}
+#leftside { /* leftboxes area */
+  margin: 0;
+  padding-right: 4px;
+}
+#rightside { /* right boxes area */
+  margin: 0;
+  padding-left: 4px;
+}
+#endbox { /* optionnal area between main page and bottom */
+  margin: 4px 8px;
+
+  text-align: left;
+
+}
+#foot { /* footer Copyright */
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #6666CC;
+  background-color: transparent;
+  padding: 0 8px;
+}
+/*******************************************
+ * Mise en page des blocks dans le header */
+div.logo { /* block logo */
+  padding: 0 8px;
+  text-align: center;
+}
+div.banner { /* block bannière */
+  background-repeat: no-repeat;
+  padding: 8px;
+  text-align: center;
+}
+/*************************
+ * block boite citation */
+div.quote { /* block citation */
+  white-space: nowrap;
+  text-align: center;
+  padding: 0 4px;
+}
+div.cita { /* texte */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #6633CC;
+  background: inherit;
+  font-style: normal;
+  text-align: center;
+  border: 0;
+  margin: 0;
+  padding: 0 8px;
+}
+
+/***********************************
+ * block box Header Menu sections */
+div.menuIcons { /* block menu */
+  padding: 8px 0;
+}
+div.menuIcons ul { /* block liste du menu */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+div.menuIcons ul li { /* toutes les sections */
+  float: left;
+  margin-right: 8px;
+  text-align: center;
+}
+div.menuIcons ul li span { /* toutes les sections */
+  display: block;
+  white-space: nowrap;
+}
+div.menuIcons ul li.menu_flags { /* section drapeau */
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+}
+div.menuIcons ul li.menu_flags img { /* séparation drapeau */
+	margin: 0;
+}
+div.menuIcons ul li.menu_admin { /* section admin */
+  float: right;
+  padding-right: 3px;
+}
+div.menuIcons ul li a span { /* lien */
+  color: #6666CC;
+  background-color: inherit;
+  text-decoration: none;
+  font: bold 11px Arial, Helvetica, sans-serif;
+}
+div.tblbox ul li a span, td.tblbox ul li a span { /* lien latéral */
+  color: #0066CC;
+  background-color: inherit;
+  text-decoration: none;
+  font: bold 11px Arial, Helvetica, sans-serif;
+}
+div.menuIcons ul li a span.current { /* lien actif */
+  color:#FFCC00;
+  background-color: #6666CC;
+  text-decoration: underline;
+}
+div.tblbox ul li a span.current, td.tblbox ul li a span.current { /* lien latéral actif */
+  color:#FF3366;
+  background-color: #B9D7BA;
+  text-decoration: underline;
+}
+div.menuIcons ul li a:hover span { /* lien survolé*/
+  color: #FFCC00;
+  text-decoration: underline;
+  background-color: inherit;
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+div.tblbox ul li a:hover span, td.tblbox ul li a:hover span { /* lien latéral survolé*/
+  color: #FF3366;
+  text-decoration: underline;
+  background-color: inherit;
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+/******************************************
+ * Mise en page des blocks dans le corps */
+/* block lateral boxes */
+.htable {
+  margin-bottom: 8px;
+}
+.htable1 {
+  margin-bottom: 8px;
+}
+.htable2 {
+  padding: 0 2px;
+}
+.spacer {
+  padding: 8px 2px;
+}
+.titrebox { /* Titre */
+  background-color: #B9D7BA;
+  background-image: url(../../img/fond3.jpg);
+  border: 1px solid #B9DFCD;
+  padding: 4px;
+  white-space: nowrap;
+  font: bold 14px Arial, Helvetica, sans-serif;
+  color: #330099;
+  text-align: left;
+}
+.titrebox2 {  /* Autre titre */
+  font: bold 14px Arial, Helvetica, sans-serif;
+  color: #330099;
+  background-color: #B9D7BA;
+  text-align: center;
+}
+.tblbox {  /* Corps */
+  color:inherit;
+  background-color: #DAEADA;
+  border: 1px solid #B9DFCD;
+  padding: 4px;
+  margin-bottom: 8px;
+  text-align:left;
+}
+.tblboxover { /* Corps survolé */
+  color: inherit;
+  background-color: #DDEDDD;
+  border: 1px solid #B9DFCD;
+  padding: 4px;
+  margin-bottom: 8px;
+  text-align:left;
+}
+/* block central boxes */
+.titre {
+  background-color: #B9D7BA;
+  background-image: url(../../img/fond3.jpg);
+  border: 1px solid #B9DFCD;
+  padding: 5px;
+  white-space: nowrap;
+  font: bold 15px Arial, Helvetica, sans-serif;
+  color: #330099;
+  text-align: left;
+}
+.tbl {
+  background-color: #DAEADA;
+  border: 1px solid #B9DFCD;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #330099;
+  padding: 4px;
+  margin-bottom: 8px;
+  text-align:left;
+}
+.tblover {
+  background-color: #DAEADA;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #330099;
+  border: 1px solid #B9DFCD;
+  padding: 4px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+div ul, ol { /* listes */
+  padding: 8px 0 8px 8px;
+  margin-left: 16px;
+}
+div li{
+  padding: 0;
+  margin-left: 12px;
+}
+/************************************
+ * block box lateral Menu Sections */
+ul.boxmenu { /* block liste */
+  margin: 0;
+  padding: 5px 0;
+  list-style: none;
+}
+ul.boxmenu li { /* items liste */
+  margin-bottom: 10px;
+}
+ul.boxmenu li img { /* icons */
+  vertical-align: middle;
+  margin-right: 10px;
+}
+/****************************
+ * block box lateral Article
+ * (menu list, menu dynamic 1, menu dynamic 2) */
+.rubr { /* catégories des articles */
+  font: bold 11px Arial, Helvetica, sans-serif;
+  color: #0066CC;
+  background-color: inherit;
+  text-align: left;
+  margin: 1px;
+  padding: 4px 2px;
+}
+.item {
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #0066CC;
+  background-color: inherit;
+  text-align: left;
+  list-style: none;
+  margin: 0;
+  padding: 2px 0;
+}
+ul.item {
+  margin: 0;
+  padding: 0;
+}
+ul.item li.item { /* titres des articles */
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #0066CC;
+  background-color: inherit;
+  text-align: left;
+  list-style: none;
+  padding: 2px 0 2px 10px;
+}
+.curr_item {
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #FF3366;
+  background-color: #B9D7BA;
+  text-align: left;
+  list-style: none;
+  padding: 2px 0;
+}
+ul.item li.curr_item { /* titre article est affiché */
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #FF3366;
+  background-color: #B9D7BA;
+  text-align: left;
+  list-style: none;
+  padding: 2px 0 2px 10px;
+}
+/*************************************
+ * block box central forum - tables */
+.forum {
+  background-color: #B9D7BA;
+  padding: 5px 5px;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  color: #330099;
+  text-align: center;
+}
+.forum2 {
+  background-color: #B9D7BA;
+  padding: 5px 5px;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #330099;
+  text-align: left;
+}
+tr.forum2 {
+  background-color: #B9D7BA;
+  background-image: url(../../img/fond3.jpg);
+  padding: 5px 5px;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  color: #330099;
+  text-align: left;
+}
+.quest {
+  background-color: #CBE1CC;
+  padding: 5px 5px 5px 5px;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #330099;
+  text-align: left;
+}
+.rep {
+  background-color: #D7E9D7;
+  padding: 10px 5px 5px 5px;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #330099;
+  text-align: left;
+}
+.bord {
+  border: 1px solid #B9D7BA;
+  padding: 1px;
+}
+.bord2 {
+  border: 2px double #D7E9D7;
+}
+/*************
+ * Calendar */
+.cal {
+  border-collapse: separate;
+  border: 0px solid #B9D7BA;
+  border-spacing: 0px;
+  color: inherit;
+  background-color: #B9D7BA;
+}
+tr.cal { /* calendar nav bar */
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #330099;
+  background-color: #B9D7BA;
+  text-align: center;
+}
+td.cals { /* week */
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #330099;
+  background-color: #B9D7BA;
+  background-image: url(../../img/fond3.jpg);
+  width: 14%;
+  text-align: center;
+}
+td.cal0 { /* empty cell*/
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #3300CC;
+  background-color: inherit;
+  width: 14%;
+  text-align: center;
+}
+td.cal1 { /* days */
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #3300CC;
+  background-color: #CBE1CC;
+  width: 14%;
+  text-align: center;
+}
+td.cal2 { /* today */
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #3300CC;
+  background-color: #4A9FAC;
+  width: 14%;
+  text-align: center;
+}
+td.cal3 { /* sunday or special */
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #3300CC;
+  background-color: #B9D7BA;
+  width: 14%;
+  text-align: center;
+}
+td.cal4 { /* today is sunday or special */
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #3300CC;
+  background-color: #4A9FAC;
+  width: 14%;
+  text-align: center;
+}
+td.calevt { /* planner event */
+  font: bold 11px Arial, Helvetica, sans-serif;
+  color: #330099;
+  background-color: #97B7BF;
+  text-decoration: underline;
+  text-align: center;
+  width: 14%;
+}
+/************************
+ * Formulaires (Forms) */
+form { /* formulaire */
+  margin: 3px 0;
+}
+fieldset { /* Encadrement des champs */
+  border: 1px solid #B9D7BA;
+  margin: 8px;
+}
+legend { /* légende des encadrements */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #330099;
+  background-color: inherit;
+  font-weight: bold;
+}
+input.bouton, button { /* bouton */
+  cursor: pointer;
+  margin: 4px 0;
+  color: #000099;
+  border: 1px inset #B9DFCD;
+  background-color: #CBE1CC;
+  font: 11px Arial, Helvetica, sans-serif;
+
+}
+input.texte { /* champ texte */
+  background-color: #CBE1CC;
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #000099;
+  border: 1px solid #B9DFCD;
+  margin: 4px 0;
+}
+select { /* champ select */
+  color: #000099;
+  background-color: #CBE1CC;
+  font: 11px Arial, Helvetica, sans-serif;
+  border: 1px solid #B9DFCD;
+  margin: 4px 0;
+}
+textarea { /* champ textarea */
+  color: #000099;
+  background-color: #CBE1CC;
+  border: 1px solid #B9DFCD;
+  overflow: auto;
+  margin: 4px 0;
+}
+/**********************
+ * Editeur FckEditor */
+.Code {
+  border: #B9D7BA 1px solid;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #330099;
+  font: 11px Arial, Helvetica, sans-serif, Monospace;
+  background-color: #D7E9D7;
+}
+/*********************
+ * Editeur pgeditor */
+div.pgeditor {
+ color: inherit;
+ background-color: #B9D7BA;
+ border: 1px solid #B9D7BA;
+}
+div #toolbarIcons_ptxt, div #toolbarSmileys_ptxt {
+ color: inherit;
+ background-color: #B9D7BA;
+ border: 1px solid #B9D7BA;
+}
+/*******************
+ * pop comment RSS */
+.pop {
+  z-index: 30;
+  width: 380px;
+  text-align: left;
+  position: relative;
+}
+.pop a {
+  display: block;
+}
+.pop span {
+  z-index: 30;
+  display: none;
+}
+.pop a:hover span {
+  display: block;
+  width: 280px;
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  color: #330099;
+  background-color: #CBE1CC;
+  font: normal 12px Arial, Helvetica, sans-serif;
+  border: 1px solid #B9DFCD;
+  padding: 4px;
+}
+/*******************************************
+ * Mise en page des blocks dans le footer */
+#foot span.copyright { /* Copyright */
+  font: 1em Arial, Helvetica, sans-serif;
+  color: #6666CC;
+  background-color: inherit;
+  text-align: center;
+}
+/************************
+ * Divers, inclassables */
+.box {
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #330099;
+  background-color: inherit;
+  text-align: left;
+}
+p.box {
+  margin: 0;
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #330099;
+  background-color: inherit;
+}
+.box a, .item a {
+  color: #0066CC;
+  background-color: inherit;
+  text-decoration: none;
+  font: 11px Arial, Helvetica, sans-serif;
+}
+.box2 a {
+  color: #FF3366;
+  background-color: inherit;
+  text-decoration: none;
+  font: 11px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.box a:hover, .item a:hover {
+  color: #FF3366;
+  text-decoration: none;
+  background-color: inherit;
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+.top {
+  font: 0.8em Arial, Helvetica, sans-serif;
+  color: #6666CC;
+  background-color: inherit;
+  text-align: center;
+}
+.timer {
+  font: italic 0.9em Arial, Helvetica, sans-serif;
+  color: #6666CC;
+  background-color: inherit;
+  text-align: center;
+  padding: 8px;
+}
+.clsCursor {
+  cursor: pointer;
+}
+.notice {
+  color: red;
+  background-color: #FF9;
+  padding: 2px;
+}
+.band {
+
+}
+/* skn_cc2: extra css list for boxes */
+.box_tr {
+background-image: url(img/hd.gif);
+background-position: top left;
+width: 12px; height: 12px;
+}
+.box_t {
+background-image: url(img/hc.gif);
+background-repeat: repeat-x;
+height: 12px;
+}
+.box_tl {
+background-image: url(img/hg.gif);
+background-position: top right;
+width: 12px; height: 12px;
+}
+.box_l {
+background-image: url(img/cg.gif);
+background-repeat: repeat-y;
+width: 12px;
+}
+.box_r {
+background-image: url(img/cd.gif);
+background-repeat: repeat-y;
+width: 12px;
+}
+.box_bl {
+background-image: url(img/bg.gif);
+background-position: bottom left;
+width: 12px;
+height: 12px;
+}
+.box_b {
+background-image: url(img/bc.gif);
+background-repeat: repeat-x;
+height: 12px;
+}
+.box_br {
+background-image: url(img/bd.gif);
+background-position: bottom right;
+width: 12px;
+height: 12px;
+}
+/*******************************************
+ * Mise en page des blocks dans le header */
+div.logo { /* block logo */
+  background-color: transparent;
+  padding: 0px 0px 0px 32px;
+  text-align: center;
+}
+.quote { /* texte */
+  margin-left: 180px;
+  text-align: center;
+}
+#headBottom { /* header bottom (logo-menu) */
+  margin-left: 180px;
+  padding: 0 4px;
+}
+#page{ /* all the page */
+  z-index: 20;
+  padding-top:0px;
+  background-color: #D4E6D4;
+  background: url(img/chaine.gif);
+  background-repeat: repeat-y;
+}

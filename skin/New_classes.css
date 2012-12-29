@@ -1,0 +1,272 @@
+/* CSS Document: les classes supplémentaires v4.6
+   new classes to include in your old css file */
+
+/******************************************
+* Mise en page des blocks div principaux */
+#screen_choice {
+  z-index:10;
+  position:absolute; top: 1px; right: 1px;
+  padding: 0px;
+  margin: 0px;
+	text-align: right;
+}
+#page{ /* all the page */
+ z-index:20;
+ padding-top:10px;
+ background-color: #CADEF0;
+ background-image: url(../../img/dolphins.jpeg);
+}
+#headTop { /* header top and middle (logo-banner + citation) */
+  z-index: 15;
+  margin: 0;
+  padding: 0px;
+  background-color: transparent;
+
+}
+#headBottom { /* header bottom (logo-menu) */
+  margin: 0;
+  padding: 0 4px;
+}
+/*******************************************
+ * Mise en page des blocks dans le header */
+div.logo { /* block logo */
+  background-color: transparent;
+  padding: 0px 8px;
+  text-align: left;
+}
+div.banner { /* block bannière */
+  background-repeat: no-repeat;
+  padding: 8px;
+  text-align: right;
+}
+/*************************
+ * block boite citation */
+div.quote { /* block citation */
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+}
+div.quote span.cita { /* texte */
+  background-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #CCFFFF;
+	font-style: normal;
+  text-align: center;
+  width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+div.quote span.author { /* auteur */
+	font-style: normal;
+}
+
+/***********************************
+ * block box Header Menu sections */
+div.menuIcons { /* block menu */
+	padding:8px 0px;
+}
+div.menuIcons ul { /* block liste du menu */
+	margin:0;
+	padding:0;
+	list-style:none;width:100%;
+}
+div.menuIcons ul li { /* toutes les sections */
+	float:left;
+	margin-right:8px;
+	text-align:center;
+}
+div.menuIcons ul li span { /* toutes les sections */
+	display:block;
+	white-space:nowrap;
+	color: #FFFFCC;
+}
+div.menuIcons ul li.menu_flags { /* section drapeau */
+	float:left;
+	margin-right:10px;
+	text-align:center;
+}
+div.menuIcons ul li.menu_flags img { /* séparation drapeau */
+	margin:3px;
+}
+div.menuIcons ul li.menu_admin { /* section admin */
+	float:right;
+	padding-right:3px;
+}
+div.menuIcons ul li a:hover, div.tblbox ul li a:hover {
+ position:static;
+  background-color: transparent; position: relative; top: 1px; left: 1px;
+}
+div.menuIcons ul li a span, div.tblbox ul li a span  { /* lien */
+  color: #FFFFCC;
+  text-decoration: none;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+div.menuIcons ul li a span.current, div.tblbox ul li a span.current, td.tblbox ul li a span.current { /* lien actif */
+  color:#993300;
+  background-color:#FFFFCC;
+  text-decoration: underline;
+}
+div.menuIcons ul li a:hover span, div.tblbox ul li a:hover span { /* lien survolé*/
+  color: #993300;
+  text-decoration: underline;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+   background-color: transparent; position: relative; top: 1px; left: 1px;
+}
+/************************************
+ * block box lateral Menu Sections */
+ul.boxmenu { /* block liste */
+	margin:0;
+	padding:8px 0px;
+	list-style:none;
+}
+ul.boxmenu li { /* items liste */
+	margin-bottom:10px;
+}
+ul.boxmenu li img { /* icons */
+	vertical-align:middle;
+	margin-right:10px;
+}
+#leftside { /* leftboxes area */
+ margin: 0px;
+ padding:0px;
+}
+#rightside { /* right boxes area */
+ margin: 0px;
+ padding:0px;
+}
+#endbox { /* optionnal area between corpse and bottom */
+ margin: 0px;
+ padding: 4px;
+ text-align: left;
+}
+/*******************
+ * pop comment RSS */
+.pop {
+  z-index: 30;
+  width:380px;
+  text-align:left;
+}
+.pop a {
+  display: block;
+}
+.pop span {
+  z-index: 30;
+  display:none;
+}
+.pop a:hover span {
+  display:block;
+  width:280px;
+  position:absolute;
+  top:2em;
+  left:2em;
+  color: #0F0F0F;
+  background-color: #F3EADB;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  border: 1px solid #996600;
+  padding: 4px;
+}
+p, span {
+ margin: 4px 0px;
+ font-size: 12px;
+ font-family: Arial, Helvetica, sans-serif;
+ color: #330099;
+}
+/**************************************************************************
+ * block box lateral Article (menu list, menu dynamic 1, menu dynamic 2) */
+.rubr {
+  background-color: transparent;
+  padding: 4px 2px;
+  margin: 1px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #0F0F0F;
+  text-align:left;
+}
+p.rubr { /* catégories des articles */
+  background-color: transparent;
+  padding: 4px 2px;
+  margin: 1px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #0F0F0F;
+  text-align:left;
+}
+.item {
+  background-color: #CFE5F9;
+  padding: 2px 0px;
+  margin: 0px;
+  background-color: #E6D5B6;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0F0F0F;
+  text-align:left;
+  list-style: none;
+}
+ul.item {
+	margin:0;
+	padding:0;
+}
+ul.item li.item { /* titres des articles */
+  background-color: #E6D5B6;
+  padding: 2px 0px 2px 10px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0F0F0F;
+  text-align:left;
+  list-style: none;
+}
+.curr_item {
+  padding: 2px 0px;
+  background-color: #DBA86D;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0F0F0F;
+  text-align:left;
+  list-style: none;
+}
+ul.item li.curr_item { /* titre article est affiché */
+  background-color: #DBA86D;
+  padding: 2px 0px 2px 10px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0F0F0F;
+  text-align:left;
+  list-style: none;
+}
+/* added forms enhancement */
+/* replace name of class input.bouton by input.bouton, button */
+fieldset {
+ border: 1px solid #AECBED;
+ margin: 8px;
+}
+legend {
+ font-size: 12px;
+ font-family: Arial, Helvetica, sans-serif;
+ color: #330099;
+ font-weight: bold;
+}
+.notice { /* very important */
+ color:red;
+ background-color:yellow;
+ padding:2px;
+}
+/* style for FckEditor */
+.Code {
+ border: #AECBED 1px solid;
+ padding-right: 5px;
+ padding-left: 5px;
+ color: #330099;
+ font-family: Comic sans MS, Arial, sans-serif , Monospace;
+ font-size: 11px;
+ background-color: #CFE5F9;
+}

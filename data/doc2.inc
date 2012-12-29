@@ -1,0 +1,19 @@
+<?php
+$type = "ba";
+$fileid = "2";
+$status = "i";
+$creadate = "201210150400";
+$moddate = "201210150400";
+$author = stripslashes("GuppY Team");
+$email = stripslashes("webmaster@guppy.cms");
+$fielda1 = stripslashes("guppypub.gif");
+$fielda2 = stripslashes("guppypub.gif");
+$fieldb1 = stripslashes("http://www.freeguppy.org/");
+$fieldb2 = stripslashes("http://www.freeguppy.org/");
+$fieldc1 = stripslashes("");
+$fieldc2 = stripslashes("");
+$fieldd1 = stripslashes("");
+$fieldd2 = stripslashes("");
+$fieldweb = stripslashes("");
+$fieldmail = stripslashes("");
+$fieldmod = stripslashes("");

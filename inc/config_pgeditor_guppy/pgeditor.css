@@ -1,0 +1,276 @@
+/*
+     Plugin PostGuestEditor
+	 Version  : 2.5.0b6 (2008/06/13)
+	 Compatibility : Guppy v4.5.x
+	 Licence  : GNU Lesser General Public License
+	 Author   : jérôme CROUX (Djchouix)
+     Web site : http://lebrikabrak.info/
+     E-mail   : jchouix@wanadoo.fr
+*/
+
+/**
+ *   CSS de PostGuest Editor
+ *
+ *    v4.6.11 (xx november 2009)    : optimized classes div.code (by Icare)
+ */
+
+/**
+ *   Editeur PGEditor
+ */
+div.pgeditor {
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+}
+
+/**
+ *   Editeur WYSIWYG
+ */
+div.toolbarIcons {
+	border:1px solid #000;
+	border-bottom:none;
+	margin:0px auto;
+	padding:3px 0px;
+	text-align:center;
+	background-color:#ECE9D8;
+	width:100%;
+}
+div.toggle {
+	float:right;
+	margin:0px;
+	padding:0px;
+}
+div.toolbarWIW {
+	height:auto;
+	margin:0px;
+	padding:0px;
+}
+
+div.toolbarIcons img.icon {
+	vertical-align:middle;
+}
+
+div.toolbarIcons img.icon:hover {
+	vertical-align:middle;
+	background-color:#FFFFFF;
+}
+
+div.contentWIW {
+	margin:0px auto;
+	padding:0px;
+	border:1px solid #000000;
+}
+
+div.contentWIW iframe {
+	margin:0px;
+	padding:0px;
+	border:none;
+	background-color:#FFFFFF;
+	color:#000000;
+}
+
+/*  zone d'édition WYSIWYG */
+body.contentWIW {
+	background-color:#FFFFFF; /* couleur de fond */
+	color:#000000;   /* couleur du texte */
+	font-family:"Times New Roman", Times, serif; /* police du texte */
+	font-size:12pt; /* taille du texte */
+}
+
+body.contentWIW img {
+	border:none;
+}
+
+/*  zone d'édition textarea de l'éditeur WYSIWYG*/
+body.contentTA {
+	background-color:#FFFFFF; /* couleur de fond */
+	color:#000000;   /* couleur du texte */
+	font-family:"Times New Roman", Times, serif; /* police du texte */
+	font-size:12pt; /* taille du texte */
+}
+
+div.cite {
+    margin:15px 0px 0px;
+    background-color:#FFFFFF;
+    color:#000099;
+    border:1px solid #000099;
+}
+div.code {
+    margin:8px 0px;
+    color:#000000;
+    overflow:auto;
+}
+
+div.cite span.cite {
+    position:relative;
+    top:-10px;
+    left:10px;
+    padding:2px;
+    border:1px dotted #000099;
+    background-color:#DDFFFF;
+    color:#000099;
+    font-weight:bold;
+}
+div.code span.code {
+    display:none;
+    margin:0;
+}
+
+div.cite p {
+	margin:0px;
+	padding:0px 5px 5px;
+	background-color:#FFFFFF;
+	color:#000099;
+	width:98%;
+	overflow:auto;
+	padding-bottom:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	font-style:italic;
+}
+
+div.code pre {
+    margin:8px auto;
+    padding:0px;
+    color:#000000;
+    background-color:#FFFFFF;
+    width:98%;
+    overflow:auto;
+    padding-bottom:10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:10pt;
+    font-style:normal;
+}
+
+/**
+ *   Editeur TEXTAREA
+ */
+div.toolbarIconsTA {
+	display:none;
+	margin:0px auto;
+	padding:3px 0px;
+	border:1px solid #000000;
+	border-bottom:none;
+	background-color:#ECE9D8;
+	text-align:left;
+}
+
+div.toolbarIconsTA img.icon {
+	vertical-align:middle;
+}
+
+div.toolbarIconsTA img.icon:hover {
+	vertical-align:middle;
+	background-color:#FFFFFF;
+}
+
+div.toolbarIconsTA .icon_color {
+	vertical-align: middle;
+}
+div.toolbarIconsTA select.icon_color {
+	width:95px;
+	background-color:#FFFFFF;
+	color:#000000;
+}
+
+div.contentTA {
+	margin:0px auto;
+	padding:0px;
+	border:1px solid #000000;
+}
+
+div.contentTA textarea {
+	margin:0px;
+	padding:0px 0px 0px 5px;
+	border:none;
+	text-align:left;
+	background-color:#FFFFFF; /* couleur de fond */
+	color:#000000;   /* couleur du texte */
+	font-family:"Times New Roman", Times, serif; /* police du texte */
+	font-size:12pt; /* taille du texte */
+}
+
+/* Help */
+div.helpTA {
+	margin:15px auto;
+	padding:0px;
+	background-color:#ECE9D8;
+	color:#660000;
+	border:1px solid #000000;
+}
+div.helpTA p {
+	margin:0px;
+	padding:0px;
+}
+
+div.helpTA h3 {
+	text-align:left;
+	margin:8px 8px 0px;
+	font-size:16px;
+	text-decoration:underline;
+}
+div.helpTA h4 {
+	text-align:left;
+	margin:16px 16px 8px;
+	font-size:14px;
+}
+div.helpTA ul {
+	text-align:justify;
+	padding:0px;
+	margin:0px;
+	list-style-type:none;
+}
+div.helpTA ul li {
+	margin:5px;
+	padding:5px;
+	background-color:#FDFDFD;
+}
+div.helpTA strong {
+	font-weight:bold;
+}
+div.helpTA em {
+	text-decoration:underline;
+}
+div.helpTA .tag_value {
+	color:#FF0000;
+	font-weight:bold;
+}
+div.helpTA a {
+	color:#000000;
+	font-weight:bold;
+}
+div.helpTA a:hover {
+	color:#000000;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+/**
+ *   Smileys
+ */
+div.toolbarSmileys {
+	display:none;
+	margin:0px auto;
+	padding:3px 0px;
+	text-align:center;
+	background-color:#ECE9D8;
+	border:1px solid #000000;
+	border-top:none;
+}
+
+div.toolbarSmileys img.icon {
+	vertical-align:middle;
+	padding:4px;
+}
+
+div.toolbarSmileys img.icon:hover {
+	padding:4px;
+	vertical-align:middle;
+	background-color:#FFFFFF;
+}
+
+/**********************
+ * Editeur pgeditor */
+body.tblbox {
+ background-image: none;
+}

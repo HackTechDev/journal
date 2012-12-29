@@ -1,0 +1,14 @@
+<Files ~ "^\.ht">
+ Order allow,deny
+ Deny from all
+ Satisfy All
+</Files>
+<Files ~ "\.(inc|dtb)$">
+Order allow,deny
+Deny from all
+Satisfy all
+</Files>
+ErrorDocument 400 /error.php?err=400
+ErrorDocument 403 /error.php?err=403
+ErrorDocument 404 /error.php?err=404
+ErrorDocument 500 /error.php?err=500

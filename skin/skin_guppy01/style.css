@@ -1,0 +1,674 @@
+/*
+   CSS file for skin_guppy01  - version 4.6  CeCILL Copyright (C) 2004-2012 by GuppY Team
+    Initiated by Laurent Duveau and Nicolas Alves
+     Web site = http://www.freeguppy.org/
+     e-mail   = guppy@freeguppy.org
+	 
+	   GuppY Design: Skins for Guppy - original release juin 2010
+	   Design - Graphisme :  Sabine    Guppy Team
+	   CSS - Reglages       :  Papinou  GuppY Team
+       GuppY Design: Adaptation  full screen Novembre 2012 by Papinou  
+*/
+
+html { /*  document */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  background-color: #fffffe;
+}
+body { /*  corps du document */
+  margin: 0;
+  padding: 0;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  background:url(img/top.png) repeat-x #3faada;
+}
+a { /* lien */
+  color: #4C86D4;
+  background: transparent;
+  text-decoration: none;
+}
+a:hover { /* lien survolé */
+  color: #FF3366;
+  text-decoration: none;
+  font-weight: bold;
+  background: transparent;
+}
+p { /* paragraphe */
+  margin: 4px 0;
+}
+hr { /* ligne horizontale */
+  border-style: none none dashed;
+  border-color: #93C1DB;
+  border-width: 0 0 1px;
+  height: 1px;
+}
+ul, ol { /* listes */
+  padding:0;
+  margin:0;
+}
+
+h1 { /* titre niveau 1 */
+  font-size: 24px;
+}
+h2 { /* titre niveau 2 */
+  font-size:18px;
+}
+h3 { /* titre niveau 3 */
+  font-size:16px;
+}
+h4 { /* titre niveau 4 */
+  font-size:14px;
+}
+/******************************************
+* Mise en page des blocks div principaux */
+#screen_choice {
+  z-index:20;
+  position:absolute; top: 56px; right: 8px;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+div#page { /* mask border for IE */ 
+ border: none;
+}
+#page{ /* all the page */
+  z-index: 10;
+  padding-top: 0;
+  color: inherit;
+  background-color: #fffffe;
+}
+#headTop { /* header top and middle (logo-banner + citation) */
+  z-index: 15;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  background: url(img/top.png) repeat-x top center;
+  height: 246px;
+}
+#headBottom { /* header bottom (logo-menu) */
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  background:transparent;
+  position: absolute;top: 12px;left:0;width: 100%;
+}
+#mainContent { /* main page */
+  margin: 0;
+  padding:0;
+}
+#leftside { /* leftboxes area */
+  margin-right: 4px;
+  background-color: #fffffe;
+  border: 1px dotted #93C1DB;
+}
+#rightside { /* right boxes area */
+  margin-left: 4px;
+  background-color: #fffffe;
+  border: 1px dotted #93C1DB;
+}
+#endbox { /* optionnal area between main page and bottom */
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+#foot { /* footer Copyright */
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #93C1DB;
+  background: #144F6F;
+  margin-top: 5px;
+  padding-bottom:5px;
+}
+/*******************************************
+ * Mise en page des blocks dans le header */
+div.logo { /* block logo */
+  padding: 92px 0 0 40px;
+  text-align: center;
+}
+div.banner { /* block bannière */
+  background-repeat: no-repeat;
+  padding-top: 140px;
+  padding-right: 40px;
+  text-align: right;
+}
+/*************************
+ * block boite citation */
+div.quote { /* block citation */
+  white-space: nowrap;
+  text-align: center;
+  padding: 0 4px;
+  position: absolute;top: 58px;left:0;width:98%;
+}
+div.quote span.labelcita { /* label */
+ font: bold 12px arial, helvetica, sans-serif;
+ color: #224405C;
+ background-color: inherit;
+ border: 0;
+ margin: auto;
+}
+div.quote span.cita { /* texte */
+ font: 12px arial, helvetica, sans-serif;
+ font-style: normal;
+ text-align: center;
+ color: #22405C;
+ background-color: inherit;
+ border: 0;
+ margin: auto;
+ padding: 0 8px;
+}
+div.quote span.author { /* auteur */
+ font-style: italic;
+ color: ##22405C;
+ background-color: inherit;
+}
+/***********************************
+ * block box Header Menu sections */
+div.menuIcons { /* block menu */
+  padding: 0;
+}
+div.menuIcons ul { /* block liste du menu */
+  margin:0;
+  padding:0;
+  list-style:none;width:100%;
+}
+div.menuIcons ul li { /* toutes les sections */
+  float: left;
+  text-align: center;
+}
+div.menuIcons ul li span { /* toutes les sections */
+  display: block;
+  white-space: nowrap;
+}
+div.menuIcons ul li.menu_flags { /* section drapeau */
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+}
+div.menuIcons ul li.menu_flags img { /* séparation drapeau */
+  margin: 2px;
+}
+div.menuIcons ul li.menu_admin { /* section admin */
+  float: right;
+  padding-right: 8px;
+}
+div.menuIcons ul li a span { /* lien */
+  color: #000;
+  background-color: #ffd820;
+  text-decoration: none;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  padding: 5px 10px;  
+  border: 2px outset #fffffe;
+  border-radius: 6px;
+ -moz-border-radius: 6px;
+ -webkit-border-radius: 6px;
+ -khtml-border-radius: 6px;
+ -ms-border-radius: 6px;  
+}
+div.menuIcons ul li a span.current { /* lien actif */
+  color: #000;
+  background-color: #8ad5f1;
+  text-decoration: none;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  position: relative;
+  padding: 5px 10px;  
+  border: 2px outset #fffffe;
+  border-radius: 6px;
+ -moz-border-radius: 6px;
+ -webkit-border-radius: 6px;
+ -khtml-border-radius: 6px;
+ -ms-border-radius: 6px; 
+}
+div.menuIcons ul li a:hover span { /* lien survolé*/
+  color: #fff;
+  background-color: #ffa000;
+  text-decoration: none;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  position: relative;
+  padding: 5px 10px;
+  border: 2px outset #fffffe;
+  border-radius: 6px;
+ -moz-border-radius: 6px;
+ -webkit-border-radius: 6px;
+ -khtml-border-radius: 6px;
+ -ms-border-radius: 6px; 
+}
+div.tblbox ul li a span, td.tblbox ul li a span { /* lien latéral */
+  color: #0066CC;
+  background-color: inherit;
+  text-decoration: none;
+  font: bold 11px Arial, Helvetica, sans-serif;
+}
+div.tblbox ul li a span.current, td.tblbox ul li a span.current { /* lien latéral actif */
+  color:#FF3366;
+  background-color: inherit; 
+}
+div.tblbox ul li a:hover span, td.tblbox ul li a:hover span { /* lien latéral survolé*/
+  color: #FF3366;
+  text-decoration: underline;
+  background-color: inherit;
+}
+/******************************************
+ * Mise en page des blocks dans le corps */
+/* block lateral boxes */
+.htable {
+  margin-bottom: 8px;
+}
+.htable1 {
+  margin-bottom: 8px;
+}
+.htable2 {
+  padding: 0px 2px;
+}
+.spacer {
+  padding: 8px 2px;
+}
+.titrebox { /* Titre blog */
+  background: url(img/latblog.png) no-repeat 0 0;
+  white-space: nowrap;
+  font: bold 15px Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  height: 40px;
+  line-height: 26px;
+  padding: 0 5px;
+}
+.titrebox2 {  /* Autre titre */
+  background: url(img/latblog.png) no-repeat 0 0;
+  white-space: nowrap;
+  font: bold 15px Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  height: 40px;
+  line-height: 26px;
+  padding: 0 5px;
+}
+.tblbox {  /* Corps */
+  color:inherit;
+  background-color: transparent;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  text-align:left;
+}
+.tblboxover { /* Corps survolé */
+  color: inherit;
+  background-color: transparent;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  text-align:left;
+}
+/* block central boxes */
+.titre {
+  background: url(img/titre.png) no-repeat;
+  padding-left: 22px;
+  white-space: nowrap;
+  font: bold 16px arial, helvetica, sans-serif;
+  color: #fff;
+  text-align: left;
+  height: 40px;
+  line-height: 28px;
+}
+.tbl {
+  background-color: inherit;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  padding: 4px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  text-align:left;
+}
+.tblover {
+  background-color: inherit;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  padding: 4px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  text-align:left;
+}
+div ul, ol { /* listes */
+  padding:8px 0 8px 8px; margin-left: 16px;
+}
+div li{
+  padding: 0; margin-left: 12px;
+}
+/************************************
+ * block box lateral Menu Sections */
+ul.boxmenu { /* block liste */
+	margin:0;
+	padding: 5px;
+	list-style: disc;
+}
+ul.boxmenu li { /* items liste */
+	margin-bottom: 10px;
+}
+ul.boxmenu li img { /* icons */
+	vertical-align: middle;
+	margin-right: 10px;
+}
+/**************************************************************************
+ * block box lateral Article (menu list, menu dynamic 1, menu dynamic 2) */
+.rubr { /* catégories des articles */
+  font: bold 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  background-color: inherit;
+  text-align:left;
+  margin: 1px;
+  padding: 2px;
+}
+.item {
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  background-color: inherit;
+  text-align:left;
+  list-style: none;
+  margin: 0;
+  padding: 2px 0;
+}
+ul.item {
+  margin:0;
+  padding:0;
+}
+ul.item li.item { /* titres des articles */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  background-color: inherit;
+  text-align:left;
+  list-style: none;
+  padding: 2px 0 2px 10px;
+}
+.curr_item {
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  background-color: #E7F3FF;
+  text-align:left;
+  list-style: none;
+  padding: 2px 0;
+}
+ul.item li.curr_item { /* titre article est affiché */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  background-color: #E7F3FF;
+  text-align:left;
+  list-style: none;
+  padding: 2px 0 2px 10px;
+}
+/*************************************
+ * block box central forum - tables */
+.forum {
+  background: #083E5C;
+  padding: 5px 5px;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+.forum2 {
+  background-color: #4CA2D4;
+  padding: 5px 5px;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align:left;
+}
+.forum2 a {
+  color: #fff;
+}
+tr.forum2 {
+  background-color: #4CA2D4;
+  padding: 5px;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align:left;
+}
+.quest {
+  background: #fffffe;
+  padding: 5px;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #4CA2D5;
+  text-align:left;
+  border: 1px dotted #93C1DB;
+}
+.quest a {
+  color: #083E5C;
+}
+.rep {
+  background: url(img/rep.png) repeat-x;
+  padding: 10px 5px 5px 5px;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  text-align:left;
+  border: 1px dotted #93C1DB;
+}
+.bord {
+  border: 0 solid #fffffe;
+  padding: 1px;
+}
+.bord2 {
+  border: 0 double #CFE5F9;
+}
+/*************
+ * Calendar */
+.cal {
+  border-collapse: separate;
+  border-spacing: 1px;
+  color:inherit;
+  background: url(img/forum2.png) repeat-x #fffffe;
+}
+tr.cal { /* calendar nav bar */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  background-color: transparent;
+  text-align: center;
+}
+tr.cal a {
+  color: #fff;
+}
+td.cals { /* week */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #1e8fff;
+  width: 14%;
+  text-align: center;
+}
+td.cal0 { /* empty cell*/
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  width: 14%;
+  text-align: center;
+}
+td.cal1 { /* days */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  width: 14%;
+  text-align: center;
+}
+td.cal2 { /* today */
+  font: bold 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  background-color: #DBECF7;
+  width: 14%;
+  text-align: center;
+}
+td.cal3 { /* sunday or special */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  background: url(img/forum2.png) repeat-x #fffffe;
+  width: 14%;
+  text-align: center;
+}
+td.cal4 { /* today is sunday or special */
+  font: bold 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  background-color: #94F337;
+  width: 14%;
+  text-align: center;
+}
+td.calevt { /* planner event */
+  font: bold 12px Arial, Helvetica, sans-serif;
+  color: #000;
+  background-color: #FFE743;
+  text-decoration: none;
+  text-align: center;
+  width: 14%;
+}
+/************************
+ * Formulaires (Forms) */
+form { /* formulaire */
+  margin: 3px 0;
+}
+fieldset { /* Encadrement des champs */
+  border: 1px solid #fffffe;
+  margin: 8px;
+}
+legend { /* légende des encadrements */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  background-color:inherit;
+  font-weight: bold;
+}
+input.bouton, button { /* bouton */
+  cursor: pointer;
+  margin: 4px 0px;
+  color: #4C86D4;
+  background: url(img/bouton.png) no-repeat;
+  border: 1px solid #fffffe;
+  height: 20px;
+  min-width: 98px;
+  font: 11px Arial, Helvetica, sans-serif;
+}
+input.texte { /* champ texte */
+  background-color: inherit;
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  border: 1px dotted #93C1DB;
+  margin: 4px 0px;
+}
+select { /* champ select */
+  background-color: #fffffe;
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  border: 1px dotted #93C1DB;
+  margin: 4px 0px;
+}
+textarea { /* champ textarea */
+  background-color: #fffffe;
+  font: 11px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  border: 1px dotted #93C1DB;
+  overflow: auto;
+  margin: 4px 0px;
+}
+/**********************
+ * Editeur FckEditor */
+.Code {
+  border: 1px solid #000;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #083E5D;
+  font: 11px Arial, Helvetica, sans-serif, Monospace;
+  background-color: #fffffe;
+}
+/*********************
+ * Editeur pgeditor */
+div #toolbarIcons_ptxt, div #toolbarSmileys_ptxt {
+ color: inherit;
+ background-color: #aed5f9;
+}
+/*******************
+ * pop comment RSS */
+.pop {
+  z-index: 30;
+  width:380px;
+  text-align:left;
+  position: relative;
+}
+.pop a {
+  display: block;
+}
+.pop span {
+  z-index: 30;
+  display:none;
+}
+.pop a:hover span {
+  display:block;
+  width:280px;
+  position:absolute;
+  top:2em;
+  left:2em;
+  color: #083E5D;
+  background-color: #CFE5F9;
+  font: normal 12px Arial, Helvetica, sans-serif;
+  border: 1px solid #fffffe;
+  padding: 4px;
+}
+/*******************************************
+ * Mise en page des blocks dans le footer */
+#foot span.copyright { /* Copyright */
+  font: 1em Arial, Helvetica, sans-serif;
+  color: #6600CC;
+  text-align: center;
+  background: #428BB2;
+}
+/************************
+ * Divers, inclassables */
+.box {
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  background-color: transparent;
+}
+p.box {
+  margin: 0;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #083E5D;
+  background-color: transparent;
+}
+.box a {
+  color: #4C86D4;
+  background-color: transparent;
+  text-decoration: none;
+  font: 12px Arial, Helvetica, sans-serif;
+}
+.box2 a {
+  color: #FF3366;
+  background-color: transparent;
+  text-decoration: none;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.box a:hover {
+  color: #FF3366;
+  text-decoration: none;
+  background-color: inherit;
+}
+.top {
+  font: 1.2em Arial, Helvetica, sans-serif;
+  color: #428BB2;
+  background-color: transparent;
+  text-align: center;
+  padding: 8px;
+}
+.timer {
+  font: italic 0.8em Arial, Helvetica, sans-serif;
+  color: #4C86D4;
+  background-color: transparent;
+  text-align: center;
+  padding: 2px;
+}
+.clsCursor {
+  cursor: pointer;
+}
+.notice {
+  color:red;
+  background-color:#FF9;
+  padding:2px;
+}
+.Code {
+  color: #fff;
+  background: #2E79A4;
+}
+.preview {
+  background: #fffffe;
+}
+.content {
+  background: #fffffe;
+}
+#miaou {
+ background: #fffffe;
+}

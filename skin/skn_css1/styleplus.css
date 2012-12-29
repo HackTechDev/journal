@@ -1,0 +1,65 @@
+/* skn_cc2: extra css list for boxes */
+.box_tr {
+background-image: url(img/hd.gif);
+background-position: top left;
+width: 12px; height: 12px;
+}
+.box_t {
+background-image: url(img/hc.gif);
+background-repeat: repeat-x;
+height: 12px;
+}
+.box_tl {
+background-image: url(img/hg.gif);
+background-position: top right;
+width: 12px; height: 12px;
+}
+.box_l {
+background-image: url(img/cg.gif);
+background-repeat: repeat-y;
+width: 12px;
+}
+.box_r {
+background-image: url(img/cd.gif);
+background-repeat: repeat-y;
+width: 12px;
+}
+.box_bl {
+background-image: url(img/bg.gif);
+background-position: bottom left;
+width: 12px;
+height: 12px;
+}
+.box_b {
+background-image: url(img/bc.gif);
+background-repeat: repeat-x;
+height: 12px;
+}
+.box_br {
+background-image: url(img/bd.gif);
+background-position: bottom right;
+width: 12px;
+height: 12px;
+}
+/*******************************************
+ * Mise en page des blocks dans le header */
+div.logo { /* block logo */
+  background-color: transparent;
+  padding: 0px 0px 0px 32px;
+  text-align: center;
+}
+.quote { /* texte */
+  margin-left: 180px;
+  text-align: center;
+}
+#headBottom { /* header bottom (logo-menu) */
+  margin-left: 180px;
+  padding: 0 4px;
+}
+#page{ /* all the page */
+  z-index: 20;
+  padding-top:0px;
+  background-color: #D4E6D4;
+  background: url(img/chaine.gif);
+  background-repeat: repeat-y;
+}

@@ -1,0 +1,98 @@
+/*
+     Plugin PostGuestEditor
+	 Version  : 2.0.2 (2007/01/16)
+	 Compatibility : Guppy v4.5.x
+	 Licence  : GNU Lesser General Public License
+	 Author   : jérôme CROUX (Djchouix)
+     Web site : http://lebrikabrak.info/
+     E-mail   : jchouix@wanadoo.fr
+*/
+
+/**
+ *   CSS de PostGuest Editor pour IE
+ */
+
+/** 
+ *   Editeur PGEditor 
+ */
+div.pgeditorIE {
+	text-align:center;  /* Nécessaire pour centrer l'éditeur avec IE */
+}
+
+/** 
+ *   Editeur WYSIWYG 
+ */
+div.toolbarIcons a img {
+	vertical-align:middle;
+}
+
+div.toolbarIcons a:hover img {
+	vertical-align:middle;
+	background-color:#FFFFFF;
+}
+
+div.contentWIW {
+	border:1px solid #000000;
+}
+
+div.contentWIW iframe {
+	margin:-1px;  /* correction bug IE (valeur négative de l'épaisseur de la bordure du div.contentWIW) */
+}
+
+div.cite, div.code {
+	margin:15px 0px 0px;
+	background-color:#FFFFFF;
+	color:#000000;
+	border:1px solid #000000;
+}
+
+div.cite p {
+	overflow-y:hidden;
+	padding-bottom:25px;
+}
+
+div.code pre {
+	overflow-y:hidden;
+	padding-bottom:25px;
+}
+
+/* Popup Preview*/
+div.preview div.content {
+	width:495px;  /* correction bug IE */
+}
+
+/**
+ *   Editeur TEXTAREA 
+ */
+div.toolbarIconsTA a img {
+	vertical-align:middle;
+}
+
+div.toolbarIconsTA a:hover img   {
+	vertical-align:middle;
+	background-color:#FFFFFF;
+}
+
+div.contentTA {
+	border:1px solid #000000;
+}	
+
+div.contentTA textarea {
+	margin:-1px;  /* correction bug IE (valeur négative de l'épaisseur de la bordure du div.content */
+}
+
+/**
+ *   Smileys 
+ */
+div.toolbarSmileys {
+	padding:6px 0px 7px;
+}
+
+div.toolbarSmileys a {
+	padding:4px;
+}
+
+div.toolbarSmileys a:hover {
+	background-color:#FFFFFF;
+	padding:4px;
+}

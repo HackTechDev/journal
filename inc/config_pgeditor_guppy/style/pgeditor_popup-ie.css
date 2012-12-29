@@ -1,0 +1,41 @@
+/*
+     Plugin PostGuestEditor
+	 Version  : 2.0 (2006/12/05)
+	 Compatibility : Guppy v4.5.x
+	 Licence  : GNU Lesser General Public License
+	 Author   : jérôme CROUX (Djchouix)
+     Web site : http://lebrikabrak.info/
+     E-mail   : jchouix@wanadoo.fr
+*/
+
+/**
+ *  CSS popups for IE
+ */
+ 
+/* Popup Code */
+body.popupCode input#over {
+	margin-left:5px;
+	width:80px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	background-color:#E8E3C5;
+}
+
+/* Popup Link et Image */
+body.popupLink input#over,
+body.popupImage input#over {
+	margin-left:5px;
+	width:80px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	background-color:#E8E3C5;
+}
+
+/* Popup Citation */
+body.popupCitation input#over {
+	margin-left:5px;
+	width:80px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+	background-color:#E8E3C5;
+}

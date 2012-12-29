@@ -1,0 +1,619 @@
+/*
+    CSS file for web20 Skin - version 4.6
+    CeCILL Copyright (C) 2004-2012 by GuppY Team
+    Initiated by Laurent Duveau and Nicolas Alves
+      Web site = http://www.freeguppy.org/
+      e-mail   = info@freeguppy.org
+
+    CSS History :
+      v1.0 (01 May 2007)           : Initial release (by deherve "GuppY Design")
+      v4.6.11 (15 december 2009)   : corrected margin of mainContent (by Papinou)
+	  v4.6.20 (24 May 2012)        : corrected display headTop (by Papinou)
+*/
+
+body { /*  corps du document */
+ font: 12px arial, helvetica, sans-serif;
+ color: #000;
+ background: url(img/body.png) repeat-x #FFF;
+ margin: 0;
+}
+a { /* lien */
+ color: #526EB0;
+ background-color:inherit;
+ text-decoration: none;
+}
+a:hover { /* lien survolé */
+ font-weight: bold;
+ color: #88C81A;
+ background-color: inherit;
+ position: relative;
+ top: 1px;
+ left: 1px;
+ text-decoration: none;
+}
+p { /* paragraphe */
+ margin: 4px 0;
+}
+hr { /* ligne horizontale */
+ display: none;
+ height: 0;
+ border: 0;
+ border-bottom: inset;
+ width: 98%;
+}
+ul, ol { /* listes */
+ font: 12px arial, helvetica, sans-serif;
+ color: #000;
+ background-color:inherit;
+ margin: 0;
+ padding: 0;
+}
+h1 { /* titre niveau 1 */
+ font-size: 24px;
+}
+h2 { /* titre niveau 2 */
+ font-size: 18px;
+}
+h3 { /* titre niveau 3 */
+ font-size: 16px;
+}
+h4 { /* titre niveau 4 */
+ font-size: 14px;
+}
+.bordure {
+ border: 1px solid #AEDAFC;
+}
+
+/******************************************
+* Mise en page des blocs div principaux */
+div#page { /* mask border for IE */
+ border: none;
+ padding-top: 10px;
+}
+#screen_choice {
+ margin: 0;
+ padding: 0;
+}
+div#screen_choice {
+ position: absolute;
+ top: 8px;
+ left: 20px;
+}
+#page { /* all the page */
+ z-index: 10;
+ color:inherit;
+ background: url(img/body.png) repeat-x #FFF;
+ padding-top: 0;
+}
+#headTop { /* header top and middle (logo-banner + citation) */
+ color:inherit;
+ background: url(img/headtop.png) repeat-x #FFC800;
+ border-right: 1px groove #7AF;
+ border-left: 1px solid #AEDAFC;
+ margin: 0 10px;
+ padding: 0 0 5px 0;
+}
+#headBottom { /* header bottom (logo-menu) */
+ color:inherit;
+ background-color: #FFC800;
+ border-right: 1px groove #7AF;
+ border-left: 1px solid #AEDAFC;
+ border-bottom: 2px groove #AEDAFC;
+ margin: 0 10px;
+ padding: 0 4px;
+}
+#mainContent { /* main page */
+ margin: 6px 4px;
+ padding: 0;
+}
+#leftside { /* leftboxes area */
+ margin: 0;
+ padding-right: 4px;
+}
+#rightside { /* right boxes area */
+ margin: 0;
+ padding-left: 4px;
+}
+#endbox { /* optionnal area between main page and bottom */
+ text-align: left;
+ margin: 0;
+ padding: 4px;
+}
+#foot { /* footer Copyright */
+ font-family: arial, helvetica, sans-serif;
+ color: inherit;
+ background-color: inherit;
+ text-align: center;
+ margin: 10px;
+}
+
+/*******************************************
+ * Mise en page des blocs dans le header */
+div.logo { /* block logo */
+ text-align: center;
+ padding: 0 30px;
+}
+div.banner { /* bloc bannière */
+ background-repeat: no-repeat;
+ text-align: center;
+ padding: 30px 70px 20px;
+}
+
+/*************************
+ * bloc boîte citation */
+div.quote { /* bloc citation */
+ white-space: nowrap;
+ text-align: center;
+ padding: 0 4px;
+}
+div.quote span.labelcita { /* label */
+ font: bold 12px arial, helvetica, sans-serif;
+ color: #526EB0;
+ background-color: #FFC800;
+ border: 0;
+ margin: auto;
+}
+div.quote span.cita { /* texte */
+ font: 12px arial, helvetica, sans-serif;
+ font-style: normal;
+ text-align: center;
+ color: #526EB0;
+ background-color: #FFC800;
+ border: 0;
+ margin: auto;
+ padding: 0 8px;
+}
+div.quote span.author { /* auteur */
+ font-style: italic;
+ color: #526EB0;
+ background-color: #FFC800;
+}
+
+/***********************************
+ * block box Header Menu sections */
+div.menuIcons { /* block menu */
+	padding:8px 0;
+}
+div.menuIcons ul { /* block liste du menu */
+	margin:0;
+	padding:0;
+	list-style:none;width:100%;
+}
+div.menuIcons ul li { /* toutes les sections */
+	float:left;
+	margin-right:8px;
+	text-align:center;
+}
+div.menuIcons ul li span { /* toutes les sections */
+	display:block;
+	white-space:nowrap;
+}
+div.menuIcons ul li.menu_flags { /* section drapeau */
+	float:left;
+	margin-right:10px;
+	text-align:center;
+}
+div.menuIcons ul li.menu_flags img { /* séparation drapeau */
+	margin:3px;
+}
+div.menuIcons ul li.menu_admin { /* section admin */
+	float:right;
+	padding-right:3px;
+}
+div.menuIcons ul li a span { /* lien */
+  color: #526eb0;
+  background-color: inherit;
+  text-decoration: none;
+  font: bold 11px Arial, Helvetica, sans-serif;
+}
+div.tblbox ul li a span, td.tblbox ul li a span { /* lien latéral */
+  color: #526eb0;
+  background-color: inherit;
+  text-decoration: none;
+  font: bold 11px Arial, Helvetica, sans-serif;
+}
+div.menuIcons ul li a span.current { /* lien actif */
+  color:#88c81a;
+  background-color: #FFE133;
+  text-decoration: underline;
+}
+div.tblbox ul li a span.current, td.tblbox ul li a span.current { /* lien latéral actif */
+  color:#88c81a;
+  background-color: #FFE133;
+  text-decoration: underline;
+}
+div.menuIcons ul li a:hover span { /* lien survolé*/
+  color: #88c81a;
+  text-decoration: underline;
+  background-color: inherit; position: relative; top: 1px; left: 1px;
+}
+div.tblbox ul li a:hover span, td.tblbox ul li a:hover span { /* lien latéral survolé*/
+  color: #88c81a;
+  text-decoration: underline;
+  background-color: inherit; position: relative; top: 1px; left: 1px;
+}
+
+/******************************************
+ * Mise en page des blocs dans le corps */
+/* block lateral boxes */
+.titrebox { /* Titre */
+ font: bold 15px arial, helvetica, sans-serif;
+ color: #526EB0;
+ background: #FFC800 url(img/titrebox.png) repeat-x;
+ border: 1px solid #AEDAFC;
+ white-space: nowrap;
+ text-align: center;
+ line-height: 26px;
+ height: 26px;
+ padding: 4px;
+}
+.tblbox { /* Corps */
+ color: inherit;
+ background-color: #FFF;
+ border-right: 1px solid #AEDAFC;
+ border-bottom: 1px solid #AEDAFC;
+ border-left: 1px solid #AEDAFC;
+ margin-bottom: 8px;
+ padding: 4px;
+}
+.tblboxover { /* Corps survolé */
+ color: inherit;
+ background-color: #FFF;
+ border: 1px solid #AEDAFC;
+ text-align: left;
+ margin-bottom: 8px;
+ padding: 4px;
+}
+.titre { /* block central boxes */
+ font: bold 18px arial, helvetica, sans-serif;
+ color: #FFF;
+ background: transparent url(img/titre.png) repeat-x;
+ border: 1px solid #AEDAFC;
+ white-space: nowrap;
+ text-align: left;
+ line-height: 32px;
+ height: 32px;
+ padding: 0 5px 0 5px;
+}
+.tbl {
+ font: 12px arial, helvetica, sans-serif;
+ color: #000;
+ background-color: #FFF;
+ border-right: 1px solid #AEDAFC;
+ border-bottom: 1px solid #AEDAFC;
+ border-left: 1px solid #AEDAFC;
+ text-align: left;
+ margin-bottom: 8px;
+ padding: 0px;
+}
+.tblover {
+ font: 12px arial, helvetica, sans-serif;
+ color: #000;
+ background-color: #FFF;
+ border: 1px solid #AEDAFC;
+ text-align: left;
+ margin-bottom: 8px;
+ padding: 0px;
+}
+div ul, ol { /* listes */
+ margin-left: 16px;
+ padding: 8px 0 8px 8px;
+}
+div li {
+ margin-left: 12px;
+ padding: 0;
+}
+
+/************************************
+ * block box lateral Menu Sections */
+ul.boxmenu { /* block liste */
+ list-style: none;
+ margin: 0;
+ padding: 8px 0;
+}
+ul.boxmenu li { /* items liste */
+ margin-bottom: 10px;
+}
+ul.boxmenu li img { /* icons */
+ vertical-align: middle;
+ margin-right: 10px;
+}
+
+/**************************************************************************
+ * block box lateral Article (menu list, menu dynamic 1, menu dynamic 2) */
+.rubr { /* catégories des articles */
+ color: #000;
+ background-color: inherit;
+ padding: 4px 2px;
+ margin: 1px;
+ font: bold 12px Arial, Helvetica, sans-serif;
+ text-align:left;
+}
+.item {
+ padding: 2px 0px;
+ margin: 0px;
+ color: #000;
+ background-color: #ECF7FF;
+ font: 12px Arial, Helvetica, sans-serif;
+ text-align:left;
+ list-style: none;
+}
+ul.item {
+ margin:0;
+ padding:0;
+}
+ul.item li.item { /* titres des articles */
+ background-color: #ECF7FF;
+ padding: 2px 0px 2px 10px;
+ font: 12px Arial, Helvetica, sans-serif;
+ color: #000000;
+ text-align:left;
+ list-style: none;
+}
+.curr_item {
+ padding: 2px 0px;
+ background-color: #FFFFFF;
+ font: 12px Arial, Helvetica, sans-serif;
+ color: #000000;
+ text-align:left;
+ list-style: none;
+}
+ul.item li.curr_item { /* titre article est affiché */
+ background-color: #FFFFFF;
+ padding: 2px 0px 2px 10px;
+ font: 12px Arial, Helvetica, sans-serif;
+ color: #000000;
+ text-align:left;
+ list-style: none;
+}
+
+/*************************************
+ * block box central forum - tables */
+.forum {
+ font: bold 12px arial, helvetica, sans-serif;
+ color: #000;
+ background-color: #FFF;
+ text-align: center;
+ padding: 5px 5px;
+}
+.forum2, tr.forum2 {
+ font: bold 12px arial, helvetica, sans-serif;
+ color: #000;
+ background-color: #FFF;
+ text-align: left;
+ padding: 5px 5px;
+}
+.quest {
+ font: 12px arial, helvetica, sans-serif;
+ color: #000;
+ background-color: #ECF7FF;
+ text-align: left;
+ padding: 5px;
+}
+.rep {
+ font: 12px arial, helvetica, sans-serif;
+ color: #000;
+ background-color: #ECF7FF;
+ text-align: left;
+ padding: 10px 5px 5px 5px;
+}
+.bord {
+ border: 1px solid #FFF;
+ padding: 1px;
+}
+.bord2 {
+ border: 2px double #ECF7FF;
+}
+
+/*************
+ * Calendar */
+.cal {
+  border-collapse: separate;
+  border: 1px solid #FFC800;
+  border-spacing: 1px;
+  color:inherit;
+  background-color: #FFFFFF;
+}
+tr.cal { /* calendar nav bar */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #000;
+  background-color: #FFC800;
+  text-align: center;
+}
+td.cals { /* week */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #000;
+  background-color: #FFFFFF;
+  width: 14%;
+  text-align: center;
+}
+td.cal0 { /* empty cell*/
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #000;
+  background-color: inherit;
+  width: 14%;
+  text-align: center;
+}
+td.cal1 { /* days */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #000;
+  background-color: #FFF;
+  width: 14%;
+  text-align: center;
+}
+td.cal2 { /* today */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #000;
+  background-color: #3CC;
+  width: 14%;
+  text-align: center;
+}
+td.cal3 { /* sunday or special */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #000;
+  background-color: #FFC800;
+  width: 14%;
+  text-align: center;
+}
+td.cal4 { /* today is sunday or special */
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #000;
+  background-color: #88c81a;
+  width: 14%;
+  text-align: center;
+}
+td.calevt { /* planner event */
+  font: bold 12px Arial, Helvetica, sans-serif;
+  color: #000;
+  background-color: #F69;
+  text-decoration: underline;
+  text-align: center;
+  width: 14%;
+}
+
+/************************
+ * Formulaires (Forms) */
+form { /* formulaire */
+  margin: 3px 0;
+}
+fieldset { /* Encadrement des champs */
+ border: 1px solid #CCC;
+ margin: 8px;
+}
+legend { /* légende des encadrements */
+ font: bold 12px arial, helvetica, sans-serif;
+ color: #000;
+ background-color:inherit;
+}
+input.bouton, button { /* bouton */
+ font: 11px "trebuchet ms", helvetica, sans-serif;
+ color: #000;
+ background-color: #FFF;
+ border: 1px inset #FFC800;
+ cursor: pointer;
+ margin: 4px 0;
+}
+input.texte { /* champ texte */
+ font: 11px "trebuchet ms", helvetica, sans-serif;
+ color: #000;
+ background-color: #FFF;
+ border: 1px inset #FFC800;
+ margin: 4px 0;
+}
+select { /* champ select */
+ font: 11px "trebuchet ms", helvetica, sans-serif;
+ color: #000;
+ background-color: #FFF;
+ border: 1px solid #FFC800;
+ margin: 4px 0;
+}
+textarea { /* champ textarea */
+ color: #000;
+ background-color: #FFF;
+ border: 1px solid #FFC800;
+ overflow: auto;
+ margin: 4px 0;
+}
+
+/**********************
+ * Editeur FckEditor */
+.Code {
+ font: 11px arial, helvetica, sans-serif , monospace;
+ color: #000;
+ background-color: #ECF7FF;
+ border: 1px solid #FFF;
+ padding-right: 5px;
+ padding-left: 5px;
+}
+/**********************
+ * Editeur pgeditor */
+div #toolbarIcons_ptxt, div #toolbarSmileys_ptxt {
+ color: inherit;
+ background-color: #FFC800;
+}
+/*******************************************
+ * Mise en page des blocs dans le footer */
+#foot span.copyright { /* Copyright */
+ font: 1em arial, helvetica, sans-serif;
+ color: inherit;
+ background-color: inherit;
+}
+
+/************************
+ * Divers */
+.box {
+ font: 11px arial, helvetica, sans-serif;
+ color: #000;
+ background-color: inherit;
+}
+p.box {
+ font: 11px arial, helvetica, sans-serif;
+ color: #000;
+ background-color: inherit;
+ margin: 0;
+}
+a.box {
+ font: 11px arial, helvetica, sans-serif;
+ color: #526EB0;
+ background-color: inherit;
+ text-decoration: none;
+}
+a.box:hover {
+ font: bold 11px arial, helvetica, sans-serif;
+ color: #88C81A;
+ background-color: inherit;
+ text-decoration: none;
+ position: relative;
+ top: 1px;
+ left: 1px;
+}
+
+/*******************
+ * pop comment RSS */
+.pop {
+ z-index: 30;
+ width: 400px;
+ text-align: left;
+ position: relative;
+}
+.pop a {
+ display: block;
+}
+.pop span {
+ z-index: 30;
+ display: none;
+}
+.pop a:hover span {
+ font: 12px arial, helvetica, sans-serif;
+ font-weight: normal;
+ color: #000;
+ background-color: #FFF;
+ border: 1px solid #FFC800;
+ display: block;
+ width: 280px;
+ position: absolute;
+ top: -2em;
+ left: 2em;
+ padding: 4px;
+}
+.top {
+ font: 0.8em arial, helvetica, sans-serif;
+ color: inherit;
+ background-color: inherit;
+ text-align: center;
+}
+.timer {
+ font: italic 1em arial, helvetica, sans-serif;
+ color: inherit;
+ background-color: inherit;
+ text-align: center;
+ padding: 10px;
+}
+.clsCursor {
+ cursor: pointer;
+}
+.notice {
+ color: #F30;
+ background-color: #FF9;
+ padding: 4px;
+}

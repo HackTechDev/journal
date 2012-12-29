@@ -1,0 +1,49 @@
+         ____________    ___   __   ________   ________   __    ___ 
+        /   _____   /   /  /  / /  /  ___  /  /  ___  /  |  |  /  /
+       /   /    /__/   /  /  / /  /  /__/ /  /  /__/ /   |  | /  /
+      /   / ______    /  /  / /  /  _____/  /  _____/    |  |/  /
+     /   / /__   /   /  /__/ /  /  /       /  /          |     /
+    /   /    /  /   /_______/  /__/       /__/           |    /
+   /   /____/  /                                         /   /
+  /           /   ______________________________________/   /
+ /___________/   /_________________________________________/
+
+                          GuppY v4.6
+                          ==========
+  
+  version 4.6.0 - July 04, 2006
+    CeCILL Copyright (C) 2004-2007 by Laurent Duveau
+    Initiated by Laurent Duveau and Nicolas Alves
+    Site Web = http://www.freeguppy.org/
+    e-Mail   = guppy@aldweb.com
+
+
+
+                    Fichiers de langues
+			        (à  l'intention des traducteurs)
+                    ===================
+Les différents fichiers de langues à  traduire sont:
+
+sous inc/lang
+-------------
+  - xx-admin.inc  : les variables des scripts d'administration
+  - xx-help.htm   : le fichier d'aide en ligne des éditeurs
+    ATTENTION, ne pas changer le nombre de lignes!!!
+  - xx-special.js : le script de calcul des fêtes catholiques et des jours fériés
+    Vous pouvez ajouter d'autres jours spéciaux dans la liste $ferie.
+    ATTENTION, si vous modifiez la liste $ferie prenez bien soin de la ponctuation
+  - xx-web.inc    : les variables des scripts "publics"	
+  
+sous /inc/rtef/lang
+-------------------
+  - xx.js : les variables langue de l'éditeur postguest (rtef).
+  
+sous /inc/fckeditor/editor/lang
+-------------------------------
+  - xx.js : les variables langue de l'éditeur d'admin (Fckeditor). Bien respecter MAJ, min et la ponctuation! 
+  
+S'il n'y a pas de fichier langue pour votre pays, et que vous ne savez pas traduire, vous devrez copier 
+les fichiers en ou fr dans votre langue (exemple: en-admin.inc ==> de-admin.inc,
+en-lang.js ==> de-lang.js, en.js ==> de.js etc...) 
+
+  Bonne traduction, Icare.

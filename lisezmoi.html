@@ -1,0 +1,4027 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+  <title></title>
+  <style type="text/css">
+a:link {
+color:#FFFF00;
+text-decoration:underline;
+background-color:;
+}
+a:visited {
+color:#FFFFFF;
+text-decoration:;
+background-color:;
+}
+a:hover {
+color:C0C0C0;
+text-decoration:;
+background-color:;
+}
+a:active {
+color:C0C0C0;
+text-decoration:;
+background-color:;
+}</style>
+</head>
+
+<body
+style="background-;background-color:#000080;color:#ffff80;font-family: Arial,Helvetica,sans-serif;line-height:1.5em;">
+<p><span style="background-color:#400080"><span
+style="background-color:#400080"><span style="background-color:#400080"><span
+style="background-color:#400080"></span></span></span><span
+style="background-color:#400080"><span
+style="background-color:#400080"></span></span></span> </p>
+
+<h1 style="text-align:center;"><span style="font-size: 30pt">Lisezmoi.html
+GuppY</span></h1>
+
+<h3 style="text-align:center;">GuppY Version 4.6.22 - 29 décembre 2012</h3>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<h3 style="line-height:1em;"><span style="font-size: 8pt"><span
+style="font-size: 10pt">CeCILL Copyright (C) 2004-2012 by Laurent
+Duveau</span></span></h3>
+
+<h3 style="font-size: 8pt;line-height:1em;">Initiated by Laurent Duveau and
+Nicolas Alves<span style="background-color:#000080"></span></h3>
+
+<h3 style="font-size: 8pt;line-height:1em;">Website =
+http://www.freeguppy.org/</h3>
+
+<h3 style="line-height:1em;"><span style="font-size: 8pt">courriel = guppy [at]
+freeguppy.org</span></h3>
+
+<h2><span style="font-size: 26pt"><a name="Table" id="Table">Table des
+matières</a></span></h2>
+
+<h4 style="line-height:1em;"><a href="#L3057">0. Préambule (MERCI DE LE LIRE EN
+ENTIER !)<span class="Rouge"></span></a></h4>
+
+<h4 style="line-height:1em;"><a href="#L3065">1. Présentation</a></h4>
+
+<h4 style="line-height:1em;"><a href="#L2553">2. Installation</a></h4>
+<ul style="line-height:1em;">
+  <li style="line-height:1.5em;"><a href="#L2615">2.1 Première installation
+    (démo)</a></li>
+  <li style="line-height:1.5em;"><a href="#CHMOD">CHMOD</a></li>
+  <li style="line-height:1.5em;"><a href="#L2618">2.2 Installation
+  propre</a></li>
+</ul>
+
+<h4 style="line-height:1em;"><a href="#L2555">3. Mise à jour</a></h4>
+<ul style="line-height:1em;">
+  <li style="line-height:1.5em;"><a href="#L2620">3.1 Mettre à jour depuis la
+    même version principale : Patcher</a></li>
+  <li style="line-height:1.5em;"><a href="#L2622">3.2 Mettre à jour depuis une
+    version principale antérieure : Migrer</a></li>
+</ul>
+
+<h4 style="line-height:1em;"><a href="#L2559">5. Configuration</a></h4>
+
+<h4 style="line-height:1em;"><a href="#L2561">6. Gérer le contenu</a></h4>
+
+<h4 style="line-height:1em;"><a href="#L2563">7. Fonctionnement interne</a></h4>
+
+<h4 style="line-height:1em;"><a href="#L2565">8. Compatibilité</a></h4>
+
+<h4 style="line-height:1em;"><a href="#L2567">9. Problèmes connus</a></h4>
+
+<h4 style="line-height:1em;"><a href="#L2569">10. Notes techniques</a></h4>
+<ul style="line-height:1em;">
+  <li style="line-height:1.5em;"><a href="#L2624">10.1. Courriel</a></li>
+  <li style="line-height:1.5em;"><a href="#L2626">10.2. Courriel spécifique à
+    Free.fr</a></li>
+  <li style="line-height:1.5em;"><a href="#L2628">10.3. Chargement de
+    fichiers</a></li>
+  <li style="line-height:1.5em;"><a href="#L2630">10.4. Partage de contenu
+    inter-sites au format RSS</a></li>
+  <li style="line-height:1.5em;"><a href="#L2632">10.5. Comment accéder à la
+    version mobile de GuppY</a></li>
+  <li style="line-height:1.5em;"><a href="#L2634">10.6. Courriel de suivi à
+    plusieurs destinataires</a></li>
+</ul>
+
+<h4 style="line-height:1em;"><a href="#L2571">11. Licence</a></h4>
+
+<h4 style="line-height:1em;"><a href="#L2573">12. Don</a></h4>
+
+<h4 style="line-height:1em;"><a href="#L2575">13. L'équipe GuppY
+informelle</a></h4>
+
+<h4 style="line-height:1em;"><a href="#L2578">14. Nous rejoindrez-vous
+?</a></h4>
+
+<h4 style="line-height:1em;"><a href="#L2580">15. Historique des
+versions</a></h4>
+
+<p style="line-height:1em;"></p>
+<hr>
+<hr>
+
+<p></p>
+
+<p></p>
+
+<h3><a name="L3057" id="L3057" href="#L3057">0. Préambule (MERCI DE LE LIRE EN
+ENTIER !)</a></h3>
+
+<p></p>
+
+<p>Bienvenue sur GuppY, le portail web facile et sans base de données.</p>
+<dl>
+  <dt style="line-height:1.5em;">GuppY est le nouveau nom de miniPortail depuis
+  la version 2.4. Pourquoi donc un nouveau nom ? Tout simplement parce que
+  beaucoup d'utilisateurs de miniPortail nous ont dit que le qualificatif de
+  "mini" les avait trompés sur les réelles et nombreuses fonctionnalités de ce
+  portail web.</dt>
+    <dd style="line-height:1.5em;">Pourquoi le nom de GuppY alors ?</dd>
+</dl>
+
+<p>Certains ont voulu y voir une signification du genre "Générateur Universel
+de Portail en PHP, Youpi". Mais, pour de vrai, GuppY est juste le poisson
+favori d'aldweb.</p>
+
+<p>Ce fichier lisezmoi.txt est long et le plus complet possible.</p>
+
+<p>Deux compléments indispensables à ce fichier lisezmoi.txt sont :</p>
+<ul>
+  <li>- la FAQ GuppY (Foire Aux Questions)</li>
+  <li>- le superbe manuel utilisateurs réalisé par Zerg (version française) et
+    WackoJacko puis Killer (traduction anglaise)</li>
+</ul>
+
+<p style="line-height:1.5em;">Vous les trouverez en téléchargement et en
+lecture sur le site de GuppY (http://www.freeguppy.org/).</p>
+
+<p style="line-height:1.5em;">Lisez ATTENTIVEMENT cette documentation avant de
+poser une question sur le forum GuppY accessible sur le site de GuppY
+(http://www.freeguppy.org/). On vous demande gentiment ici de la lire
+ATTENTIVEMENT parce que plus de 90% des questions posées sur le forum GuppY ont
+leur réponse dans cette documentation.</p>
+
+<p style="line-height:1.5em;">Merci de ne pas m'écrire personnellement un
+courriel pour des questions liées à la compréhension ou à l'utilisation de
+GuppY, ma boîte aux lettres étant en permanence saturée de messages et mon
+temps disponible pour vous répondre étant compté !</p>
+
+<p style="line-height:1.5em;">Un membre de l'équipe GuppY ou un autre
+utilisateur vous répondra sur le forum bien plus vite et souvent bien mieux que
+je ne saurais le faire. En plus, dans ce cas, c'est l'ensemble de la communauté
+des utilisateurs GuppY qui profite de votre question et des réponses apportées.
+Mais, avant de poser votre question, respectez notre travail et vérifiez bien
+que vous avez lu ATTENTIVEMENT la documentation disponible. J'espère avoir été
+clair sur ce sujet !</p>
+
+<p></p>
+
+<p>Pour les remerciements et autres commentaires sympathiques, pensez au Livre
+d'Or du site GuppY ou de mon site personnel avant de m'écrire
+personnellement... Merci !</p>
+
+<p>Enfin, si vous tenez vraiment à nous écrire, merci d'utiliser l'adresse
+courriel guppy[at]freeguppy.org qui est accessible à l'ensemble de la GuppY
+Team.</p>
+
+<p>Bonne lecture,</p>
+
+<p>Laurent Duveau (alias aldweb)</p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<h3><a name="L3065" id="L3065" href="#L3065">1. PRÉSENTATION</a></h3>
+
+<p>GuppY, petit portail web, voulu facile d'utilisation pour l'utilisateur
+final que vous êtes, et qui ne nécessite pas de base de données s'est enrichi
+au fil du temps pour vous offrir un maximum de services. Ceci permet donc de
+l'installer sur tous les hébergeurs Internet (ou presque), la seule contrainte
+est que votre hébergeur fournisse le service du langage de script PHP. Nul
+besoin de s'y connaître en langage HTML, en configuration de base de données
+MySQL, en PHP, GuppY offre une interface d'administration complète et sécurisée
+pour gérer l'apparence de votre site et le contenu des différentes rubriques de
+votre site.</p>
+
+<p>GuppY propose l'ensemble des fonctionnalités classiques d'un portail web
+:</p>
+<ul>
+  <li style="line-height:1.5em;">- news</li>
+  <li style="line-height:1.5em;">- articles</li>
+  <li style="line-height:1.5em;">- blog</li>
+  <li style="line-height:1.5em;">- annuaire de liens</li>
+  <li style="line-height:1.5em;">- section téléchargements</li>
+  <li style="line-height:1.5em;">- diaporama de photos</li>
+  <li style="line-height:1.5em;">- livre d'or</li>
+  <li style="line-height:1.5em;">- forum</li>
+  <li style="line-height:1.5em;">- FAQ</li>
+  <li style="line-height:1.5em;">- sondage</li>
+  <li style="line-height:1.5em;">- compteur de visites</li>
+  <li style="line-height:1.5em;">- compteur de clics et de téléchargements</li>
+  <li style="line-height:1.5em;">- newsletter</li>
+  <li style="line-height:1.5em;">- zone d'administration (administration
+    différenciée optionnelle)</li>
+  <li style="line-height:1.5em;">- zone membre optionnelle</li>
+  <li style="line-height:1.5em;">- etc.</li>
+</ul>
+
+<p>Mais, GuppY apporte une gestion ORIGINALE à forte valeur ajoutée : en plus
+d'être nativement MULTILANGUES, GuppY offre facultativement une présentation du
+contenu BILINGUE, avec un choix des 2 langues d'affichage.</p>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<h3><a name="L2553" id="L2553" href="#L2553">2. INSTALLATION</a></h3>
+
+<h3><a name="L2615" id="L2615" href="#L2615">2.1 PREMIÈRE INSTALLATION
+(DÉMO)</a></h3>
+
+<h4>Ce paragraphe sur la première installation explique comment préparer un
+site GuppY avec du contenu de démonstration, de façon à ce que vous puissiez
+jouer avec.</h4>
+<ul>
+  <li>1. Téléchargez le fichier guppy.zip (http://www.freeguppy.org/) sur votre
+    PC.</li>
+  <li>2. Décompressez ce fichier guppy.zip avec votre programme de
+    décompression favori (7zip, winzip...) dans un dossier de votre PC.</li>
+  <li>3. BRAVO, GuppY est prêt à fonctionner !</li>
+  <li>4. Si vous souhaitez jouer avec GuppY sur votre PC avant de le mettre sur
+    Internet, installez un serveur web et PHP (vous pouvez aussi prendre un
+    "ensemblee" comme EasyPHP - http://www.easyphp.org/) sur votre PC et copiez
+    le contenu du dossier précédent dans le sous-répertoire www de EasyPHP,
+    puis lancez EasyPHP... et votre site web tournera en local sur votre PC.
+    C'est aussi simple que cela !</li>
+  <li>4 bis. Si vous souhaitez installer votre site directement sur Internet,
+    alors copiez tous les fichiers décompressés sur le FTP de votre site avec
+    un simple programme client FTP (FileZilla, FireFtp (module pour FireFox),
+    etc.)). Et c'est tout, il vous suffit maintenant de taper l'URL de votre
+    site dans la barre d'adresse de votre navigateur pour vous retrouver sur
+    votre site "online".</li>
+  <li>5. Félicitations, vous venez d'installer GuppY avec succès !</li>
+  <li></li>
+</ul>
+
+<h3>REMARQUE IMPORTANTE :</h3>
+
+<p>- Si vous ne prévoyez pas d'installer une base de données vierge, supprimez
+le répertoire install/ maintenant. </p>
+
+<p>Sinon toute personne qui l'exécuterait détruirait tout le contenu de votre
+site web !</p>
+
+<h4>ALTERNATIVE : vous pouvez aussi télécharger :</h4>
+
+<p>- MiniGuppY sur le site de GuppY. MiniGuppY est un ensemble qui comprend un
+serveur web, PHP et GuppY, le tout configuré avec un programme d'installation
+automatique pour PC sous Windows. On ne peut pas faire plus simple !</p>
+
+<h4>- easyGuppY++ sur le site de GuppY. EasyGuppY++ est un ensemble qui
+comprend un serveur web, PHP et GuppY plus les versions portables de Firefox,
+FileZilla et NotePad++, le tout configuré avec un programme d'installation
+automatique pour PC sous Windows.</h4>
+
+<h3>Remarque "<a name="CHMOD" id="CHMOD">CHMOD</a>" :</h3>
+
+<h4>Voici comment mettre en place les droits sur les fichiers pour les serveurs
+internet qui le nécessitent (pas tous).</h4>
+
+<h4>1. Répertoire admin</h4>
+<ul>
+  <li>- Fichier admin/action.php : droits = 666. commande UNIX = chmod 666
+    admin/action.php</li>
+  <li>- Fichier admin/mdp.php : droits = 666. commande UNIX = chmod 666
+    admin/mdp.php</li>
+  <li>+ Répertoire admin/redac : droits = 777. commande UNIX = chmod 777
+    admin/redac</li>
+  <li>- Fichiers admin/redac/* : droits = 666. commande UNIX = chmod 666
+    admin/redac/*</li>
+</ul>
+
+<h4>2. Répertoire data : droits = 777. commande UNIX = chmod 777 data</h4>
+<ul>
+  <li>- Fichiers data/* : droits = 666. commande UNIX = chmod 666 data/*</li>
+  <li>+ Répertoire data/archive : droits = 777. commande UNIX = chmod 777
+    data/archive</li>
+  <li>- Fichiers data/archive/* : droits = 666. commande UNIX = chmod 666
+    data/archive/*</li>
+  <li>+ Répertoire data/cache : droits = 777. commande UNIX = chmod 777
+    data/cache</li>
+  <li>- Fichiers data/cache/* : droits = 666. commande UNIX = chmod 666
+    data/cache/*</li>
+  <li>+ Répertoire data/countmsg : droits = 777. commande UNIX = chmod 777
+    data/countmsg</li>
+  <li>- Fichiers data/countmsg/* : droits = 666. commande UNIX = chmod 666
+    data/countmsg/*</li>
+  <li>+ Répertoire data/usermsg : droits = 777. commande UNIX = chmod 777
+    data/usermsg</li>
+  <li>- Fichiers data/usermsg/* : droits = 666. commande UNIX = chmod 666
+    data/usermsg/*</li>
+  <li>+ Répertoire data/error : droits = 777. commande UNIX = chmod 777
+    data/error</li>
+  <li>- Fichiers data/error/* : droits = 666. commande UNIX = chmod 666
+    data/error/*</li>
+</ul>
+
+<h4>3. Répertoire file : droits = 777. commande UNIX = chmod 777 file</h4>
+<ul>
+  <li>- Fichiers file/* : droits = 666. commande UNIX = chmod 666 file/*</li>
+</ul>
+
+<h4>4. Répertoire img : droits = 777. commande UNIX = chmod 777 img</h4>
+<ul>
+  <li>- Fichiers img/* : droits = 666. commande UNIX = chmod 666 img/*</li>
+</ul>
+
+<h4>5. Répertoire pages : droits = 777. commande UNIX = chmod 777 pages</h4>
+<ul>
+  <li>- Fichiers pages/* : droits = 666. commande UNIX = chmod 666 pages/*</li>
+</ul>
+
+<h4>6. Répertoire photo : droits = 777. commande UNIX = chmod 777 photo</h4>
+<ul>
+  <li>- Fichiers photo/* : droits = 666. commande UNIX = chmod 666 photo/*</li>
+</ul>
+
+<h4>7. Pour tous les dossiers de skins il est aussi nécessaire de chmoder les
+fichiers de configuration</h4>
+<ul>
+  <li>- skin/ma_skin/confskin.inc : droits = 666. UNIX command = chmod 666
+    skin/ma_skin/confskin.inc</li>
+  <li>- skin/ma_skin/style.css : droits = 666. UNIX command = chmod 666
+    skin/ma_skin/style.css</li>
+</ul>
+
+<h4><em><strong>Note</strong></em> : <span
+style="color:#ff0000;background-color:#ffffff"><span
+style="font-size: 20pt"><span style="font-size: 32pt"><span
+style="color:#ff0000"><span
+style="font-size: 20pt">/*</span></span></span></span></span> signifie que tous
+les fichiers du répertoire doivent être chmodés comme indiqués. Exemple :</h4>
+<ul>
+  <li><strong>Fichiers data/* : droits = 666. commande UNIX = chmod 666 data/*
+    signifie que tous les fichiers du répertoire data doivent être chmodés en
+    666</strong>.</li>
+  <li></li>
+</ul>
+
+<h4>Comment détecter que vous devez exécuter ces "CHMOD" ? </h4>
+
+<h4>Eh bien c'est facile à détecter, c'est quand vous obtenez une ribambelle de
+messages d'erreurs de ce style :</h4>
+<ul>
+  <li>Warning: fopen("data/logh.dtb","w") - Permission denied in
+    http://www.mysite.com/inc/functions.php on line 198</li>
+  <li>Warning: Supplied argument is not a valid File-Handle resource in
+    http://www.mysite.com/inc/ functions.php on line 206</li>
+  <li>Warning: fopen("../data/logh.dtb", "w") - Read-only file system in
+    functions.php on line 198</li>
+  <li>Warning: fputs(): supplied argument is not a valid File-Handle resource
+    in functions.php on line 206</li>
+</ul>
+
+<h4>Remarque .htaccess :</h4>
+
+<p>GuppY est proposé avec un fichier .htaccess dans le répertoire racine. Ce
+fichier n'est utile que si votre serveur web fonctionne sous Apache (serveur
+web le plus commun). Voici sa structure :</p>
+<hr>
+
+<p>&lt; files ~= ^\.ht=&gt;&lt;/&gt;files&gt;</p>
+
+<p>Order allow,deny</p>
+
+<p>Deny from all</p>
+
+<p>Satisfy All</p>
+
+<p>&lt; files ~= ^.*\.(inc|dtb=&gt;&lt;/&gt;files&gt;</p>
+
+<p>Order allow,deny</p>
+
+<p>Deny from all</p>
+
+<p>Satisfy All</p>
+
+<p>ErrorDocument 400 /error.php?err=400</p>
+
+<p>ErrorDocument 403 /error.php?err=403</p>
+
+<p>ErrorDocument 404 /error.php?err=404</p>
+
+<p>ErrorDocument 500 /error.php?err=500</p>
+<hr>
+
+<p>Les 5 premières lignes servent à protéger le contenu de votre base de
+données des regards indiscrets des internautes mal intentionnés (et il y en a
+!). Sinon, des fichiers comme le fichier data/frth.dtb par exemple - qui
+contient toutes les adresses courriel des gens ayant posté un message dans le
+forum - sont lisibles et peuvent même servir à alimenter un fichier de Spam
+(berk !). Ces 5 lignes sont à laisser telles quelles.</p>
+
+<p>Les 4 lignes suivantes servent à rediriger les internautes vers la page
+erreur lorsqu'ils demandent une page inexistante, etc. Celles ci doivent être
+adaptées par vos soins (via un simple éditeur de texte comme Notepad++ ou
+Wordpad par exemple) selon l'endroit où est placé votre GuppY.</p>
+
+<p>Ainsi, si votre installation GuppY est faite à la racine de votre site (URL
+= http://www.votresite.com/) alors vous n'avez rien à faire. Par contre si
+votre installation GuppY est faite dans un répertoire de votre site (URL =
+http://www.votresite.com/ici/ par exemple), alors il vous faut modifier ainsi
+ces 4 lignes :</p>
+<hr>
+
+<p>ErrorDocument 400 /ici/error.php?err=400</p>
+
+<p>ErrorDocument 403 /ici/error.php?err=403</p>
+
+<p>ErrorDocument 404 /ici/error.php?err=404</p>
+
+<p>ErrorDocument 500 /ici/error.php?err=500</p>
+<hr>
+
+<h4>Dans certains cas, vous aurez peut-être à modifier ainsi ces 4 lignes (pour
+un site dont l'URL serait http://www.votresite.com/) :</h4>
+ErrorDocument 400 http://www.votresite.com/error.php?err=400 
+
+<p>ErrorDocument 403 http://www.votresite.com/error.php?err=403</p>
+
+<p>ErrorDocument 404 http://www.votresite.com/error.php?err=404</p>
+
+<p>ErrorDocument 500 http://www.votresite.com/error.php?err=500</p>
+<hr>
+
+<h4>Ou encore, si installé dans le sous-répertoire ici/ :</h4>
+<hr>
+
+<p>ErrorDocument 400 http://www.votresite.com/ici/error.php?err=400</p>
+
+<p>ErrorDocument 403 http://www.votresite.com/ici/error.php?err=403</p>
+
+<p>ErrorDocument 404 http://www.votresite.com/ici/error.php?err=404</p>
+
+<p>ErrorDocument 500 http://www.votresite.com/ici/error.php?err=500</p>
+<hr>
+
+<p>Il serait aussi judicieux de protéger votre répertoire admin/ par un nom
+d'utilisateur et un mot de passe spécifiques via .htaccess. Comme la façon de
+faire est souvent spécifique à votre hébergeur, merci de consulter ses pages
+d'aide à ce sujet.</p>
+
+<p>Pour de plus amples renseignements sur la protection de votre site par
+.htaccess, référez-vous à la documentation officielle d'Apache.</p>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<h3><a name="L2618" id="L2618" href="#L2618">2.2 INSTALLATION PROPRE</a></h3>
+
+<h3></h3>
+
+<p>L'installation propre permet de supprimer le contenu de démonstration et de
+commencer avec un beau site GuppY vierge de tout contenu. Le point de départ de
+cette installation propre est n'importe où entre la première installation et
+l'état de votre base de démo avec son contenu que vous avez pu modifier. Cette
+installation va détruire tout le contenu mais garder le paramétrage que vous
+avez pu réaliser dans les différents "Config quelque chose" dans la zone
+d'admin.</p>
+
+<h4></h4>
+
+<p><strong>Une popup apparaît en admin une fois par jour si GuppY détecte la
+présence du répertoire install</strong></p>
+
+<p><strong><span style="font-size: 16pt">Si la popup apparaît,</span> il suffit
+de cliquer sur l'icône <span style="font-size: 16pt">"poubelle"</span> pour
+lancer la suppression du répertoire install</strong>.</p>
+
+<p></p>
+<ul>
+  <li>1. Si l'URL de votre site est http://www.mysite.com/ alors saisissez le
+    texte suivant dans votre navigateur : http://www.mysite.com/install/</li>
+  <li>2. Suivez les instructions pour une "Installation propre".</li>
+  <li>3. Félicitations, votre site web est prêt à fonctionner avec votre
+    contenu !</li>
+</ul>
+
+<h3>REMARQUE IMPORTANTE :</h3>
+<ul>
+  <li>- Assurez-vous que tous les fichiers dans le répertoire install/ ont bien
+    été supprimés. Sinon toute personne qui l'exécuterait détruirait tout le
+    contenu de votre site web !</li>
+  <li>- Si vous ne pouvez plus voir le répertoire install/, ça veut dire que
+    tout s'est passé correctement. Même conclusion si le répertoire install/
+    existe toujours mais est vide (supprimez le alors par FTP, votre hébergeur
+    n'autorise pas son effacement par PHP).</li>
+</ul>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<h3><a name="L2555" id="L2555" href="#L2555">3. METTRE A JOUR</a></h3>
+
+<p>Vous avez un GuppY qui fonctionne et vous voulez le mettre à jour. Avant
+tout, vous devez comprendre comment les versions de GuppY sont identifiées. La
+version de GuppY est identifiée par trois chiffres, par exemple 4.6.10. Les
+deux premiers indiquent la version principale de GuppY. Le troisième sert à
+identifier le niveau de correctif (ou patch) de la version principale. Dans
+4.6.10, la version principale est 4.6 et cette version comporte les dix
+premiers correctifs de la version principale.</p>
+
+<p>Deux cas se présentent à vous lors de la mise à jour, soit votre GuppY est
+déjà à la même version principale, soit il est à une des versions principales
+antérieures. Dans le premier cas, on dira qu'il faut patcher GuppY, dans le
+second cas, on dira qu'il faut migrer vers la nouvelle version principale.</p>
+
+<p></p>
+
+<h3><a name="L2620" id="L2620" href="#L2620">3.1 METTRE A JOUR DEPUIS LA MÊME
+VERSION PRINCIPALE : PATCHER</a></h3>
+
+<p>Vous êtes dans le cas où votre GuppY est déjà en 4.6.x (x &lt; 19) et vous
+souhaitez le mettre à jour en 4.6.20. </p>
+
+<p>FreeGuppY vous propose au téléchargement des patchs pour faire cela.</p>
+
+<p>Là aussi, deux cas se présentent à vous, soit votre GuppY est dans la
+version précédente (par exemple 4.6.18 pour passer en 4.6.20), soit il est dans
+une version plus ancienne (4.6.x avec x compris entre 0 et 17 inclus).</p>
+<ul>
+  <li>Dans le premier cas, vous utiliserez le patch non cumulatif 4.6.20 qui
+    permet de passer d'une version 4.6.19 à 4.6.20.</li>
+  <li>Dans le second cas, vous utiliserez le patch cumulatif 4.6.20, qui
+    contient tous les correctifs jusqu'à la version 4.6.20. Il permet de passer
+    de n'importe quelle version dans la nouvelle version.</li>
+</ul>
+
+<p>Une fois en possession du bon patch, il ne vous reste plus qu'à décompresser
+l'archive Zip du patch dans un répertoire temporaire et copier tous les
+fichiers et sous-répertoires de ce répertoire dans le répertoire racine de
+votre site.</p>
+
+<p></p>
+
+<h3><a name="L2622" id="L2622" href="#L2622">3.2 METTRE À JOUR DEPUIS UNE
+VERSION PRINCIPALE ANTÉRIEURE : MIGRER</a></h3>
+
+<h3></h3>
+
+<h3>IMPORTANT : </h3>
+
+<h4>le script de migration est destiné aux sites web fonctionnant avec
+miniPortail version 1.8 ou ultérieure / GuppY version 2.4 ou ultérieure.</h4>
+
+<h3></h3>
+
+<p>Si votre site est sous une version antérieure de miniPortail / GuppY, vous
+devrez appliquer les instructions suivantes :</p>
+<ul>
+  <li>- Suivez les étapes 1 à 6 de la procédure de migration ci-dessous.</li>
+  <li>- Ensuite, exécutez install/migrate17.php puis install/migrate18.php si
+    vous êtes en version &lt; 1.7 de miniPortail.</li>
+  <li>- Ou bien exécutez install/migrate18.php si vous êtes en version 1.7 de
+    miniPortail.</li>
+  <li>- Passez ensuite à l'étape 7 de la procédure de migration ci-dessous.</li>
+</ul>
+
+<h3><span style="text-decoration: underline;">Note</span></h3>
+
+<h4>Maintenant, si vous êtes en version 1.8 ou ultérieure de miniPortail / en
+version 2.4 de GuppY ou ultérieure, suivez ces instructions :</h4>
+<ul>
+  <li>1. Faites une sauvegarde complète de votre site avant de passer à l'étape
+    suivante.</li>
+  <li>2. Exécutez un "contrôle d'intégrité DB". Assurez-vous qu'il ne produit
+    pas d'erreur sinon exécutez-le une nouvelle fois.</li>
+  <li>3. Vos données sont stockées dans les 4 répertoires data/, file/, img/ et
+    photo/. Il ne faut donc surtout pas les supprimer de votre site web.</li>
+  <li>4. Désactiver la skin et les plugins utilisés</li>
+</ul>
+<ul>
+  <li>4.1 Aller dans Config. Site pour activer la skin "no_skin".</li>
+  <li>4.2 Aller dans les pages d'administration des plugins pour retirer les
+    icônes de la barre supérieure d'icônes.</li>
+  <li>4.3 Aller dans Config. Boîtes pour retirer les boîtes latérales des
+    plugins.</li>
+  <li>5. Supprimez les fichiers contenus à la racine de votre site (/) et les
+    répertoires admin/, inc/, mobile/ (mobile/ est apparu avec la version 2.3)
+    et plugins/ (plugins/ est apparu avec la version 3.0) leur contenu, ainsi
+    que leurs sous-répertoires et tous leurs contenus.</li>
+  <li>6. Copiez les nouveaux répertoires et fichiers de la nouvelle version de
+    GuppY (/, admin/, inc/, mobile/, pages/ et plugins/ sans oublier skins/)
+    ainsi que le répertoire install/ et son contenu.</li>
+  <li>7. Vérifiez si la remarque "CHMOD" (du paragraphe 2) s'applique à votre
+    installation. C'est le cas si vous avez eu à l'appliquer dans vos
+    installations/migrations précédentes de miniPortail / GuppY.</li>
+  <li>8. Si l'URL de votre site est http://www.mysite.com/ alors saisissez le
+    texte suivant dans la barre d'adresse de votre navigateur :
+    http://www.mysite.com/install/</li>
+  <li>9. Suivez les instructions pour une "Migration".</li>
+  <li>10. Félicitations, vous venez de migrer dans la toute dernière version de
+    GuppY.</li>
+  <li>11. Des modifications dans le paramétrage vous imposent de revérifier
+    "Config générale", "Config site", "Config sections", "Config services",
+    "Config boîtes", "Config forum" et "Config style". Il vous faudra aussi
+    faire tourner un "Contrôle d'intégrité DB" pour mettre à jour les index de
+    la base de données GuppY.</li>
+  <li>12. Il vous reste à installer votre skin et vos plugins en vous assurant
+    auparavant que vous disposez de versions compatibles avec la présente
+    version.</li>
+</ul>
+
+<p></p>
+
+<h3><span style="text-decoration: underline;">REMARQUES IMPORTANTES</span></h3>
+<ul>
+  <li>- Une fois que vous avez fini la migration, assurez-vous que les fichiers
+    dans le répertoire install/ ont bien été supprimés. Sinon toute personne
+    qui l'exécuterait détruirait tout le contenu de votre site web !</li>
+  <li>- Si vous ne pouvez plus voir le répertoire install/, ça veut dire que
+    tout s'est passé correctement. Même conclusion si le répertoire install/
+    existe toujours mais est vide (supprimez le alors par FTP, votre hébergeur
+    n'autorise pas son effacement par PHP).</li>
+  <li>- A l'issue de la migration, le mot de passe d'admin est remis à "pass".
+    N'oubliez pas de le changer.</li>
+</ul>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<h2><a name="L2557" id="L2557">4. Ce paragraphe n'existe plus. Il a été intégré
+dans les paragraphes précédents.</a></h2>
+
+<p></p>
+
+<h3><a name="L2559" id="L2559" href="#L2559">5. CONFIGURATION</a></h3>
+<ul>
+  <li>1. Commencez par vous inscrire comme membre sur votre propre site (Boîte
+    "Préférences", Devenir membre)</li>
+  <li>2. Cliquez sur l'icone "Admin" dans la barre du haut.</li>
+  <li>3. Un mot de passe vous est demandé. Saisissez "pass" (sans les
+    guillemets). Mot de passe que vous vous empresserez de changer dans le menu
+    d'administration !</li>
+  <li>4. Et hop, vous voici sur l'interface d'administration. Avant tout, vous
+    devez effectuer deux actions indispensables.</li>
+</ul>
+<ul>
+  <li><strong>4.1 Première action indispensable</strong> 
+    <ul>
+      <li><strong></strong>Cliquer sur l'icône "Mot de passe" pour changer le
+        mot de passe</li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li><strong>4.2 Seconde action indispensable</strong> 
+    <ul>
+      <li>Cliquer sur l'icône "Config.Générale" pour vérifier que les champs
+        "URL du site" et "Meta Identifier-url" sont correctement remplis avec
+        l'adresse exacte du site (ex : http://www.monsiteweb.com/).</li>
+    </ul>
+  </li>
+</ul>
+
+<p></p>
+
+<h4>En cas de doute, la méthode suivante permet de réaliser un remplissage
+automatique et correct de ces deux champs :</h4>
+<ul>
+  <li> Aller dans la page Config.Générale</li>
+  <li> Vider les deux champs "URL du site" et "Meta Identifier-url"</li>
+  <li>Enregistrer la configuration</li>
+</ul>
+
+<h4>Guppy remplit alors les deux champs avec la bonne adresse</h4>
+<ul>
+  <li> Enregistrer la configuration avec les deux champs remplis
+  correctement.</li>
+</ul>
+
+<h3>5.</h3>
+
+<p>Les deux premiers groupes d'icônes vous permettent de paramétrer votre site
+web (langues, apparence, services à activer, etc.), de le maintenir (mais vous
+n'en avez pas encore besoin) et de changer le mot de passe d'administration
+(faites-le tout de suite !). Prenez bien le temps de remplir correctement les
+formulaires qui se trouvent dans les 8 icônes "Config".</p>
+
+<h4>Vous pouvez désormais recourir aux services de rédacteurs que vous
+configurerez dans "Droits"</h4>
+
+<h4>6.</h4>
+Toutes les autres icônes vous permettent de gérer le contenu de votre site avec
+une interface intuitive. 
+
+<h3><span style="text-decoration: underline;">REMARQUE IMPORTANTE</span></h3>
+<ul>
+  <li>- A n'importe quel moment, vous pouvez remettre le mot de passe à "pass",
+    juste en rechargeant par FTP le fichier admin/mdp.php.</li>
+</ul>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<h3><a name="L2561" id="L2561" href="#L2561">6. GÉRER LE CONTENU</a></h3>
+
+<p>GuppY fonctionne grâce aux dernières technologies web.</p>
+
+<p>Pour comprendre comment il marche, retournons un peu en arrière et revenons
+sur la création d'une page web traditionnelle. Dans une page web classique, on
+écrit du texte dans lequel on insère des tags HTML (pour Hyper Text Markup
+Language) qui indiquent au navigateur ( Firefox , Opéra, Chrome, Safari ou
+Internet Explorer par exemple) comment positionner et mettre en forme les
+différents éléments (texte, images, liens...) dans la page.</p>
+
+<p>On doit ensuite relier manuellement les différentes pages d'un site entre
+elles via des liens. Et, chaque fois qu'on veut modifier le rendu de son site,
+il faut reprendre l'ensemble des pages... C'est lourd et fastidieux, et on
+passe rapidement plus de temps à gérer la mise en forme que le contenu !</p>
+
+<p>Maintenant, existent des langages de programmation web complets qui
+permettent de gérer du contenu Internet comme n'importe quel programme qui
+tourne sur votre PC. Ainsi, GuppY utilise le langage de programmation le plus
+répandu, à savoir le PHP (qui signifie Hypertext PreProcessor).</p>
+
+<p>Le principe de GuppY est alors le suivant : on sépare le contenu (stocké
+dans une petite base de données "texte") de la mise en forme (gérée par
+l'ensemble de scripts PHP qui composent GuppY).</p>
+
+<p>Et l'on obtient ainsi ce que l'on appelle un CMS (pour Content Management
+System, c'est-à-dire "Système de Gestion -Dynamique- de Contenus en français").
+Bref, vous n'avez plus qu'à saisir l'information dans les rubriques appropriées
+(articles, news, etc.) via une interface d'administration (la petite icone
+"Admin" en haut à droite de l'écran vous permet d'y accéder) et GuppY se charge
+de la gestion complète et de la présentation de cette information selon les
+clics des visiteurs qui viennent sur votre site.</p>
+
+<p>Comme le code HTML est autorisé, il est possible d'utiliser toutes les
+balises HTML que l'on veut (IMG, A, B, I, U, etc.) dans les articles, liens,
+nouvelles, etc. Vérifiez bien systématiquement que ces balises n'interfèrent
+pas de façon négative avec le fonctionnement du site.</p>
+
+<p></p>
+
+<p></p>
+
+<h3><span style="text-decoration: underline;">Note</span></h3>
+
+<p>Les visiteurs de votre site peuvent eux-mêmes poster des nouvelles, des
+messages dans le livre d'or ou le forum. L'usage des balises HTML est
+légèrement plus restreint pour eux, afin d'éviter tout dysfonctionnement du
+site, l'éditeur leur permet d'utiliser les balises les plus courantes.</p>
+
+<p>Vous disposez de 5 répertoires pour poser les objets spécifiques (via
+l'icône "Fichiers") :</p>
+<ul>
+  <li>- file : pour mettre les fichiers de téléchargement. Vous réfèrerez alors
+    à un fichier via le tag HTML suivant : [A HREF="file/fichier.ext"]texte[/A]
+    (en remplaçant les [ et ] par &lt; et &gt;).</li>
+  <li>- img : pour mettre les images de fond, le logo de votre site et
+    l'ensemble des images avec lesquelles vous souhaitez agrémenter votre site.
+    Vous réfèrerez alors à une image via le tag HTML suivant : [IMG
+    SRC="img/image.ext"] (en remplaçant les [ et ] par &lt; et &gt;).</li>
+  <li>- photo : pour mettre les photos du diaporama. Vous devez activer ce
+    service dans admin/config services puis dans admin/photos cliquez sur
+    Ajouter une photo, et recommencer pour chaque ajout de photo.</li>
+  <li>- pages : pour mettre les pages HTML ou PHP spécifiques. Vous appellerez
+    alors une page via le tag HTML suivant : [A
+    HREF="pages/pager.ext"]texte[/A] (en remplaçant les [ et ] par &lt; et
+    &gt;).</li>
+  <li>- flash : pour stocker vos animations vidéo au format flash, sauf vos
+    bannières en flash qui doivent se trouver dans img.</li>
+  <li>Un autre répertoire important a été ajouté pour gérer l'aspect et
+    l'habillage de vos pages ; c'est le répertoire /skin.</li>
+</ul>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<h3><a name="L2563" id="L2563" href="#L2563">7. FONCTIONNEMENT INTERNE</a></h3>
+
+<h3>Répétons-le encore une fois, avec GuppY </h3>
+<ul>
+  <li>- Quasiment tous les hébergeurs Internet sont possibles (ils doivent
+    juste offrir le service du langage de script PHP dans lequel est écrit
+    GuppY).</li>
+  <li>- Il n'y a pas de compétence technique en installation de base de données
+    à posséder (cf. la procédure ultra simple d'installation de GuppY).</li>
+  <li>- L'affichage des pages est grandement accéléré, la gestion de la base de
+    données étant généralement le maillon faible des hébergeurs.</li>
+  <li></li>
+  <li>Les informations gérées par GuppY sont enregistrées dans des fichiers
+    texte (au format .dtb) ou PHP (au format .inc) dans le dossier data/.</li>
+</ul>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<h3><a name="L2565" id="L2565" href="#L2565">8. COMPATIBILITÉ</a></h3>
+
+<p>Pour fonctionner correctement, GuppY a besoin que votre navigateur web
+puisse gérer correctement les feuilles de style CSS et le langage HTML dans sa
+version 4.</p>
+
+<p>GuppY devrait fonctionner correctement avec Internet Explorer ,
+FireFox/Mozilla, Chrome, Opéra et tous les navigateurs récents. Nous l'avons
+testé avec ces navigateurs, mais votre compte-rendu d'utilisation sur un autre
+navigateur web sera le bienvenu.</p>
+
+<h4></h4>
+
+<p>L'ancien éditeur subsiste et peut être choisi. Amélioré, il est utilisé en
+mode simplifié pour les navigateurs non compatibles.</p>
+
+<p></p>
+
+<p>* What You See Is What You get : <em>ce que tu vois est ce que tu
+obtiens</em> = <em>tel affichage, tel résultat</em>, ou aussi : <em>tel écrit,
+tel écran.</em></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<h3><a name="L2567" id="L2567" href="#L2567">9. PROBLÈMES ÉVENTUELS</a></h3>
+<ul>
+  <li>- Le nouvel éditeur WYSIWYG introduit dans la version 4.6.17 est CK
+    Editor. Il est compatible avec la plupart des navigateurs de dernière
+    génération et Windows, Mac, Linux.</li>
+  <li>- GuppY devrait maintenant (depuis la version 3.0) être compatible à 100%
+    avec IIS.</li>
+</ul>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<h3><a name="L2569" id="L2569" href="#L2569">10. NOTES TECHNIQUES</a></h3>
+
+<h3><a name="L2624" id="L2624" href="#L2624">10.1. Courriel</a></h3>
+<ul>
+  <li>Certains hébergeurs de sites ne travaillent pas avec la fonction PHP
+    mail() standard, mais avec une version modifiée de cette fonction (comme
+    Online.net ou Nexen.net par exemple) ou une version "truquée" (comme
+    Free.fr par exemple, voir le paragraphe 10.2.).</li>
+  <li>A partir de la version 2.4 de GuppY, ces fonctions courriel peuvent être
+    intégrées dans le répertoire inc/mail/ dédié.</li>
+</ul>
+
+<p>Si vous écrivez un script pour accéder à une telle fonction spécifique d'un
+hébergeur (voir les fichiers Online.net.inc et Nexen.net.inc pour apprendre
+comment faire), l'équipe de développement de GuppY serait très heureuse d'en
+recevoir une copie.</p>
+
+<h3><a name="L2626" id="L2626" href="#L2626">10.2. Courriel spécifique à
+Free.fr</a></h3>
+
+<p>Free utilise désormais la fonction mail standard de PHP. Il n'est donc plus
+nécessaire d'utiliser "protomail".</p>
+
+<h3><a name="L2628" id="L2628" href="#L2628">10.3. Chargement de
+fichiers</a></h3>
+<ul>
+  <li>Certains hébergeurs désactivent la fonctionnalité de chargement HTTP. La
+    fonctionnalité "Fichiers" dans l'admin est alors inutilisable. Vous
+    transférerez donc vos fichiers sur votre site en utilisant votre logiciel
+    FTP.</li>
+</ul>
+
+<h3><a name="L2630" id="L2630" href="#L2630">10.4. Partage de contenu
+inter-sites au format RSS</a></h3>
+<ul>
+  <li>Certains hébergeurs limitent la fonction PHP include() à l'accès des
+    seuls fichiers internes au site, et ne permettent pas l'accès aux fichiers
+    d'un autre site web.</li>
+</ul>
+
+<p>Dans ce cas, le module de partage de nouvelles au format RSS ne fonctionnera
+pas.</p>
+
+<h3><a name="L2632" id="L2632" href="#L2632">10.5. Comment accéder à la version
+mobile de GuppY</a></h3>
+
+<p>Si l'accès à votre site se fait de cette façon :
+http://www.votresite.com/ici/ (par exemple), alors la version mobile (qui est
+destinée aux utilisateurs de Smartphones et aux aveugles) est aisément et
+automatiquement accessible à l'adresse suivante :
+http://www.votresite.com/ici/mobile/. Mettez juste un lien dans votre site pour
+indiquer à vos visiteurs comment y accéder.</p>
+
+<h3><a name="L2634" id="L2634" href="#L2634">10.6. Courriel de suivi à
+plusieurs destinataires</a></h3>
+
+<p>Un exemple de fonction qui permet l'envoi de courriels de suivi à plusieurs
+destinataires est fourni dans inc/mail/more1receiver.inc.</p>
+
+<p>Soyez attentif au fait que vous aurez à éditer le fichier
+inc/mail/more1receiver.inc (avec n'importe quel éditeur de texte basique) et à
+saisir les identifiants (pseudo et adresse courriel) supplémentaires.</p>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<h3><a name="L2571" id="L2571" href="#L2571">11. LICENCE</a></h3>
+
+<p>GuppY est distribué gratuitement sous licence libre CeCILL (se référer au
+fichier pages/copyright-fr.txt). Ceci signifie que vous pouvez utiliser
+gratuitement ce script, le modifier pour votre usage propre. Si vous en
+distribuez une version modifiée, elle doit elle-même suivre les termes de la
+licence CeCILL.</p>
+
+<p>JE NE POURRAI EN AUCUN CAS ETRE TENU RESPONSABLE DES PROBLEMES QUI
+POURRAIENT RESULTER DE L'UTILISATION DE CE SCRIPT.</p>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<h3><a name="L2573" id="L2573" href="#L2573">12. DON</a></h3>
+
+<h3></h3>
+
+<p>Je développe et maintiens mon site et mes programmes gratuits sur mon temps
+libre et aussi sur mes ressources. Cette démarche est complètement gratuite de
+ma part, sans désir de m'enrichir par ce biais.</p>
+
+<p>Néanmoins, si vous trouvez que GuppY vous est utile et si vous souhaitez
+m'aider à continuer de développer mon site et mon offre de programmes gratuits,
+vous pouvez toujours me faire un petit cadeau pour m'encourager.</p>
+
+<p>N'importe quel montant sera très apprécié, c'est bien le geste qui
+compte.</p>
+
+<p>Pour me faire un don, il vous suffit d'aller à l'adresse suivante :
+http://www.aldweb.com/give.html</p>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<h3><a name="L2575" id="L2575" href="#L2575">13. L'ÉQUIPE GUPPY INFORMELLE</a>
+</h3>
+
+<h3></h3>
+<ul>
+  <li>aldweb - (c'est moi ! je suis français !) Créateur de GuppY et premier
+    développeur. - Courriel : info[at]aldweb.com - Site Web :
+    http://www.aldweb.com/</li>
+</ul>
+<ul>
+  <li>JeandePeyrat - (le serviteur du serveur!), administrateur de la GuppY
+    Team, président de l'association freeGuppY, modérateur du forum. La
+    maintenance des serveurs de freeGuppY n'a plus de secrets pour Jean.</li>
+</ul>
+<ul>
+  <li>Papinou - (le magicien du CSS), administrateur de la GuppY Team,
+    trésorier de l'association freeGuppy, modérateur du forum. Il s'intéresse à
+    tout ce qui concerne les feuilles de style CSS, et il n'est pas mauvais du
+    tout en anglais !</li>
+</ul>
+<ul>
+  <li>Saxbar - (le compositeur et musicien du php), depuis Août 2011 a fait
+    naître de son clavier toutes les versions de GuppY. Cela ne surprendra
+    personne quand on sait que l'informatique, le php et le javascript sont ses
+    passions, dont la moindre n'est pas le jazz !</li>
+</ul>
+<ul>
+  <li>DJchouix - (le scientifique), un développeur de talent, qui travaille
+    sans cesse dans l'ombre depuis des années. Il est l'auteur des nouveaux
+    éditeurs de GuppY.</li>
+</ul>
+<ul>
+  <li>Corrector - (le roi de la traduction), l'anglais est sa deuxième langue
+    maternelle, mais il n'est pas en reste pour les corrections de la langue
+    française. Et il a la dent particulièrement dure pour le franglais.</li>
+</ul>
+<ul>
+  <li>La Vache Qui Rêve - The Dreaming Cow! - Comme elle se nomme elle-même,
+    mais elle est bien plus féminine et subtile que ça ! (GuppYed, tutoriels),
+    Administratrice de GuppYed, et spécialiste des tutoriels tout en gardant
+    notre étable nette ! </li>
+</ul>
+<ul>
+  <li>Fred68 - (GuppYed, tutoriels), Administrateur de GuppYed, spécialiste des
+    tutoriels ; l'un des ces travaux notoires est un excellent tutoriel pour
+    CKEditor<br>
+  </li>
+  <li>Sabine - (la fée du design), en un tour de main vous avez un excellent
+    design pour un site GuppY, fait au Québec.<br>
+  </li>
+  <li>Laroche - (un grand connaisseur), connait GuppY et tous ses rouages sur
+    le bout des doigts, un excellent chasseur de couics.</li>
+</ul>
+<ul>
+  <li>Pascal31 -(GuppYLand), Administrateur de GuppYLand, dont il a conçu le
+    style de présentation.</li>
+</ul>
+<ul>
+  <li>jerlal -(GuppYLand) Administrateur de GuppYLand, bêta-testeur des
+    versions alpha, et chasseur de couics acharné... </li>
+</ul>
+
+<p>Merci à tous les membres de la GuppY Team, à tous les traducteurs, à tous
+ceux qui soumettent des idées d'amélioration, à tous ceux qui mettent des
+encouragements.</p>
+
+<p>Je garde une pensée particulière pour Alex, le premier à m'avoir rejoint et
+Nicolas, bouillonnant d'idées et auteur de nombreux scripts pour GuppY,Icare
+qui est à l'origine de la refonte graphique de GuppY, et JeanMi expert es
+plugins, un vrai pro du PHP.</p>
+
+<p></p>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p><br>
+</p>
+
+<p><a name="L2578" id="L2578" href="#L2578"><strong>14. NOUS REJOINDREZ-VOUS
+?</strong></a></p>
+
+<p></p>
+
+<p>Si vous appréciez GuppY et que vous souhaitez nous aider à le promouvoir et
+le développer, soyez le bienvenu.</p>
+
+<p></p>
+
+<p>Voici quelques points d'améliorations possibles et sur lesquels votre aide
+sera précieuse (il y en a pour tous les goûts) :</p>
+<ul>
+  <li>- des développeurs PHP, HTML, CSS, JAVASCRIPT, JAVA, AJAX, etc.</li>
+  <li>- des traducteurs Français / Anglais pour nous aider à faire vivre le
+    contenu bilingue du site officiel de GuppY</li>
+  <li>- des traducteurs toutes langues</li>
+  <li>- des documentalistes</li>
+  <li>- débogage, amélioration du code source.</li>
+  <li>- nouvelles fonctionnalités.</li>
+  <li>- toute idée que vous aurez.</li>
+</ul>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<p></p>
+
+<p><a name="L2580" id="L2580" href="#L2580"><strong>15. HISTORIQUE DES
+VERSIONS</strong></a></p>
+
+<p></p>
+
+<h4>v5.0</h4>
+
+<p>(et suivantes, toute cette liste de souhaits ne sera peut-être pas réalisée
+dans cette prochaine version) - déjà en cours de développement</p>
+
+<p>- Objectif général : avec la série 4.x, nous avons atteint un certain palier
+de maturité fonctionnelle. Nous allons donc nous concentrer sur l'adéquation du
+système avec les techniques les plus récentes, pour une rapidité et une
+facilité d'utilisation encore accrues. KISS...</p>
+
+<p>- Optimisation de la conformité aux standards du W3C, amélioration de
+l'accessibilité</p>
+
+<p>- prise en compte des suggestions déposées dans la boîte à idées de
+FreeGuppY</p>
+
+<p></p>
+
+<p></p>
+
+<h1 style="text-align:center;margin-left:auto;margin-right:auto;">********</h1>
+
+<p></p>
+
+<p></p>
+
+<h4>v 4.6.22 Patch et version</h4>
+
+<p></p>
+
+<p>Nous avons le plaisir de vous proposer le patch_nc_4622 avec plusieurs
+nouveautés, corrections et améliorations.</p>
+
+<p>Depuis la sortie de la première version de miniPortail le 30 décembre 2002,
+ce patch est la 71ème version mise en téléchargement.</p>
+
+<p>La date de sortie de cette version n'est pas totalement fortuite mais
+<strong>une façon de marquer les 10 ans de GuppY</strong>, 10 ans d'une
+formidable aventure.</p>
+
+<p><strong>Merci aldweb d'avoir initier ce projet</strong>,</p>
+
+<p>Merci à tous les participants qui ont permis la poursuite de GuppY, la
+sortie de nouvelles versions.</p>
+
+<p>Merci à vous tous, utilisateurs de GuppY, qui êtes la reconnaissance de
+notre travail.</p>
+
+<p></p>
+
+<h4>Dans cette version plusieurs nouveautés :</h4>
+
+<p></p>
+
+<p>- ajout d'un pseudo-groupe privé auquel sont ajoutés automatiquement tous
+les membres (merci Saxbar)</p>
+
+<p>- ajout du répertoire inc/csshead, tous les css de csshead sont chargés
+automatiquement dans la partie HEAD de la page (merci JeanMi)</p>
+
+<p>- ajout de la version 3.6.5 de CK Editor (merci Papinou)</p>
+
+<p>modification de la configuration de la touche "Entrée": Entrée = br,
+Maj+Entrée = div</p>
+
+<p>- suppression de FCK Editor du pack 4.6.22 (merci Saxbar)</p>
+
+<p>vous devez supprimer les répertoires admin/editors/fckeditor_config et
+inc/fckeditor,</p>
+
+<p>les fichiers admin/editors/editorFCK.php et
+admin/editors/postdataFCK.php.</p>
+
+<p>les fichiers admin/editors/editors_functions.php et
+admin/editors/editors_scripts.js sont modifiés.</p>
+
+<p>- ajout de la skin guppy01 en skin d'origine (merci Sabine, merci
+Papinou)</p>
+
+<p>- suppression de la skin Island du pack 4.6.22,</p>
+
+<p>dans le répertoire skin de GuppY, vous devez supprimer le répertoire
+skn_island.</p>
+
+<p></p>
+
+<h4>Des corrections :</h4>
+
+<p></p>
+
+<p>- correction $prt dans blog.php (merci Ludo)</p>
+
+<p>- correction affichage boites latérales blog (merci Icare)</p>
+
+<p>- remplacement include par include_once de funcrss.php dans la fonction
+ActionOnFields() (merci Icare)</p>
+
+<p>- correction $pluginlist (merci JeanMi, merci linuxmr)</p>
+
+<p>- correction traitement de style.css (merci JeanMi)</p>
+
+<p>- correction de inc/admin.inc par utilisation de ReadGroups() (merci
+JeanMi)</p>
+
+<p>- correction de pgeditor/pgeditor.php (merci jchouix)</p>
+
+<p>- correction lien et hyperlien dans download.php (merci JeanMi)</p>
+
+<p>- modification $meskin dans skin.inc pour toutes les skins (merci JeanMi)</p>
+
+<p>- modification include pour confskin.inc (merci JeanMi)</p>
+
+<p></p>
+
+<h4>Comme à chaque nouvelle version, n'oubliez pas de mettre à jour vos
+plugins, de réinstaller vos forks, de revalider vos pages de configuration.</h4>
+
+<h4>Vous devez revalider les catégories de discussion du forum pour mettre les anciennes catégories privées au nouveau format.</h4>
+
+<h3>Pour passer de la version 4.6.21a à la version 4.6.22, c'est ce
+patch_nc_4622 que vous devez utiliser.</h3>
+
+<p></p>
+
+<p></p>
+
+<h4>v 4.6.21a Patch et version <span style="color:#ff0000"><span
+style="background-color:#ffffff">de sécurité</span></span></h4>
+
+<h4></h4>
+
+<p>Nous vous proposons le patch 4.6.21a avec des corrections,trois nouveautés,
+<span style="background-color:#ffffff"><span style="color:#ff0000">et la
+correction d'une faille</span></span></p>
+
+<p><span style="background-color:#ffffff"><span
+style="color:#ff0000">permettant l'injection de code, découverte le samedi 20
+octobre 2012.</span></span></p>
+
+<p></p>
+
+<h3>Attention, toutes les versions de GuppY sont concernées, <span
+style="color:#ff0000;background-color:#ffffff">y compris la version
+4.6.21.</span></h3>
+
+<h3></h3>
+
+<h3>Vous devez installer <span
+style="color:#ff0000;background-color:#ffffff">IMPERATIVEMENT et
+IMMEDIATEMENT</span> ce correctif pour la sécurité de votre site.</h3>
+
+<p></p>
+
+<h3>Les corrections :</h3>
+
+<p>- correction affichage $web111 dans postguest.php (merci JeanMi, Saxbar)</p>
+
+<p>- correction MAJ_AGENDA.PHP (merci linuxmr)</p>
+
+<p>- correction textes anglais de error.php (merci Corrector)</p>
+
+<p>- correction affichage drapeau dans boxlang.inc (merci Saxbar)</p>
+
+<p>- correction $pluginlist dans attribdroits.inc (merci linuxmr)</p>
+
+<p>- correction contrôle saisie email, url (merci jchouix, merci Saxbar)</p>
+
+<p>- correction fichier langue française fr_upload.inc (merci Corrector)</p>
+
+<p>- correction fichier langue anglaise en_upload.inc (merci Corrector)</p>
+
+<p>- correction htmlspecialchars dans fckeditor_php5.inc et fckeditor_php4.inc
+(merci linuxmr)</p>
+
+<p>- mise à jour crédits et générique (merci Papinou)</p>
+
+<p>- modification du fichier .htaccess, seuls les fichiers avec l'extension inc
+ou dtb sont bloqués (merci JeanMi)</p>
+
+<p>- ajout possibilité de s'abonner à un fil du forum en cas de modification du
+sujet (merci Saxbar)</p>
+
+<p></p>
+
+<h3>Les nouveautés :</h3>
+
+<p>- nouvelle version de pgeditor.php (merci jchouix)</p>
+
+<p>- intégration de la version 3.6.4 de CKEditor (merci Papinou)</p>
+
+<p>- fichier de mise à jour du .htaccess de la racine de GuppY (merci JeanMi,
+merci Saxbar)</p>
+
+<h3>Pour la mise à jour du .htaccess de la racine, vous devez ajouter
+MAJ_HTACCESS.PHP à l'url de votre site puis Entrée pour l'exécuter après
+l'application du patch 4.6.21a.</h3>
+
+<p></p>
+
+<p>Comme à chaque nouvelle version, n'oubliez pas de mettre à jour vos plugins,
+de réinstaller vos forks, de revalider vos pages de configuration.</p>
+
+<p>Pour passer de la version 4.6.20 à la version 4.6.21a, c'est ce
+patch_nc_4621a que vous devez utiliser.</p>
+
+<p></p>
+
+<h4><strong>v 4.6.21 - 18 octobre 2012</strong> </h4>
+
+<h4>Patchs et version 4.6.21</h4>
+
+<p></p>
+
+<p>Nous vous proposons le patch 4.6.21 avec des corrections et deux
+nouveautés.</p>
+
+<p></p>
+
+<h4>Les corrections :</h4>
+
+<p>- correction affichage $web111 dans postguest.php (merci JeanMi, Saxbar)</p>
+
+<p>- correction MAJ_AGENDA.PHP (merci linuxmr)</p>
+
+<p>- correction textes anglais de error.php (merci Corrector)</p>
+
+<p>- correction affichage drapeau dans boxlang.inc (merci Saxbar)</p>
+
+<p>- correction $pluginlist dans attribdroits.inc (merci linuxmr)</p>
+
+<p>- correction fichier langue française fr_upload.inc (merci Corrector)</p>
+
+<p>- correction fichier langue anglaise en_upload.inc (merci Corrector)</p>
+
+<p>- correction htmlspecialchars dans fckeditor_php5.inc et fckeditor_php4.inc
+(merci linuxmr)</p>
+
+<p>- mise à jour crédits et générique (merci Papinou)</p>
+
+<p>- modification du fichier .htaccess, seuls les fichiers avec l'extension inc
+ou dtb sont bloqués (merci JeanMi)</p>
+
+<p>- ajout possibilité de s'abonner à un fil du forum en cas de modification du
+sujet (merci Saxbar)</p>
+
+<p></p>
+
+<h4>Les nouveautés :</h4>
+
+<p>- nouvelle version de pgeditor.php (merci jchouix)</p>
+
+<p>- intégration de la version 3.6.4 de CKEditor (merci Papinou)</p>
+
+<p></p>
+
+<h2><span style="color:#ff0000"><span
+style="background-color:#ffffff">ATTENTION: modification du fichier .htaccess
+dans le patch.</span></span></h2>
+
+<p></p>
+
+<h4>v4.6.20 - 24 mai 2012</h4>
+
+<h4>Patchs et version de sécurité 4.6.20</h4>
+
+<p></p>
+
+<p>Le patch_nc_4.6.20 corrige une faille XSS, deux failles permettant
+l'injection de codes et trois couics signalés par Antoine Cervoise, expert en
+sécurité informatique.</p>
+
+<p></p>
+
+<h4>Tous nos remerciements à Antoine Cervoise, pour son intétêt et pour ses
+recherches sur la sécurité de GuppY.</h4>
+
+<h4>Vous pouvez retrouver ses travaux sur http://www.antoine-cervoise.fr</h4>
+
+<p></p>
+
+<p>En plus de la correction de ces failles et couics, nous avons ajouté dans ce
+patch :</p>
+
+<p></p>
+
+<p>- la correction des fichiers pour l'affichage de toutes les boites (thanks
+Saxbar)</p>
+
+<p>- la correction du blocage de l'inscription des membres par la suppression
+automatique du fichier ".dtb" sans pseudo(thanks Saxbar, JeanMi)</p>
+
+<p>- la prise en charge des langues étrangères par le plugin smileys de FCK
+Editor, dans le fichier admin/editors/guppy_fckconfig.js (thanks jchouix)</p>
+
+<p>- la correction de l'insertion d'image avec Chrome dans
+admin/editors/upload/upload.php (thanks jchouix)</p>
+
+<p>- la correction de admin/inc/attribdroits.inc pour $pluginlist (thanks
+Saxbar)</p>
+
+<p>- la correction de $boxwidth dans les fichiers du blog (thanks Saxbar)</p>
+
+<p>- la correction de $boxwidth dans toutes les skins (thanks Saxbar -
+Papinou)</p>
+
+<p>- la correction de l'affichage des boites sans titre dans toutes les skins
+(thanks Saxbar)</p>
+
+<p>- la correction de l'affichage du bloc citation (thanks Saxbar)</p>
+
+<p>- La mise à jour de CK Editor version 3.6.3 (thanks Papinou)</p>
+
+<p>- la correction de CK Editor et de FCK Editor (htlmspecialchars, $charset)
+pour l'édition des textes en admin pour PHP 5.4 et supérieur(thanks Saxbar,
+jchouix)</p>
+
+<p>Tous nos remerciements à JeanMi pour ses propositions et la correction d'un
+couic pour $site['TZ'].</p>
+
+<p></p>
+
+<h3>Attention: Toutes les skins sont concernées par des modifications.</h3>
+
+<h3>Pour les skins no_skin, skn1, skn_css, skn_css1 vous devez régénérer le
+fichier style.css de chaque skin par admin/config look/config style pour</h3>
+
+<h3>appliquer les modifications.</h3>
+
+<h3>Pour les skins island et web20, le fichier style.css modifié pour chacune
+est dans le patch.</h3>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.6.19 - 30 mars 2012</strong></p>
+
+<p><strong>Patchs et version de sécurité 4.6.19</strong></p>
+
+<p></p>
+
+<p>Ce patch <strong>non cumulatif</strong> 4.6.19 corrige une faille critique,
+rendue publique concernant toutes les versions précédentes de GuppY.</p>
+
+<p>Vous devez installer IMPERATIVEMENT et IMMEDIATEMENT ce correctif pour la
+sécurité de votre site.</p>
+
+<p>Nous y avons ajouté quelques nouveautés ou corrections:</p>
+
+<p></p>
+
+<p>- correction function WriteDoc, thanks jchouix</p>
+
+<p>- ajout des réseaux sociaux, thanks Saxbar</p>
+
+<p>- ajout de l'initialisation de DBLOGL dans install/cleanup.php, thanks
+Icare</p>
+
+<p>- remplacement de Close par $admin458 dans admin/inc/archbatch.php, thanks
+Icare</p>
+
+<p>- mise à jour pages/db_guppy.txt, thanks Icare</p>
+
+<p>- correction dans config8 et config9 relative aux curseurs dans le body ,
+thanks Saxbar</p>
+
+<p>- correction dans config2, suppression de $page[24] pour le curseur dans le
+body et cursor:hand, thanks Saxbar, tonton_christian</p>
+
+<p>- ajout d'une étape supplémentaire dans les scripts de migration du
+répertoire install, pour mettre les datas conformes avec le php5 (basée sur le
+script de la moulinette à datas), thanks Saxbar, Icare, JeanMi</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.6.18 - 09 février 2012</strong></p>
+
+<p><strong>Patchs et version de sécurité 4.6.18</strong></p>
+
+<p></p>
+
+<p>L'intégration dans GuppY des groupes privés a induit un certain nombre de
+dysfonctionnements. Quelques failles de sécurité ont encore été détectées dans
+cette version.</p>
+
+<p>Nous proposons donc la version 4.6.18 qui corrige ces failles ainsi que
+certains couics. Cette version intègre également quelques nouveautés.</p>
+
+<p></p>
+
+<h2><span style="color:#ff0000;background-color:#f0f0f0">L'installation de
+cette version est indispensable pour la sécurité des données des groupes
+privés</span>.</h2>
+
+<p></p>
+
+<p>Dans ce patch les modifications suivantes sont prises en compte :</p>
+
+<p></p>
+
+<p><strong>Sur le tracker:</strong></p>
+
+<p>FS#384 - Ajout des tailles de polices manquantes dans
+admin/editors/guppy_ckconfig.js (thanks François, Saxbar)</p>
+
+<p>FS#387 - Suppression fichier inc/plugin.inc (thanks JeanMi)</p>
+
+<p>FS#388 - Correction gestion thread réponse du forum (thanks linuxmr,
+Saxbar)</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>Sur le forum :</strong></p>
+
+<p>- Ajout $supervision10 dans admin/inc/config5 pour e-mail moderateurs /
+administrateurs en supervision (thanks tonton_christian, Saxbar)</p>
+
+<p>- Correction compatibilité php 4 admin/inc/config7.inc (thanks Laroche)</p>
+
+<p>- Ajout $supervision10 dans admin/inc/confupdt.inc (thanks tonton_christian,
+Saxbar)</p>
+
+<p>- Correction fichier admin/inc/logread.inc (thanks Papinou)</p>
+
+<p>- Ajout patch correction download.php et dwnld_pr.php (thanks Laroche)</p>
+
+<p>- Ajout choix largeur de CK Editor en config services (thanks Saxbar)</p>
+
+<p>- Modification fichier inc/includes.inc pour largeur éditeur et changement
+de version (thanks Saxbar)</p>
+
+<p>- Correction $typ illegal value pour blog, nouvelles, livre d'or, et
+$screen_choice (thanks Saxbar)</p>
+
+<p></p>
+
+<p><strong>Les autres corrections, améliorations :</strong></p>
+
+<p>- Suppression short tag ligne 236 de admin/inc/members.inc (merci
+Laroche)</p>
+
+<p>- Modification fichiers langue français et anglais (merci Saxbar,
+Papinou)</p>
+
+<p>- Ajout demande de confirmation pour désinscription de la newsletter.(merci
+Saxbar)</p>
+
+<p>- Correction $uwebsite, suppression affichage message de bienvenue en cas de
+modification, correction renvoi pour admin (merci Laroche, Saxbar)</p>
+
+<p>- Contrôle groupes privés pour archivage forum(merci Saxbar)</p>
+
+<p>- Correction ajustement iframe calendrier (merci Saxbar)</p>
+
+<p>- Correction lien validation XHTML (merci Papinou)</p>
+
+<p>- Modification affichage copyright pages, maintenance et mobile (merci
+Saxbar)</p>
+
+<p>- Modification contrôle enregistrement membres (merci Saxbar)</p>
+
+<p>- Suppression champs anciens en cas de modification du profil (merci
+JeanMi)</p>
+
+<p>- Correction affichage icônes plugins pour attribution droits (merci
+Saxbar)</p>
+
+<p>- Affichage des services actifs pour attribution droits collaborateurs
+(merci Saxbar)</p>
+
+<p>- Ajout time zone (merci Saxbar)</p>
+
+<p>- Initialisation du time zone par défaut à "Europe/Paris" (merci JeanMi)</p>
+
+<p>- Correction fonction IsPrivateForumCat() (merci Saxbar)</p>
+
+<p>- Correction $obgo (merci Saxbar)</p>
+
+<p>- Correction gestion forum privé pour mobile (merci Saxbar)</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.6.17 - 21 octobre 2011</strong></p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>Les nouveautés</strong> :</p>
+
+<p></p>
+
+<p>- Insertion de CK Editor 3.6.2 comme éditeur WYSIWYG dans GuppY (thanks
+jchouix)</p>
+
+<p>- Adaptation de la partie mobile aux groupes privés (thanks Saxbar)</p>
+
+<p>- Ajout drapeaux de tous les pays dans inc/lang (thanks François)</p>
+
+<p>- Ajout de plusieurs membres dans un groupe privé en une seule fois (thanks
+Saxbar)</p>
+
+<p>- création du répertoire inc/inchead pour permettre un include automatique
+de scripts php ou html dans le haut de la page (thanks Saxbar - Laroche)</p>
+
+<p>- création du répertoire inc/incfoot pour permettre un include automatique
+de scripts php ou html dans le bas de la page (thanks Saxbar - Laroche)</p>
+
+<p>- création d'un hyperlien pour la FAQ, les liens et les téléchargements ,
+ajout de l'imagette hyperlink dans inc/img/general (thanks Laroche)</p>
+
+<p></p>
+
+<p><strong>Les corrections</strong> :</p>
+
+<p></p>
+
+<p>- Correction caractères pour affichage drapeaux pays dans log (thanks
+François)</p>
+
+<p>- Modification affichage pour config look et config style (thanks Saxbar)</p>
+
+<p>- Correction affichage iframe calendrier (thanks Laroche)</p>
+
+<p>- Correction affichage lire la suite pour le blog et les nouvelles en page
+d'accueil (thanks Laroche)</p>
+
+<p>- Optimisation affichage boite webmestre (thanks Saxbar)</p>
+
+<p>- Correction construction lien après recherche pour agenda et forum dans
+search.php(thanks Saxbar)</p>
+
+<p>- Correction coquille blog.inc, suppression &amp;nbsp ligne 315 (thanks
+JeanMi)</p>
+
+<p>- Mise à jour et ajout dans les fichiers langues inc/lang/en-admin.inc,
+en-web.inc, fr-admin.inc, fr-web.inc</p>
+
+<p>- Correction de printfaq.php limité à la FAQ (thanks Laroche)</p>
+
+<p>- Optimisation affichage header skin Island (thanks Papinou)</p>
+
+<p>- Modification affichage des pages pour impression (thanks Saxbar)</p>
+
+<p></p>
+
+<p><strong>La sécurisation des groupes privés</strong> :</p>
+
+<p></p>
+
+<p>- Correction des téléchargements privés (thanks Laroche)</p>
+
+<p>- Correction de la recherche respectant les données des groupes privés
+(thanks Laroche)</p>
+
+<p>- Correction du forum, des sujets privés, de l'affichage de forum en direct
+(thanks Laroche)</p>
+
+<p>- Possibilité d'avoir un forum sans catégories si non utilisation des
+groupes privés (thanks Laroche)</p>
+
+<p>- Modification de la création d'une section privée dans le forum par simple
+coche d'une case et création du groupe privé PR correspondant.(thanks
+Laroche)</p>
+
+<p></p>
+
+<p></p>
+
+<h2><strong>Nous vous conseillons l'installation de cette version 4.6.17 pour
+la sécurisation complète de vos groupes privés, la suppression du dossier
+file/private et l'utilisation d'un sous-répertoire personnel dans file pour vos
+téléchargements privés.</strong></h2>
+
+<p></p>
+
+<h2>La lecture du fichier lisezmoi.html et du tutoriel sur l'utilisation des
+groupes privés est indispensable.</h2>
+
+<p></p>
+
+<h2><span class="Rouge"><span style="color:#ff0000"><span
+style="background-color:#ffffff">Attention : Comme à chaque nouvelle version,
+n'oubliez pas de mettre à jour vos plugins, de réinstaller vos forks, de
+revalider vos pages de configuration.</span></span></span></h2>
+
+<p></p>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<h4>v4.6.16 - 02 septembre 2011<strong></strong></h4>
+
+<h4></h4>
+
+<p><strong></strong></p>
+
+<p>L'intégration dans GuppY des groupes privés a induit un certain nombre de
+dysfonctionnements</p>
+
+<p>et surtout <strong>des failles de sécurité</strong> qui n'ont pas été
+détectées lors des bêta tests.</p>
+
+<p></p>
+
+<p>Nous proposons donc la version 4.6.16 qui corrige ces failles ainsi que
+certains couics.</p>
+
+<h2><strong><span style="color:#ff0000;background-color:#ffffff">L'installation
+de cette version est indispensable pour la sécurité des données des groupes
+privés.</span></strong></h2>
+
+<p></p>
+
+<p>Sur le bugtracker :</p>
+
+<p>#366 - correction failles pour les forums privés et les
+téléchargements(thanks jchouix, Laroche, Pascal31)</p>
+
+<p>#367 - correction affichage forum en direct(thanks jchouix, Laroche,
+Pascal31)</p>
+
+<p>#365 - correction incohérence création data/temp (thanks Hpsam)</p>
+
+<p>#363 - correction affichage booster dans counter.inc (thanks Papinou)</p>
+
+<p>#372 - correction coquille dans forum.php (thanks JeanMi)</p>
+
+<p>#374 - optimisation prise encompte des langues dans fck editor (thanks
+jchouix)</p>
+
+<p>#375 - modification gestion enregistrement des membres (thanks Laroche)</p>
+
+<p></p>
+
+<p>Sur le forum:</p>
+
+<p>- Correction encadrement icône dans news.inc (thanks Papinou)</p>
+
+<p></p>
+
+<p># Correction entête fichier admin.inc</p>
+
+<p># Correction fichiers langues fr et en</p>
+
+<p># Correction affichage dernières nouvelles en page d'accueil (thanks
+Laroche)</p>
+
+<p># Correction affichage et traitement des téléchargements privés,</p>
+
+<p>création d'un sous répertoire file/private avec un .htaccess pour sécuriser
+les téléchargements privés qui devront être mis dans ce répertoire private
+(thanks Laroche)</p>
+
+<p># Modification fichiers de configuration pour contrôle de la création des
+catégories privées du forum(thanks Laroche)</p>
+
+<p># Optimisation affichage block boite citation dans toutes les skins du pack
+(thanks Papinou)</p>
+
+<h3><span style="color:#ff0000"><span
+style="background-color:#ffffff">attention</span></span> : Si vous avez
+personnalisé une skin du pack GuppY sans en changer le nom, vous devez
+impérativement la renommer <strong>avant l'installation du patch <span
+style="color:#ff0000"><span style="background-color:#ffffff">sous peine de
+perdre vos modifications.</span></span></strong></h3>
+
+<h3>Les fichiers style.css et skin.inc de chaque skin sont modifiés.</h3>
+
+<p></p>
+
+<h3><strong>Tous nos remerciements à cece45 pour nous avoir signalé la faille
+des forums privés.</strong></h3>
+
+<p></p>
+
+<p></p>
+
+<p>Il nous reste à adapter la partie mobile.</p>
+
+<p></p>
+
+<h3><strong><span style="color:#ff0000"><span
+style="background-color:#ffffff">attention</span></span> : la non prise en
+compte de la partie mobile <span style="background-color:#ffffff"><span
+style="color:#ff0000">oblige impérativement à supprimer celle-ci lorsque les
+groupes privés sont utilisés</span>.</span></strong></h3>
+
+<p></p>
+
+<p>Avec ces corrections, si vous ne configurez pas et n'utilisez pas les
+groupes privés, le fonctionnement de GuppY est inchangé.</p>
+
+<p></p>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<p><strong>v4.6.15 - 30 juin 2011</strong></p>
+
+<p></p>
+
+<p><strong>Sur le bugtracker:</strong></p>
+
+<p>- #327 - suppression error 401 htaccess</p>
+
+<p>- #340 - concerne l'ajout de balise HR - merci jchouix</p>
+
+<p>- #357 - correction nombre de jours du mois précédent - merci jchouix</p>
+
+<p>- #358 - correction prise en compte adresse web sous domaine.domaine - merci
+jchouix</p>
+
+<p>- #359 - correction erreur pour validation - merci jchouix</p>
+
+<p>- #360 - suppression accès code source PgEditor - merci jchouix</p>
+
+<p>- #361 - amélioration affichage partiel nouvelle en page d'accueil et
+permalink - merci Laroche</p>
+
+<p>- #362 - amélioration affichage partiel du blog an page d'accueil - merci
+Laroche</p>
+
+<p>- Forum anglais: correction coquille dans inc/blogcalendar.inc</p>
+
+<p>- Boite à idées n°234: correction affichage date journée pour évènement
+(autre que j/m/a) - merci Quefer</p>
+
+<p>Une nouveauté :</p>
+
+<p>- La gestion des groupes privés d'utilisateurs - merci Icare - merci JeanMi
+(voir le tutoriel spécialisé)</p>
+
+<p></p>
+
+<p><strong>v4.6.14 - 14 Février 2011</strong></p>
+
+<p></p>
+
+<p>Copyright - Version</p>
+
+<p>-1- MAJ copyright année inc/bpage.inc</p>
+
+<p>-2- MAJ copyright année inc/hpage.inc</p>
+
+<p>-3- MAJ version inc/includes.inc</p>
+
+<p></p>
+
+<p><strong>Sur le bugtracker:</strong></p>
+
+<p>-1- FS#348 - Icônes de l'éditeur absentes de tinymsg</p>
+
+<p>-2- FS#347 - Position de la bulle liée à la classe pop</p>
+
+<p>-3- FS#354 - Rapport de couic graphique et correction.</p>
+
+<p>-4- FS#340 - Boîte à idées : Concerne l'ajout de balise HR</p>
+
+<p>-5- FS#338 - Sujets bloqués au top ne restent pas au top</p>
+
+<p>-6- FS#329 - Plugin Vitesse de connexion</p>
+
+<p>-7- FS#341 - En français, il y a deux $web434 et pas de $web435</p>
+
+<p>-8- FS#337 - Echec du contrôle de la dernière version chez Free</p>
+
+<p></p>
+
+<p><strong>Boîtes à idées :</strong></p>
+
+<p>-1- Réaction n°217 - Correction admin/inc/config7.inc</p>
+
+<p>-2- Réaction n°206 - Correction fichier inc/log.inc</p>
+
+<p>-3- Réaction n°202 - Modification admin/inc/admin.inc - Ajout titre article
+dans Admin - Réaction aux articles</p>
+
+<p>PgEditor :</p>
+
+<p>- Ajout MAJ PgEditor 2.5.1 - Correction couic Opéra</p>
+
+<p>- FS#355 Correction d'une faille de sécurité signalé par Antoine CERVOISE
+(http://www.antoine-cervoise.fr/)</p>
+
+<p>Les correctifs et modifications étaient en attente sur le tracker.</p>
+
+<p>La nouvelle version de PgEditor et le correctif de la faille de sécurité
+sont de djchouix.</p>
+
+<p></p>
+
+<p><strong>v4.6.13 - 22 Mai 2010</strong></p>
+
+<p></p>
+
+<p>#286 - initialisation du timezone à 'Europe/Paris' si la version PHP
+&gt;=5.1</p>
+
+<p>#316 - fichier inc/log.inc oublié en 4.6.12</p>
+
+<p>#323 - correction de l'affichage dans admin/inc/members.inc</p>
+
+<p>#324 - correction d'une coquille dans admin/inc/poll.inc, merci Laroche</p>
+
+<p>#325 - correction des fichiers d'upload (suite de #320)</p>
+
+<p>#328 - correction de l'affichage dans inc/bloglist.inc si aucun billet</p>
+
+<p></p>
+
+<p><strong>v4.6.12 - 01 Mai 2010</strong></p>
+
+<p></p>
+
+<p>#314 - dans admin/inc/admin.inc, correction d'une balise &lt;/table sans
+&gt;</p>
+
+<p>#315 - dans inc/pgeditor/style/pgeditor.css, remplacement d'une valeur
+"undeline" par "underline"</p>
+
+<p>#316 - NEW : Ajout des statistiques du mois précédent, visible au bout d'un
+mois</p>
+
+<p>#317 - dans admin/inc/members.inc, correction du chemin des icônes du
+miniéditeur</p>
+
+<p>#318 - ajout des champs auteur et email dans la page d'administration des
+articles</p>
+
+<p>#319 - suppression du fichier admin/adminstrateur.php (uniquement dans le
+pack complet)</p>
+
+<p>#320 - lors d'upload, la création de répertoire est interdite si le nom du
+répertoire contient le mot script</p>
+
+<p>#321 - correction de la page d'administration du sondage, qui perdait la
+valeur de la skin sélectionnée</p>
+
+<p>#322 - correction dans inc/topforum.inc pour validation W3C</p>
+
+<p></p>
+
+<p><strong>v4.6.11 - 11 Décembre 2009</strong></p>
+
+<p></p>
+
+<p>#291 - correction coquille de preg_match() dans
+admin/editors/minieditortextarea/popup/image.php</p>
+
+<p>#293 - correction coquille dans inc/blogcalendar.inc</p>
+
+<p>#294 - sécurisation de l'affichage du document dans agenda.php par hpsam</p>
+
+<p>#295 - correction pluginlist dans admin/inc/infos.inc</p>
+
+<p>#297 - correction functions.php: génération du lien mailto par la fonction
+ForceToAbsolute_callback()</p>
+
+<p>#298 - reprise lang/fr-admin.inc du pack 4.6.10 qui était erroné dans les
+patches</p>
+
+<p>#299 - correction abrégé des évènements du jour dans inc/calendar.php, merci
+Linuxmr.</p>
+
+<p>#300 - correction erreur css et titre de Rubrique en double dans
+blogrss.php</p>
+
+<p>#301 - optimisation des fonctions selectDBFieldsBy...</p>
+
+<p>#302 - suppression du lien vide sur les bannières si pas d'URL définie</p>
+
+<p>#303 - optimisation affichage des boîtes du blog, suppression des hr du blog
+de news.inc et de boxreact.inc</p>
+
+<p>#304 - remplacement de $admin53 par $admin173 dans admin.inc modification
+message du forum</p>
+
+<p>#305 - correction prise en compte extensions en majuscules dans
+upload.php</p>
+
+<p>#306 - correction test dans inc/lang/fr-special.inc et en-special.inc</p>
+
+<p>#307 - fiabilisation affichage du forum (suppression déformations et
+optimisation des classes div.code de pgeditor) et remplacement de width par
+style=width dans les cellules de tableaux de divers scripts</p>
+
+<p>#310 - fiabilisation saisie URL avec bouton "Parcourir le serveur" dans
+admin.inc, merci Linuxmr</p>
+
+<p>#311 - correction coquille prag_match dans
+admin/editors/minieditortextarea/popup/entities.php</p>
+
+<p>- ajout bouton abandon de transaction dans les scripts install, cleanup et
+delete.php</p>
+
+<p>#312 - correction affichage licence dans download.php</p>
+
+<p>#313 - ajout dans administrateur.php d'un message périodique incitant à
+supprimer le dossier install en ligne</p>
+
+<p>- modification des dates du copyright</p>
+
+<p></p>
+
+<p><strong>v4.6.10 - 7 Septembre 2009</strong></p>
+
+<p></p>
+
+<p>#253 - correction des adresses relatives des images (img/, inc/img/ et
+photo/) en adresses absolues dans la lettre d'informations et dans les flux
+RSS</p>
+
+<p>#253 - correction des adresses relatives des liens en adresses absolues dans
+la lettre d'informations, les flux RSS et les emails de supervision</p>
+
+<p>#253 - correction des ancres dans la lettre d'informations, qui restent
+relatives</p>
+
+<p>#253 - correction de la fonction pubDate</p>
+
+<p>#253 - correction de la fonction UpdateDBBlog</p>
+
+<p>#256 - correction de la gestion en zone membres dans postguest.php</p>
+
+<p>#259 - correction de error.php suite au patch 4.6.9</p>
+
+<p>#260 - rajout du fichier install/migrate24.php</p>
+
+<p>#262 - correction des liens lors du changement de langue</p>
+
+<p>#263 - ajout d'une fonction iconv lorsque PHP &lt; 5, merci linuxmr</p>
+
+<p>#266 - correction de l'ordre des tests dans le parcours d'un répertoire avec
+la fonction is_dir</p>
+
+<p>#267 - correction de la prise en compte de la langue dans FCKeditor</p>
+
+<p>#268 - NOUVEAU : la fonction Bannières devient bilingue</p>
+
+<p>#269 - correction de la gestion des droits sur les plugins pour les
+rédacteurs</p>
+
+<p>#271 - correction pour l'utilisation des quotes dans les catégories</p>
+
+<p>#272 - remplacement des fonctions de la famille EREG dépréciées à partir de
+PHP 5.3</p>
+
+<p>#273 - suppression du popup vide dans le blog, lorsque l'option "Masquer
+l'adresse émail" est activée</p>
+
+<p>#274 - correction de nombreux fichiers pour une meilleure conformité aux
+recommandations du W3C</p>
+
+<p>#275 - ajout des boîtes libres dans la page d'accueil</p>
+
+<p>#276 - intégration de la version 2.6.4 de FCKeditor</p>
+
+<p>#278 - ajout d'images pour les types de fichiers : pdf, doc, xls, ppt et
+OpenOffice</p>
+
+<p>#279 - amélioration des tests sur les URLS dans Config.Générale</p>
+
+<p>#280 - amélioration de la page agenda en cas de paramètres erronés</p>
+
+<p>#281 - impression de la partie centrale des pages avec une feuille de style
+dédiée</p>
+
+<p>#282 - amélioration de la duplication avec création du nouvel élément après
+validation et non avant</p>
+
+<p>#283 - amélioration du test sur le REFERER dans postguest.php</p>
+
+<p>#284 - ajout duplication évènement, évènements multiples avec plages
+horaires dans l'agenda, merci linuxmr</p>
+
+<p>#285 - correction de la gestion membre du blog en page d'accueil</p>
+
+<p>#287 - correction FCKeditor non vide</p>
+
+<p>#288 - correction code des boîtes du blog</p>
+
+<p>#289 - correction css sujet dans thread.php, merci Kamila</p>
+
+<p>#290 - suppression colonne 1 (ou 3) vide sur affichage en 2 colonnes</p>
+
+<p></p>
+
+<p><strong>v4.6.9 - 25 Décembre 2008</strong></p>
+
+<p></p>
+
+<p>- correction du test de sécurité sur admin/inc/access.inc #232</p>
+
+<p>- correction du test affichant l'icône RSS en administration #231</p>
+
+<p>- déplacement de la fonction ShowBlock vers inc/functions.php #221</p>
+
+<p>- correction de la fonction ShowBlock</p>
+
+<p>- déplacement de la fonction SearchOption vers inc/functions.php #219</p>
+
+<p>- correction de la fonction TestEmail dans admin/inc/nwlist.inc #226</p>
+
+<p>- correction des incohérences dans les statistiques #218</p>
+
+<p>- ajout / correction des statistiques pour les pages Blog et Admin #216</p>
+
+<p>- amélioration du contrôle de la variable $num dans postguest.php #203</p>
+
+<p>- correction de l'email utilisé dans les RSS #225</p>
+
+<p>- correction du mode pleine page du blog #228</p>
+
+<p>- correction du mode pleine page du forum #234</p>
+
+<p>- amélioration du forum en cas de sujet inexistant ou archivés #237</p>
+
+<p>- ajout de la limitation du calendrier du blog depuis le premier billet
+jusqu'à maintenant #221</p>
+
+<p>- ajout de la gestion des pages inexistantes du blog #221</p>
+
+<p>- ajout du contrôle des fonctions "Recommander" et "Mail PHP" #20</p>
+
+<p>- correction de l'activation des items du menu principal #224</p>
+
+<p>- correction de l'affichage de certains flux RSS #229</p>
+
+<p>- ajout du champ pubDate dans les flux RSS #240</p>
+
+<p>- ajout d'un test de sécurité sur les paramètres numériques #242</p>
+
+<p>- ajout d'un champ "URL du site" dans l'administration du forum #241</p>
+
+<p>- ajout du header HTTP Content-Type avec le charset correct #245</p>
+
+<p>- ajout du répertoire inc/jshead pour le chargement automatique de
+javascript dans la partie HEAD de la page #246</p>
+
+<p>- nombreuses petites corrections améliorant la conformité aux standards du
+W3C</p>
+
+<p>- amélioration de la migration</p>
+
+<p>- optimisation du code de test des jours fériés</p>
+
+<p>- amélioration de la fonction "Ajouter aux favoris" (boîte à idées #156)</p>
+
+<p>- conservation de la saisie en cas de pseudo déjà utilisé (boîte à idée
+#160)</p>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<p><strong>v4.6.8 - 24 Mai 2008</strong></p>
+
+<p></p>
+
+<p>- rectification liste des plugins dans admin/adminredac.php et
+admin/inc/plugins.inc</p>
+
+<p>- rectification du select dans inc/boxsearch.inc et du moteur dans
+search.php</p>
+
+<p>- remise date de la nouvelle (disparue!) dans inc/news.inc</p>
+
+<p>- modification du lien de la popup dwnld dans download.php</p>
+
+<p>- ajout du n° de sujet, retour vers forum si pas de paramètres dans
+thread.php</p>
+
+<p>- correction du test HTTP_REFERER, et des mails de supervision dans
+postguest.php/mod_thread.inc</p>
+
+<p>- correction sélection des commentaires dans inc/bloglist.inc</p>
+
+<p>- suppression des paramètres du lien liste globale dans blog.php</p>
+
+<p>- correction coquilles $msg2 dans admin/inc/members.inc</p>
+
+<p>- rectification affichage de fortopic.php, inc/topblog.inc et
+topforum.inc</p>
+
+<p>- correction config des entités html de FCKeditor</p>
+
+<p>- remplacement de include par include_once pour funcrss dans admin.inc et
+maintain.inc</p>
+
+<p>- modification de config2/config8.inc (génération automatique de la css, si
+permis)</p>
+
+<p>- ajout de création/suppression de sous-répertoire dans upload.inc</p>
+
+<p>- nouvelle version de pgeditor</p>
+
+<p></p>
+
+<p><strong>v4.6.7 - 23 Avril 2008</strong></p>
+
+<p></p>
+
+<p>- suppression des icônes inutilisées dans administration</p>
+
+<p>- correction de tags erronés dans generic.htm</p>
+
+<p>- correction anomalie enregistrement de tinymsg</p>
+
+<p>- correction du module de recherche</p>
+
+<p>- correction tags br dans postguest</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.6.6 - 14 Avril 2008</strong></p>
+
+<p></p>
+
+<p>- Correction prise en compte de $serviz31 dans admin/inc/config5.inc</p>
+
+<p>- correction erreurs de syntaxe dans config6 et config7.inc</p>
+
+<p>- icônes de validation W3c rendues amovibles dans config1.inc</p>
+
+<p>- ajout de la sélection des catégories, dans admin.inc</p>
+
+<p>- correction des fonctions putBR() et putHR()</p>
+
+<p>- Correction test langue de poll.php</p>
+
+<p>- correction emplacement include hpage.inc dans pages/sample.php</p>
+
+<p>- download possible si javascript inactif et correction caractéristiques du
+fichier dans download.php</p>
+
+<p>- suppression clear:both et &lt;/p&gt; inutiles dans links news et faq</p>
+
+<p>- correction curseur dans photorama.php</p>
+
+<p>- correction double quote dans le tag body de photoview.php</p>
+
+<p>- modification de updateDBdtb (nouveau champ pour TYP_BLOG) dans
+functions.inc</p>
+
+<p>- création de MAJ_BLOG.PHP pour prendre en compte le nouveau champ date de
+DBBLOG</p>
+
+<p>- correction sélection des billets dans blogcalendar.inc</p>
+
+<p>- affichage page en erreur si le billet n'est pas actif dans blog.php</p>
+
+<p>- correction largeur et affichage titres dans blog.php, blog, blogcat et
+bloglist.inc</p>
+
+<p>- ajout de title dans liens des menus articles</p>
+
+<p>- correction couic compteur du forum et test sujet du thread dans
+postguest.php</p>
+
+<p>- rectification affichage nouveau et important dans forum et thread.php</p>
+
+<p>- correction $fieldmod vide, valorisation variables pour supervision dans
+inc/mod_thread.inc</p>
+
+<p>- report de l'ajustement onload du calendrier dans calendar.php pour
+compatibilité W3C</p>
+
+<p>- ajustement de la taille de search dans topblog et topforum.inc</p>
+
+<p>- ajout de urlencode lors de l'utilisation de toutes les fonctions
+WriteMailto()</p>
+
+<p>- modification de hpage.js pour correction affichage nouvelles et dernières
+nouvelles</p>
+
+<p>- optimisation de hpage et bpage.inc pour étendre les possibilités de
+customisation</p>
+
+<p>- correction du nombre de jours du mois dans statcalc.inc</p>
+
+<p>- correction de boxsearch.inc pour la recherche des photos</p>
+
+<p>- correction test $err dans error.php</p>
+
+<p>- ajout header("HTTP/1.0 404 Not found") en cas de page non trouvé, merci
+eDada</p>
+
+<p>- intégration de la version 2.5.1 de FCKeditor</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.6.5 - 5 Décembre 2007</strong></p>
+
+<p></p>
+
+<p>- Inscription à la newsletter par message de confirmation</p>
+
+<p>- Ajout des enrichissements dans le mini-message aux membres</p>
+
+<p>- Correction liste des plugins dans admin/plugins</p>
+
+<p>- Correction champ $fieldd1 et $admin915 erronés dans admin.inc, merci
+JeanMi</p>
+
+<p>- Amélioration saisie URL dans config1</p>
+
+<p>- Modification texte[4] dans config2</p>
+
+<p>- Correction $$serviz[36], $serviz[31] mis à espace dans config5.inc</p>
+
+<p>- suppression d'un &gt; inutile dans config6.inc</p>
+
+<p>- Correction attribut border dans config8.inc</p>
+
+<p>- Remplacement de button par input class=bouton dans nwllist.inc</p>
+
+<p>- Correction sélection Collaborateur dans attribdroits.inc</p>
+
+<p>- Correction tests de langue dans inc/boxpoll.inc</p>
+
+<p>- Correction item titre de la boîte spécial</p>
+
+<p>- Ajout du blog dans inc/statcalc.inc</p>
+
+<p>- Suppression drapeau inutile dans mobile</p>
+
+<p>- Optimisation affichage des dernières nouvelles (pas d'affichage boîte si
+pas de nouvelle)</p>
+
+<p>- Correction erreurs d'affichage, suppression affichage nb de lectures si
+compteur inactif dans forum.php</p>
+
+<p>- Correction table de headTop dans hpage.inc (remplacée par des divs), merci
+JeanMi</p>
+
+<p>- Correction de variables en dur dans download.php, boxsearch.inc,
+attribdroits.inc et upload.inc</p>
+
+<p>- Ajout de stop sur variable illégale dans printfaq.php</p>
+
+<p>- Ajustement auto de la hauteur du calendrier</p>
+
+<p>- Correction define CHEMIN et sécurité d'accès dans tinymsg.php</p>
+
+<p>- correction display image du billet dans blog.php</p>
+
+<p>- ajout d'effacement global dans admin/inc/maintain.inc</p>
+
+<p>- ajout de la restriction de forum en direct aux seuls membres</p>
+
+<p>v4.6.4 - 04 Novembre 2007</p>
+
+<p>- correction vulnérabilité de error.php découverte par irk4z</p>
+
+<p>- correction vulnérabilité de includes.inc découverte par irk4z</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.6.3 - 30 Août 2007</strong></p>
+
+<p></p>
+
+<p>- La nouveauté : ajout de la duplication d'article, blog, news, etc. dans
+admin.inc, merci JeanMi</p>
+
+<p>- ajout de confirmation par l'admin pour les réactions aux articles et les
+commentaires blog</p>
+
+<p>- activation de la newsletter dans Config services avec test serveur de mail
+facultatif</p>
+
+<p>- possibilité de mettre un plugin (ou la boîte spécial) en page d'accueil,
+merci JeanMi</p>
+
+<p>- suppression image langue courante dans le menu de navigation</p>
+
+<p>- correction des liens des mails de supervision dans postguest</p>
+
+<p>- amélioration du test courriel dans newsletter.php et
+admin/inc/nwllist.inc</p>
+
+<p>- correction du copyright dans bpage.inc</p>
+
+<p>- correction download et admin download pour les fichiers multilangues</p>
+
+<p>- remplacement de ouvrir et fermer par des strings langue dans les menus
+(articles, blog, faq, liens et download)</p>
+
+<p>- nouveaux strings dans les fichiers de langue</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.6.2 - 1er Août 2007</strong></p>
+
+<p></p>
+
+<p></p>
+
+<p>- correction lien css-validator dans bpage.inc</p>
+
+<p>- correction screen_choice dans hpage.inc</p>
+
+<p>- correction mise en forme du blog et bas de page manquant dans
+blogrss.php</p>
+
+<p>- modification taille du select de admin/inc/config6 et css rubr de
+config8.inc</p>
+
+<p>- nouvelle procédure de test email dans newsletter.php</p>
+
+<p>- test email rectifié dans la liste des abonnés à la newsletter</p>
+
+<p>- correction insertion css IE de pgeditor</p>
+
+<p>- correction item DBNEWS dans functions.php</p>
+
+<p>- correction balise p dans agenda.php et boxreact.inc</p>
+
+<p>- correction short tags php oubliés</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.6.1 - 3 Juillet 2007</strong></p>
+
+<p></p>
+
+<p>- correction lien dernier message dans forum et fortopic.php</p>
+
+<p>- corrections javascript dans postguest.php</p>
+
+<p>- modification config8.inc suite pb affichage faq liens et Téléchargement</p>
+
+<p>- correction padding de la classe rubr pour style.css de chaque skin</p>
+
+<p>- correction couic éditeur IE</p>
+
+<p>- modification test anti-usurpation de cookie dans includes.inc</p>
+
+<p>- correction mauvaise prise en compte des modifications de thread dans
+admin.inc</p>
+
+<p>- correction prise en compte des caractères accentués dans FCKeditor</p>
+
+<p>- modification PathAbs() dans functions.php</p>
+
+<p>- correction mails de supervision dans postguest.php</p>
+
+<p>- ajout de strip_tags pour tous les noms de scripts appelés par le menu
+icônes</p>
+
+<p>- ajout de recherche dans blog et commentaires dans search.php</p>
+
+<p>- optimisation du module de vérification courriel dans newsletter.php</p>
+
+<p>- fiabilisation du contrôle d'intégrité</p>
+
+<p>- rectification lien articles erroné dans funcrss.php</p>
+
+<p>- incrémentation automatique de boîtes supplémentaires dans config boîtes,
+merci JeanMi.</p>
+
+<p>- correction de divers tags non valides xhtml</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.6.0 - 4 Juin 2007</strong></p>
+
+<p></p>
+
+<p>- La NOUVEAUTE : Guppy a dorénavant son blog !!!</p>
+
+<p>- forum new-look avec sa propre page d'administration et sa charte</p>
+
+<p>- édition des posts par leurs auteurs respectifs et les admin/modérateurs</p>
+
+<p>- refonte des pages d'administration</p>
+
+<p>- accès à l'administration rapide pour les collaborateurs</p>
+
+<p>- ajout droits d'administration des plugins pour les collaborateurs</p>
+
+<p>- affichage optionnel de la charte du forum dans le module fortopic</p>
+
+<p>- mise en conformité avec le standard XHTML</p>
+
+<p>- remplacement de l'éditeur wysiwyg TypeTool par FCKeditor compatible
+xhtml</p>
+
+<p>- remplacement du mini-éditeur d'admin</p>
+
+<p>- remplacement de l'éditeur wysiwyg de postguest</p>
+
+<p>- évolution des modules photo et photorama avec possibilité de
+sous-dossiers</p>
+
+<p>- correction d'un couic d'affichage des modules download, faq et links</p>
+
+<p>- correction vulnérabilité de archbatch.php et nwlmail.php</p>
+
+<p>- affichage optionnel de la licence lors du téléchargement de logiciels
+protégés</p>
+
+<p>- amélioration de l'accessibilité et du fonctionnement sans javascript</p>
+
+<p>- choix de la largeur de la page affichée</p>
+
+<p>- choix d'affichage du forum et du blog en pleine page</p>
+
+<p>- correction du calendrier et de l'agenda</p>
+
+<p>- amélioration de la disposition des boites (en haut, en bas, au centre, sur
+les côtés)</p>
+
+<p>- gestion des skins individualisée et couplée à la disposition des boites</p>
+
+<p>- gestion intégrée de la feuille de style css (génération, modification)</p>
+
+<p>- ajout de déconnexion/reconnexion avec sauvegarde temporaire de votre
+cookie</p>
+
+<p>- ajout du contact webmaster via la plupart des messageries instantanées</p>
+
+<p>- amélioré choix du message préféré du livre d'or en page d'accueil</p>
+
+<p>- amélioration du traitement des caractères accentués dans le pseudo</p>
+
+<p>- remplacement des short tags php pour compatibilité php5</p>
+
+<p>v4.5.19 - 10 Novembre 2007</p>
+
+<p>- corrections dans error.php de failles de sécurité découvertes par rgod</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.5.18 - 1 Avril 2007</strong></p>
+
+<p></p>
+
+<p>- Correction FAQ restriction membre</p>
+
+<p>- Correction des liens mailto dans les mails Recommander et Contacter
+Webmaster</p>
+
+<p>- Correction couic d'affichage du Sondage sous IE en cas de second vote</p>
+
+<p>- Correction d'un lien dans la version mobile</p>
+
+<p>- Passage en lecture seul du pseudo lors de l'édition de son profil pour
+éviter la création d'un nouveau membre.</p>
+
+<p>- Suppression de l'affichage parasite au dessus de la boite centrale dans
+l'admin des compteurs</p>
+
+<p>- correction function PathToImage</p>
+
+<p>- Correction du calendrier qui affichait le 30 ou 31 février</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.5.17 - 31 Janvier 2007</strong></p>
+
+<p></p>
+
+<p>- correction vulnérabilité de error.php découverte par rgod</p>
+
+<p>- correction boxcal.inc</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.5.16 - 28 Janvier 2007</strong></p>
+
+<p></p>
+
+<p>- correction function PathToImage</p>
+
+<p>- correction news.inc</p>
+
+<p>- correction download.php - faq.php - links.php</p>
+
+<p>- création fonction IncrNextID() pour éviter d'écraser un ancien document
+lors de la création d'un nouveau document</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.5.15 - 27 Janvier 2007</strong></p>
+
+<p></p>
+
+<p>- correction dans le cas d'un élément seul appelé par son id ou le titre de
+la catégorie est le titre de la dernière catégorie de la boite article de
+gauche.</p>
+
+<p>- correction de l'inversion date Création / Modification lors de l'affichage
+des FAQ.</p>
+
+<p>- correction du couic d'affichage des nouvelles en langue secondaire.</p>
+
+<p>- correction photorama pour problème de galeries imbriquées</p>
+
+<p>- correction boite calendrier visible si agenda désactivé</p>
+
+<p>- correction postguest pour éviter l'accès à des services désactivés</p>
+
+<p>- correction dwnld.php ($serviz[10] au lieu de $serviz[35])</p>
+
+<p>- amelioration de liste des abonnés à la lettre d'information</p>
+
+<p>- présentation des abonnés les plus récents en début de liste</p>
+
+<p>- possibilité de suppressions multiples en une seule action</p>
+
+<p>- présentation de la liste par page d'un maximum de 25 abonnés</p>
+
+<p>- correction de tinymsg.php (suppression du maxlength="10")</p>
+
+<p>- amelioration de la fonction PathToImage pour corriger aussi les urls des
+liens</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.5.14 - 19 Mai 2006</strong></p>
+
+<p>- rectification du patch 4.5.13</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.5.13 - 19 Mai 2006</strong></p>
+
+<p></p>
+
+<p>- correction des fichiers download.php, faq.php, links.php et news.inc</p>
+
+<p>- correction du test interdisant l'emploi du pseudo "Votre Nom" dans
+newsletter.php</p>
+
+<p>- remplacement de getenv("HTTP_USER_AGENT") par $_SERVER["HTTP_USER_AGENT"]
+dans includes.inc</p>
+
+<p>- suppression de l'affichage des réactions pour les non-membres dans
+articles.php</p>
+
+<p>- correction de l'affichage dans photorama.php</p>
+
+<p>- correction de l'activation des news RSS dans hpage.inc</p>
+
+<p>- correction de l'agenda pour la seconde langue</p>
+
+<p>- amélioration du moteur de recherche pour respecter les restrictions
+"membres"</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.5.12 - 09 Mars 2006</strong></p>
+
+<p></p>
+
+<p>- correction vulnérabilité de dwnld.php découverte par kapda.ir</p>
+
+<p></p>
+
+<p><strong>v4.5.11 - 25 Décembre 2005</strong></p>
+
+<p></p>
+
+<p>- correction seconde langue dans search.php</p>
+
+<p>- correction de l'initialisation des paramètres de l'anti-spam</p>
+
+<p>- correction de la couleur figée à blanc pour l'icone "moins" des
+téléchargements</p>
+
+<p>- correction d'un test dans l'admin de l'agenda</p>
+
+<p>- uniformisation des pages téléchargements, liens et faq</p>
+
+<p>- remplissage des cellules du calendrier au delà du dernier jour du mois</p>
+
+<p>- ajout d'un avertissement pour l'administrateur quand son site est en
+travaux</p>
+
+<p>- ajout de contrôles en cas de fichiers docXXX.inc absent, vide ou
+corrompu</p>
+
+<p>Boîte à idées n°63</p>
+
+<p>- interdition de l'indexation des pages error et newsrss par les robots</p>
+
+<p>Boîte à idées n°48</p>
+
+<p>- suppression du soulignement de la page courante dans la barre de
+navigation</p>
+
+<p>Boîte à idées n°64</p>
+
+<p>- ajout du texte de la réponse à un sujet du forum dans le mail de suivi
+d'un sujet</p>
+
+<p>Boîte à idées n°46</p>
+
+<p>- correction du retour systématiquement en langue principale lors de
+l'inscription d'un visiteur</p>
+
+<p>Boîte à idées n°70</p>
+
+<p>- ajout d'un affichage dépliée lorsque l'on accède à une seule page de
+téléchargements (par &amp;pg=99)</p>
+
+<p>- ajout d'un affichage dépliée lorsque l'on accède à une seule page de liens
+(par &amp;pg=99)</p>
+
+<p>- ajout d'un affichage dépliée lorsque l'on accède à une seule page de faq
+(par &amp;pg=99)</p>
+
+<p>Boîte à idées n°28</p>
+
+<p>- ajout du choix de l'état (actif ou non) des éléments créés en admin.</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.5.10 - 29 Novembre 2005</strong></p>
+
+<p></p>
+
+<p>- correction de 5 failles de sécurité découverte par rgod</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.5.9 - 27 Novembre 2005</strong></p>
+
+<p></p>
+
+<p>- correction du sélecteur de couleurs</p>
+
+<p>- correction des menus articles sous FireFox</p>
+
+<p>- corrections mineures dans plusieurs fichiers</p>
+
+<p>- amélioration de l'archivage du forum et du contrôle d'intégrité</p>
+
+<p>- amélioration de postguest.php</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.5.8 - 16 Octobre 2005</strong></p>
+
+<p></p>
+
+<p>- correction de postguest (ajout des breaks manquants)</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.5.7 - 8 Octobre 2005</strong></p>
+
+<p></p>
+
+<p>- correction du sondage</p>
+
+<p>- amélioration du mécanisme anti-spam</p>
+
+<p>- ajout du paramétrage du mécanisme anti-spam</p>
+
+<p>- correction d'une balise input non fermée dans admin.php</p>
+
+<p>- correction de la balise head mal placé dans calendar.php</p>
+
+<p></p>
+
+<p><strong>v4.5.6a - 28 Septembre 2005</strong></p>
+
+<p></p>
+
+<p>- correction de printfaq.php</p>
+
+<p></p>
+
+<p><strong>v4.5.6 - 27 Septembre 2005</strong></p>
+
+<p></p>
+
+<p>- correction d'une vulnérabilité "file transversal flaw" dans
+printfaq.php</p>
+
+<p>- correction du nombre d'erreurs pendant le contrôle d'intégrité en batch</p>
+
+<p>- correction de deux fautes d'orthographe dans fr-admin.inc</p>
+
+<p>- amélioration de l'éditeur (meta et script) et de la prévisualisation
+(flash)</p>
+
+<p></p>
+
+<p><strong>v4.5.5 - 10 Septembre 2005</strong></p>
+
+<p></p>
+
+<p>- correction des pages d'administration des compteurs</p>
+
+<p>- correction de la lettre d'informations (ajout du charset)</p>
+
+<p></p>
+
+<p><strong>v4.5.4 - 6 Septembre 2005</strong></p>
+
+<p></p>
+
+<p>- correction de trois failles de sécurité (error.php et printfaq.php) Merci
+Romano</p>
+
+<p>- correction définitive de l'agenda (voir lisezmoi_agenda.txt)</p>
+
+<p>- correction définitive de l'éditeur</p>
+
+<p></p>
+
+<p><strong>v4.5.3a - 30 August 2005</strong></p>
+
+<p></p>
+
+<p>- correction de l'agenda dans admin/inc/admin.inc</p>
+
+<p></p>
+
+<p><strong>v4.5.3 - 27 Aout 2005</strong></p>
+
+<p></p>
+
+<p>- correction du chemin du fichier RSS (ajout de data) merci Tanet</p>
+
+<p>- correction de l'agenda / calendrier</p>
+
+<p>- correction de l'éditeur (prise en compte du path images, conversion \n
+&lt;=&gt; &lt;br /&gt; en entrée et sortie)</p>
+
+<p>- correction de Config Génerale (suppression de : $site[29] = "" //
+Libre)</p>
+
+<p>- correction du couic mettant le nombre de réponses du forum à 0 lors de
+suppressions physiques</p>
+
+<p>- amélioration des news abrégés (maintenant en HTML)</p>
+
+<p>- uniformisation de la barre de navigation (archives du forum et partie
+mobile)</p>
+
+<p>- amélioration du contrôle d'intégrité par batch</p>
+
+<p>- ajout d'un mécanisme anti-spam pour toutes les soumissions</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.5.2 - 23 Juillet 2005</strong></p>
+
+<p></p>
+
+<p>- configuration dans Config.Services du nombre de fichiers à conserver dans
+data/error</p>
+
+<p>- configuration dans Config.Accueil du nombre de caractères affichés des
+nouvelles</p>
+
+<p>- correction de la classe CSS des catégories en page Téléchargements et
+Liens</p>
+
+<p>- correction de la classe CSS des informations (dates, compteurs...) en page
+Articles</p>
+
+<p>- correction du chemin pour le bon fonctionnement du "shortcut ico"</p>
+
+<p>- simplification du sélecteur d'image qui accepte récursivement les
+sous-répertoires de img et photo (suppression des fichiers listimg1.php et
+listimg2.php)</p>
+
+<p>- ajout automatique du "/" final de l'URL du site</p>
+
+<p>- amélioré les mails de supervision de la newsletter (courriel en HTML +
+liens cliquables)</p>
+
+<p>- correction du chemin de l'image utilisé par le plugin speed</p>
+
+<p>- suppression des \r oubliés dans inc/mail/standard_2.inc et
+inc/mail/standard_3.inc</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.5.1 - 7 Juillet 2005</strong></p>
+
+<p></p>
+
+<p>- Correction de la liste déroulante photorama</p>
+
+<p>- optimisation des news RSS: ajout date de sortie, modif présentation)
+(merci Tanet))</p>
+
+<p>- correction de l'envoi de mail dans tous les scripts concernés</p>
+
+<p>- correction inversion des légendes Italic et souligné dans l'éditeur
+TypeTool</p>
+
+<p>- correction faute de frappe et ajout de chemins dans l'éditeur de postguest
+(merci Djchouix)</p>
+
+<p>- correction d'un bug d'admin (le rédacteur pouvait se connecter même Option
+Rédacteur non cochée!</p>
+
+<p>- correction fontion eMailHtmlTo() pour prendre en compte l'expéditeur du
+mail (reco, webmaster)</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v4.5 - 28 Juin 2005</strong></p>
+
+<p></p>
+
+<p>- Affichage des listes d'administration par bloc (page) de 25 éléments</p>
+
+<p>- Sélection des actions par case à cocher avec exécution globale par page</p>
+
+<p>- Processus de connexion administrateur et rédacteur amélioré (séparation
+des menus administrateur et rédacteur, multi-administration simultanée
+optimisée).</p>
+
+<p>- Moteur de recherche nettement amélioré avec affichage du contenu
+recherché</p>
+
+<p>- Généralisation de l'admin rapide</p>
+
+<p>- Ajout d'un contrôle anti-usurpation des adresses émetteur/destinataire des
+mini-messages</p>
+
+<p>- Nouvelles abrégées en page d'accueil (avec affichage suite)</p>
+
+<p>- Download, liens et FAQ modifiés suivant le fork de Nicolas</p>
+
+<p>- Amélioration-optimisation des modules photo</p>
+
+<p>- Correction du menu articles: il reste ouvert, l'article sélectionné est
+identifié.</p>
+
+<p>- Optimisation des éditeurs d'administration (option popup) et intégration
+facilitée d'éditeur tiers.</p>
+
+<p>- Prévisualisation du texte saisi dans le mini-éditeur d'admin.</p>
+
+<p>- Améliorations de l'éditeur usuel (balises interdites,sauts de ligne,
+citation, code, previsualisation du message...)</p>
+
+<p>- Correction du calendrier (seconde langue, aujourd'hui surligné seulement
+sur mois-année courants)</p>
+
+<p>- Ajout de "alt" dans le calendrier (merci Hubby) et de "title"</p>
+
+<p>- Affichage de l'agenda du mois, aperçu de l'évènement du jour</p>
+
+<p>- Compatibilité ascendante avec les versions PHP (quels que soient les
+réglages "register_globals", register_long_arrays" et error_reporting)</p>
+
+<p>- Sécurisation accrue (principalement constantes, includes)</p>
+
+<p>- Possibilité de bannières en flash</p>
+
+<p>- Mail de supervision au format HTML</p>
+
+<p>- Envoi des mails php en multi-format (texte + HTML)</p>
+
+<p>- Refonte du mail webmaster et de recommandation</p>
+
+<p>- Ajout d'un lien de consultation dans les mails de supervision</p>
+
+<p>- Lettre d'information au format HTML</p>
+
+<p>- Correction de l'agenda (affichage évènements année+1 corrigé)</p>
+
+<p>- Optimisation du style et des skins grâce à l'accroissement de
+l'utilisation des div et css</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>V4.0 - 06 Décembre 2004</strong></p>
+
+<p></p>
+
+<p>- Nouvel éditeur WYSIWYG compatible IE, Mozilla et dérivés pour la rédaction
+des articles</p>
+
+<p>- Option d'Administration différenciée (droits et mot de passe des
+rédacteurs individualisés)</p>
+
+<p>- icone Admin pour accès rapide à tous les contenus pour le webmaster</p>
+
+<p>- Option de gestion en mode membres</p>
+
+<p>- Option de soumission des contributions forum et livre d'or</p>
+
+<p>- Titre de page individualisés</p>
+
+<p>- Gestion de l'UID améliorée</p>
+
+<p>- Amélioration et journalisation des compteurs</p>
+
+<p>- Calendrier amélioré doté des fonctions agenda</p>
+
+<p>- Amélioration du forum doté d'un mini-éditeur WYSIWYG</p>
+
+<p>- Extension de l'amélioration visuelle du forum aux tableaux de toutes les
+pages</p>
+
+<p>- Nouveau gestionnaire de mini-messages</p>
+
+<p>- Nouveau formulaire pour écrire au webmaster</p>
+
+<p>- envoi d'un courriel aux utilisateurs qui le souhaitent quand une réponse a
+été mise dans un thread de forum pour lequel ils désirent être tenus au
+courant</p>
+
+<p></p>
+
+<p><strong>v3.0p4 - 06 septembre 2004</strong></p>
+
+<p></p>
+
+<p>- limitation de la taille des entrées des visiteurs</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v3.0p3 - 29 juillet 2004</strong></p>
+
+<p></p>
+
+<p>- correction d'une faille de sécurité (trouvée par L0rd L4m3R)</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v3.0p2 - 9 avril 2004</strong></p>
+
+<p></p>
+
+<p>- fix compatibilité : GuppY est maintenant complètement compatible avec
+Abyss webserver, KF Web Server, IIS et sans doute d'autres serveurs web (merci
+Kromonos et lordloose)</p>
+
+<p>- ai retiré 2 lignes d'information de debug dans le script de recherche,
+lignes oubliées lors du développement de la version 3.0 (merci Realia)</p>
+
+<p>- correction d'un bug dans la feuille de style CSS (merci Ouly)</p>
+
+<p>- correction d'un bug qui trompait Netscape dans les skins (par Icare)</p>
+
+<p>- correction de la base de démo dans laquelle plusieurs documents
+comportaient des caractères "\" parasites</p>
+
+<p>- ai retiré l'affichage du lien URL vide dans la boîte de réactions (merci
+Realia)</p>
+
+<p>- ai corrigé l'erreur de frappe "adress" par "address" dans le miniéditeur
+de l'admin (merci JeanMi)</p>
+
+<p></p>
+
+<p></p>
+
+<p><strong>v3.0p1 - 26 février 2004</strong></p>
+
+<p></p>
+
+<p>- correction d'un bug (apparu en v3.0) dans la migration d'une v2.3 vers une
+v2.4, les fichiers doc[n].inc migrent maintenant correctement</p>
+
+<p>- correction d'un bug, vérifie maintenant correctement le courriel dans la
+fonction VerifyForm() des préférences utilisateurs</p>
+
+<p>- correction d'un bug, n'inclue qu'une seule fois la classe Protomail dans
+la gestion de la fonction mail() de Free.fr</p>
+
+<p>- améliorations ergonomiques dans les courriels envoyés quand un utilisateur
+s'inscrit à la newsletter</p>
+
+<p>- correction d'un bug, si aucun set d'icônes n'a été sélectionné, alors
+n'affiche pas l'image des news dans le module RSS</p>
+
+<p>- n'inclut qu'une seule fois les reglobals si nécessaire (gain de temps dans
+l'admin)</p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p><strong>v3.0 - 25 février 2004</strong></p>
+
+<p></p>
+
+<p>- ajout d'un système de thèmes de "skins" pour les boîtes (par Nicolas Alves
+et Laurent Duveau). Merci à Ricsen pour le design des boutons submit</p>
+
+<p>- newsletter avec liste d'abonnement (par Nicolas Alves et Laurent
+Duveau)</p>
+
+<p>- ajout d'un suivi admin des accès (par B@lou, Nicolas Alves et Laurent
+Duveau)</p>
+
+<p>- correction d'un bug d'affichage de date dans le script forum mobile (par
+B@lou)</p>
+
+<p>- ajout de la possibilité de mettre toutes les boîtes à droite dans les
+préférences utilisateur</p>
+
+<p>- ajout du copyright GuppY sur toutes les pages parce que trop de gens
+cachaient que leur site avait été fait avec GuppY ou usurpaient carrément le
+copyright :-(</p>
+
+<p>- la compression des pages introduite avec la v2.4 est maintenant une option
+d'admin</p>
+
+<p>- ai créé un système de gestion de plugins de façon à faciliter
+l'intégration de scripts plugins à GuppY</p>
+
+<p>- ai transformé les fichiers exemples de scripts externes en plugins</p>
+
+<p>- ai ajouté deux nouvelles options de menu en liste dynamique (merci Graznok
+et Icare)</p>
+
+<p>- ajout de la gestion d'UID pour les mini-messages</p>
+
+<p>- ajout d'une vérification des caractères "(", ")" et ";" pour contrer les
+tentatives de nuisance Javascript dans la saisie d'URL pour le livre d'or
+(amélioration sécurité)</p>
+
+<p>- ajout d'une vérification des mots trop longs (pour éviter les distorsions
+d'affichage) dans les posts utilisateurs, dans les mini messages et dans les
+préférences utilisateur</p>
+
+<p>- compatibilité avec le paramètre register_globals=off de php.ini (merci
+JonnyQuest)</p>
+
+<p>- remerciements chaleureux (mais tardifs... parce que j'avais oublié où je
+l'avais trouvé !) à Pascal aka "Le Sorcier" (http://lesorcier.free.fr) pour le
+jeu d'images du compteur miniportail_1 (le tout premier, inclus dès la version
+1.0 !)</p>
+
+<p>- ai aussi ajouté une nouvelle barre de progression d'affichage des pages
+par Pascal aka "Le Sorcier" ainsi qu'une autre barre de progression mais dont
+je ne me souviens plus où je l'ai trouvée...</p>
+
+<p>- nouvelle option d'exécution en batch du contrôle d'intégrité de la base de
+données</p>
+
+<p>- ai corrigé un bug dans le contrôle d'intégrité DB qui était tellement
+vicieux que je ne trouve pas les mots pour le décrire...</p>
+
+<p>- ajout d'une vérification de la catégorie du forum dans les posts
+utilisateurs (amélioration sécurité)</p>
+
+<p>- nouveau module d'archivage du forum et de consultation de cette archive
+(attention, notez bien que le module recherche ne scanne pas les discussions
+archivées)</p>
+
+<p>- ai ajouté une option pour un message "Merci de patienter..." quand un post
+utilisateur est en cours de traitement et une vérification évitant les posts
+redondants (merci Icare)</p>
+
+<p>- ai ajouté un nouveau répertoire pages/ pour y placer les pages web
+externes (au lieu de les mettre dans file/ qui est plutôt dédié aux fichiers à
+télécharger)</p>
+
+<p>- ai simplifié le code source de changement de langue dans la boîte de
+sélection de langue</p>
+
+<p>- ai ajouté le focus dans la zone de saisie d'un mini message (par B@lou)</p>
+
+<p>- correction d'un bug dans le module recherche qui ne marchait pas pour les
+Nouvelles et les Photos</p>
+
+<p>- les nouvelles sont maintenant publiées au format standard RSS (Web content
+syndication format) au lieu d'un format spécifique à GuppY (merci Palmipod). Ce
+module utilise la splendide classe PHP lastRSS 0.6 pour 'parser" des fichiers
+RSS sous licence GPL (par Vojtech Semecky, webmaster@webdot.cz,
+http/lastrss.webdot.cz/)</p>
+
+<p>- ajout d'une option d'effet d'animation des liens (merci reddog)</p>
+
+<p>- remplacement de la variable globale $REQUEST_URI par $SCRIPT_NAME pour
+obtenir la compatibilité avec IIS (merci Erik)</p>
+
+<p>- ai changé les libellés de $web30 et $web115 pour une meilleure
+compréhension (merci FabriceV)</p>
+
+<p>- ai ajouté la prise en compte du Title meta tag (merci Tanet et Realia)</p>
+
+<p>- ai amélioré la version imprimable des articles (merci tuture et B@lou)</p>
+
+<p>- correction d'un bug dans les préférences utilisateur qui cachait la
+signature du forum dans un cas bien particulier (merci bugs974)</p>
+
+<p>- retour automatique suite à un post (merci Icare)</p>
+
+<p>- ai ajouté 2 nouveaux formats standards de la fonction PHP mail()</p>
+
+<p>- merci à Realia pour corriger l'orthographe française de ce fichier
+lisezmoi.txt et à Neil pour avoir corrigé mon anglais dans le fichier
+readme.txt</p>
+
+<p>- merci à Realia pour avoir mis à jour la base de données de
+démonstration</p>
+
+<p>- merci à tous les membres de la GuppY Team pour leur beta testing
+approfondi !</p>
+
+<p>- premiers plugins développés en plus des plugins exemples :</p>
+
+<p>- plugin chat en direct (par Nicolas Alves) - NOTE : téléchargement
+séparé</p>
+
+<p>- plugin d'envoi de cartes (par Nicolas Alves) - NOTE : téléchargement
+séparé</p>
+
+<p>- plugin radio (par Nicolas Alves) - NOTE : téléchargement séparé</p>
+
+<p>- plugin musique (par Nicolas Alves) - NOTE : téléchargement séparé</p>
+
+<p></p>
+
+<p><strong>v2.4p4 - 4 octobre 2003</strong></p>
+
+<p></p>
+
+<p>- différentes corrections de failles de sécurité (par frog-m@n,
+http://www.phpsecure.info, merci)</p>
+
+<p></p>
+
+<p><strong>v2.4p3 - 29 septembre 2003</strong></p>
+
+<p></p>
+
+<p>- amélioration de la fonctionnalité ob_gzhandler (compression des pages),
+maintenant ne le fait que si utile (ne s'appuie plus sur PHP et les navigateurs
+pour ce faire)</p>
+
+<p>- ajout d'une extension courriel pour la fonction PHP mail() standard,
+permettant d'envoyer les courriels de suivi à plus d'un destinataire</p>
+
+<p></p>
+
+<p><strong>v2.4p2 - 28 septembre 2003</strong></p>
+
+<p></p>
+
+<p>- correction de bug = certains utilisateurs voyaient les pages s'afficher
+très lentement, c'est réparé (merci Nicol@s et Arnaud)</p>
+
+<p>- correction de bug = le 'courriel de suivi du compteur renvoie la valeur du
+compteur</p>
+
+<p>- correction de bug = les boutons de la barre supérieure n'apparaissaient
+pas correctement (centrés au lieu d'être alignés à gauche) si le bouton Stats
+n'était pas affiché (merci Raiponce)</p>
+
+<p>- amélioration de traduction = passage au vouvoiement d'une phrase restée en
+tutoiement (merci FabriceV)</p>
+
+<p>- correction de bug = le moteur de recherche ne renvoyait aucun résultat
+quand le site était monolangue (merci Laorens)</p>
+
+<p>- correctif de sécurité XSS dans le module de publipostage (par Das,
+http://www.echu.org, merci)</p>
+
+<p></p>
+
+<p><strong>v2.4p1 - 26 septembre 2003</strong></p>
+
+<p></p>
+
+<p>- correction de bug = le script free.fr fonctionne</p>
+
+<p>- correction de bug = le module de Stats recompte le Nombre de Visiteurs</p>
+
+<p>- correction de bug = [retour] fonctionne après un post dans le forum</p>
+
+<p>- correction de bug = dans la version mobile, si pas de logo du site, le
+code HTML est bon maintenant (merci Michel)</p>
+
+<p>- correction de bug = certains utilisateurs ne pouvaient pas poster de
+messages dans le livre d'or ou le forum, c'est réparé</p>
+
+<p></p>
+
+<p><strong>v2.4 - 24 septembre 2003</strong></p>
+
+<p></p>
+
+<p>- ajout d'un popup "Page en cours de chargement"</p>
+
+<p>- le compteur de visites incrémente même si la boîte compteur n'est pas
+affichée</p>
+
+<p>- affiche le pseudo des utilisateurs branchés</p>
+
+<p>- ajout d'une icône pour les articles et les news</p>
+
+<p>- ajout de l'option de recherche dans une seule langue</p>
+
+<p>- ajout d'un nouveau thème de smileys</p>
+
+<p>- ajout de l'icone de la section dans les boîtes centrales</p>
+
+<p>- ajout d'un résumé du forum en page d'accueil (derniers messages)</p>
+
+<p>- ai déplacé le paramétrage de la page d'accueil de Config Générale à Config
+Services</p>
+
+<p>- ajout du message Livre d'or préféré en page d'accueil</p>
+
+<p>- ajout du choix des boîtes centrales de la page d'accueil (boîte d'accueil,
+boîte dernières nouvelles, boîte forum en direct, boîte message préféré du
+livre d'or)</p>
+
+<p>- ajout d'un icone Config accueil dans l'admin</p>
+
+<p>- ai changé la boîte Ecrire avec maintenant la couleur de fond par défaut
+des pages (et plus un fond blanc)</p>
+
+<p>- saut à la ligne pour une ligne de menu dynamique si elle est trop
+longue</p>
+
+<p>- ai renommé les boîtes Articles Gauche et Droite en 1ère et 2ème boîtes
+Articles</p>
+
+<p>- ajout de l'option "réagir à un article"</p>
+
+<p>- ai ajouté la prise en compte du jeu de caractères dans tous les endroits
+où elle avait été oubliée : éditeur, tableau, caractères spéciaux, popup
+courriel, sélecteur d'image (merci Pavol)</p>
+
+<p>- ai remplacé la phrase "Webpage Preview" dans l'éditeur par la phrase
+traduite dans la langue du site</p>
+
+<p>- ai amélioré le sélecteur d'image</p>
+
+<p>- ai ajouté l'accès au sélecteur d'image dans le petit éditeur de l'admin</p>
+
+<p>- ai corrigé un bug dans la version mobile : la présentation des articles
+pour chacune des 2 boites articles est maintenant correcte (merci Hubert)</p>
+
+<p>- ai rajouté l'étiquette alternative pour les images des drapeaux des
+langues</p>
+
+<p>- ai rajouté l'étiquette alternative pour l'image du logo du site (nom du
+site)</p>
+
+<p>- ai corrigé un bug dans le contrôle d'intégrité DB qui se produisait quand
+le dernier document avait été créé mais pas enregistré dans les index</p>
+
+<p>- ai changé le titre de la boîte "Infos Webmaster / Site" par "Webmaster"
+plus court (merci Realia)</p>
+
+<p>- les menus dynamiques sont maintenant centrés dans les boîtes articles
+(merci Pavol)</p>
+
+<p>- les smileys apparaissent maintenant quand le texte du contenu doit
+apparaître dans la liste de documents de l'admin (merci Pavol)</p>
+
+<p>- ai ajouté un noveau jeu de compteur "venteux" (merci César) et un nouveau
+jeu de compteur "tournesol" (merci Realia)</p>
+
+<p>- la boîte de rattachement (1ère ou 2ème) est fournie pour les articles dans
+la liste de documents de l'admin (merci Pavol)</p>
+
+<p>- ai ajouté une option pour choisir la puce des articles dans les boîtes
+articles (merci Pavol)</p>
+
+<p>- ai ajouté une option pour cacher le bouton d'Admin (par Nicolas Alves)</p>
+
+<p>- ai ajouté un accès rapide à l'admin des articles (par Nicolas Alves)</p>
+
+<p>- le libellé du bouton "Devenir membre" se change en "Vos préférences" si
+l'utilisateur s'est enregistré (par Nicolas Alves)</p>
+
+<p>- l'utilisateur enregistré peut décider s'il veut ou non apparaître dans la
+liste des utilisateurs en ligne (par Nicolas Alves et Laurent Duveau)</p>
+
+<p>- des mini-messages peuvent être envoyés aux utilisateurs enregistrés en
+ligne (par Nicolas Alves et Laurent Duveau)</p>
+
+<p>- ajout du nombre de fois où un article a été lu (par Nicolas Alves et
+Laurent Duveau)</p>
+
+<p>- ajout du nombre de fois où un fil de discussion du forum a été lu (par
+Nicolas Alves et Laurent Duveau)</p>
+
+<p>- ajout du nombre de fois où un fichier a été téléchargé (par Nicolas Alves
+et Laurent Duveau). Ce compteur ne fonctionne pas sur la version mobile.</p>
+
+<p>- ajout d'un compteur de backup pour le prochain numéro de fil de discussion
+du forum</p>
+
+<p>- amélioration de la fonction eMailTo() pour accepter des fonctions de
+courriel spécifiques aux hébergeurs</p>
+
+<p>- rajout du paramètre "-f" dans la fonction d'envoi de courriels (merci
+Michel)</p>
+
+<p>- la fonction eMailTo() fonctionne chez l'hébergeur Free.fr (avec
+l'utilisation de la libraire Protomail sous licence GPL)</p>
+
+<p>- ajout d'une signature forum personnaliséee pour les utilisateurs
+enregistrés</p>
+
+<p>- l'appel aux documents de la base de données ne se fait plus via la
+fonction PHP include() mais via la fonction dédiée ReadDoc()</p>
+
+<p>- ai revu toutes les fonctions d'accès en lecture et écriture sur les
+fichiers</p>
+
+<p>- ajout du rangement par catégorie pour la FAQ</p>
+
+<p>- ajout des fonctions GetCurrentDateTime(), FormatDate() et
+FormatDateStamp() pour faciliter divers formats de présentation de la date et
+l'heure</p>
+
+<p>- ajout de nouveaux formats de date et création de formats d'heure</p>
+
+<p>- amélioration importante du code source des scripts
+admin/inc/config[n].inc</p>
+
+<p>- ajout de la recherche des images png et bmp dans la fonction IsImage()</p>
+
+<p>- ai retiré la feuille de style CSS du fichier inc/hpage.inc et l'ai mise
+dans un nouveau fichier inc/style.inc</p>
+
+<p>- ai corrigé un bug dans le script de recherche qui faisait que les articles
+trouvés étaient toujours considérés comme étant dans la 1ère boîte (merci
+Pavol)</p>
+
+<p>- pour un affichage plus rapide, les pages sont compressées avant d'être
+envoyées au navigateur web (pour les sites web tournant sous PHP &gt;= 4 et
+pour les navigateurs qui acceptent la réception de pages compressées)</p>
+
+<p>- ai sécurisé les paramètres de ligne de commande (Secunia Advisory: SA9621
+sur le paramètre lng)</p>
+
+<p>- ajout de 3 boîtes libres additionnelles (par Nicolas Alves et Laurent
+Duveau)</p>
+
+<p>- ai effectué de nombreux changements dans tous les scripts afin de diminuer
+la taille des fichiers de la base de données</p>
+
+<p>- CHANGEMENT DE NOM : MINIPORTAIL DEVIENT GUPPY</p>
+
+<p></p>
+
+<p><strong>v2.3p1 - 03 août 2003</strong></p>
+
+<p></p>
+
+<p>- ai corrigé le bug dans lequel le lien dans le bouton "page suivante" était
+erroné dans la page "news mobile" (merci airhero)</p>
+
+<p>- ai corrigé un bug en remplaçant include("minieditor.inc") par
+include("inc/minieditor.inc") dans le fichier admin.inc (merci Eddie)</p>
+
+<p></p>
+
+<p style="text-align:center;"><a href="#Table">Retour au sommaire</a></p>
+
+<p></p>
+
+<p><strong>v2.3 - 27 juillet 2003</strong></p>
+
+<p></p>
+
+<p>- ajout d'une option de choix des menus en liste ou en dynamique</p>
+
+<p>- postage de news visiteur : même si écrite dans une seule langue, mettre le
+contenu de la news dans les deux langues (jusqu'à ce que le webmaster la
+traduise)</p>
+
+<p>- ajout de trois nouveaux thèmes de smileys</p>
+
+<p>- ajout de deux nouveaux thèmes d'icones (merci B@lou et Florent)</p>
+
+<p>- ajout du cas où UNE seule news est affichée sur la homepage (merci Laurent
+Roger)</p>
+
+<p>- ajout d'un saut direct aux pages (par Nicolas Alves et Laurent Duveau)</p>
+
+<p>- passage du tutoiement au vouvoiement dans la langue française (merci
+Realia)</p>
+
+<p>- changements mineurs des polices et formats de texte dans la recherche, les
+notes et autres pages générales (merci Realia et Nicolas)</p>
+
+<p>- correction de la faille de sécurité (merci frog-m@n, Secunia Advisory:
+SA8750)</p>
+
+<p>- correction du bug qui faisait que le script d'installation ne retournait
+pas à la page d'accueil si les fichiers d'installation sont effacés</p>
+
+<p>- ajout d'une option "pas de logo"</p>
+
+<p>- grosse amélioration de l'éditeur WYSIWIG (par Nicolas Alves)</p>
+
+<p>- ajout d'une boîte calendrier (par Nicolas Alves et Laurent Duveau)</p>
+
+<p>- option pour choisir le nombre d'éléments à afficher dans les news, le
+forum, les liens, les téléchargements, la FAQ et le livre d'or déplacée de
+"Config Site" à "Config Services"</p>
+
+<p>- homogénéisation du rendu des boîtes centrales et latérales</p>
+
+<p>- correction de bug : accepte les courriels du style "prenom-nom@site.com
+(caractère "-" accepté). La vérification de courriel n'est pas aussi exhaustive
+qu'auparavant mais elle vérifie les cas les plus courants de mauvaise saisie</p>
+
+<p>- ajout de la gestion de style des citations (par Nicolas Alves et
+Realia)</p>
+
+<p>- ajout de la gestion de style des formulaires (par Nicolas Alves)</p>
+
+<p>- ai enlevé le lien sur les nombres des compteurs dans la boîte "Visites"</p>
+
+<p>- passage au vouvoiement dans ce fichier lisezmoi.txt à la place du
+tutoiement (par Realia)</p>
+
+<p>- ai ajouté un premier niveau de gestion des préférences utilisateur par
+cookie</p>
+
+<p>- gestion du format de date US (merci à Julien et à Realia qui a relayé
+l'information)</p>
+
+<p>- ajout du choix de laisser les visiteurs soumettre des news ou non</p>
+
+<p>- ajout d'une recherche ciblée sur une catégorie (forum, articles,
+news...)</p>
+
+<p>- ajout d'un formulaire de maintenance manuelle des caractéristiques d'un
+document (dates création et modification, auteur et courriel)</p>
+
+<p>- ajout d'un petit éditeur pour les saisies utilisateurs et la zone admin
+(par Nicolas Alves et Laurent Duveau)</p>
+
+<p>- les smileys sont maintenant insérés à la position du curseur et pas à la
+fin du texte</p>
+
+<p>- ai retiré la gestion automatisée des ErrorDocument dans le fichier
+..htaccess pour les serveurs Apache (merci Michel)</p>
+
+<p>- ai amélioré la fonction WriteMailTo() pour une meilleure protection contre
+le SPAM (merci Michel)</p>
+
+<p>- correction d'un bug qui faisait que les articles dans la boîte des
+articles de droite n'apparaissaient pas quand la boîte des articles de gauche
+n'était pas active</p>
+
+<p>- ai développé une extension miniPortail adaptée aux possibilités
+d'affichage d'un Palm (merci Palmipod). De plus, cette version d'affichage très
+allégée est adaptée à la lecture d'un site miniPortail par nos amis aveugles
+(merci Hubert)</p>
+
+<p>- les images dans les boîtes latérales sont maintenant toujours visibles
+même dans la zone admin (merci Realia)</p>
+
+<p>- ajout du meta tag charset dans la version HTML imprimable des articles
+(merci Pavol)</p>
+
+<p>- amélioration du script d'installation / migration</p>
+
+<p>- ajout de deux nouveux scripts externes exemples qui s'intègrent à
+miniPortail (par Realia)</p>
+
+<p>- si un article n'a pas de catégorie, n'affiche pas les parenthèses dans la
+version imprimable de l'article (merci Realia)</p>
+
+<p>- ajout d'un script externe exemple intégré à miniPortail et qui affiche les
+nouvelles de l'aldweb Site</p>
+
+<p>- changement de l'ordre des icones d'Admin depuis un classement alphabétique
+en un classement voulu plus logique (merci B@lou)</p>
+
+<p></p>
+
+<p><strong>v2.2 - 22 avril 2003</strong></p>
+
+<p></p>
+
+<p>- correction de bug : "Times New Roman, serif" à la place du faux "Time New
+Roman, serif" (merci Realia)</p>
+
+<p>- correction de bug : les stats de l'heure en cours sont aussi remises à
+zéro quand demandé dans l'Admin</p>
+
+<p>- ajout du message de forum en cours de réponse pour mémoire dans le
+formulaire de réponse (par Nicolas Alves)</p>
+
+<p>- choix donné au webmaster du positionnement des boîtes latérales (par
+Nicolas Alves et Laurent Duveau)</p>
+
+<p>- ajout d'une autre boîte pour les articles de façon à séparer les articles
+en 2 catégories principales (par Nicolas Alves et Laurent Duveau)</p>
+
+<p>- ajout d'un nouveau thème d'icones (par Roger)</p>
+
+<p>- ajout d'un nouveau thème de compteur (par César)</p>
+
+<p>- ajout d'une gestion de thèmes pour smileys (par Nicolas Alves)</p>
+
+<p>- séparation du fichier de langue en deux (admin et web) pour un chargement
+des pages plus rapide</p>
+
+<p>- petite mise à jour dans la mise en forme du courriel envoyé au webmaster
+dans le cas d'un nouveau fil de discussion</p>
+
+<p>- correction d'un petit bug "inc/img/trans.gif" à la place de
+"/inc/img/trans.gif" dans le fichier inc/boxhome.inc (merci Michel)</p>
+
+<p>- ai remplacé [P][CENTER] par [P align="center"] sinon IE prend la police de
+caractères par défaut au lieu de celle qui lui est demandée (merci Michel)</p>
+
+<p>- ajout d'une option pour choisir le nombre d'éléments à afficher dans les
+news, le forum, les liens, les téléchargements, la FAQ et le livre d'or</p>
+
+<p>- mise à jour de la fonction CompteVisites() pour qu'elle soit conforme à la
+structure de la base de données miniPortail ainsi que de toutes les parties du
+code source qui accèdent aux fichiers ipstats.dtb et ippoll.dtb</p>
+
+<p>- ai changé le code source pour tous les accès à la fonction PHP foreach()
+de façon à être compatible PHP3 puisque foreach() marche seulement avec PHP4</p>
+
+<p>- ai changé le code source pour tous les accès à la fonction PHP pathinfo()
+de façon à être compatible PHP3 puisque pathinfo() marche seulement avec
+PHP4</p>
+
+<p>- ai renommé toutes les variables $service[] en $serviz[] (pour d'étranges
+problèmes d'incompatibilité sur certains Linux, la Mandrake si je me souviens
+bien)</p>
+
+<p>- changement de répertoire automatique dans la zone "Fichiers" (plus besoin
+d'appuyer sur un bouton pour déclencher le changement de répertoire)</p>
+
+<p>- un clic sur une balise de formatage de texte copie la balise dans le texte
+dans le formulaire utilisateur</p>
+
+<p>- nouveau sélecteur de couleur dans "Config Site" (par Nicolas Alves)</p>
+
+<p>- ajout d'un éditeur WYSIWYG pour le contenu dans la zone d'Admin (par
+Nicolas Alves, à partir d'un script dont l'auteur original nous est
+malheureusement inconnu =&gt; nous aurions souhaité lui demander son
+autorisation et aussi le remercier !)</p>
+
+<p>- un nettoyage dans l'organisation des images a été effectué</p>
+
+<p>- réécriture du script d'installation qui est maintenant un vrai script
+d'installation propre et de migration</p>
+
+<p></p>
+
+<p><strong>v2.1 - 10 mars 2003</strong></p>
+
+<p></p>
+
+<p>- correction d'un bug où l'URL du Site et le Meta Identifier URL étaient
+inversés</p>
+
+<p>- correction d'un bug dans lequel les fonctions Javascript pouvaient créer
+des erreurs si le caractère ' était passé à ces fonctions Javascript</p>
+
+<p>- un clic sur un smiley copie le smiley dans le texte dans le formulaire
+utilisateur (par Nicolas Alves)</p>
+
+<p>- gestion des erreurs 40x (pour serveur web Apache uniquement)</p>
+
+<p>- ajout d'une gestion de thèmes pour compteur (par Nicolas Alves)</p>
+
+<p>- ajout de la gestion de la couleur pour la barre de défilement (par Nicolas
+Alves)</p>
+
+<p>- focus sur le premier champ dans les formulaires de saisie (par B@lou et
+Laurent Duveau)</p>
+
+<p>- réécriture complète du module de contrôle d'intégrité et de correction de
+la base de données</p>
+
+<p></p>
+
+<p><strong>v2.0 - 27 février 2003</strong></p>
+
+<p></p>
+
+<p>- correction d'un bug dans la vérification des données saisies dans les
+formulaires de saisie utilisateurs</p>
+
+<p>- couleur de fond des icones "About" et "DB Check" mise à transparent</p>
+
+<p>- ajout de la gestion des metatags (par Nicolas Alves &amp; Laurent
+Duveau)</p>
+
+<p>- ajout de l'option de fixation de l'image de fond (merci Maxrebo)</p>
+
+<p>- le logo du site n'est plus obligatoire, vous pouvez maintenant avoir un
+site sans logo en haut à gauche de la page</p>
+
+<p>- le cookie de connexion de l'administrateur est maintenant automatiquement
+désactivé à la fermeture du navigateur, plus de durée de survie de 24 heures
+(merci Marc)</p>
+
+<p>- photos : ai corrigé le calcul de la taille de fichier image et ai fusionné
+les deux boîtes d'affichage des photos en une seule boîte</p>
+
+<p>- ajout de trois nouveaux thèmes d'icones, dont un réalisé par B@lou</p>
+
+<p>- amélioration de la gestion des thèmes d'icones (merci Alex)</p>
+
+<p>- ajout de la reconstruction des index auxiliaires dans la reconstruction
+des index</p>
+
+<p>- ajout de la recherche dans la boîte libre et les photos</p>
+
+<p>- rajout d'un lien rapide de retour en arrière dans les forums et threads
+(par Alex)</p>
+
+<p>- ai retiré le formulaire de saisie à la sortie du formulaire de publication
+des invités et y ai ajouté un bouton retour</p>
+
+<p>- ajout en bas de page d'un lien "Retour en haut de page"</p>
+
+<p>- ajout de l'affichage défilant du slogan (merci ßugs)</p>
+
+<p>- ajout d'une gestion de photorama plus sophistiqué (avec description des
+photos)</p>
+
+<p>- ajout des logs pour les pages fortopic.php (que j'avais oubliée dans la
+v1.9) et photorama.php dans les "Stats"</p>
+
+<p>- ajout d'un système de cryptage des adresses courriel (protection contre le
+SPAM) même si elles apparaissent clairement dans la fenêtre du navigateur</p>
+
+<p></p>
+
+<p><strong>v1.9 - 11 février 2003</strong></p>
+
+<p></p>
+
+<p>- mise à jour de statsbk.dtb et remise à zéro de ipstats.dtb quand la valeur
+du compteur de visites est changée manuellement</p>
+
+<p>- dans l'interface d'admin de choix des services, la présentation de
+l'option forum avec catégories a été légèrement modifiée pour mieux mettre en
+évidence qu'il s'agit d'une sous-option de la section Forum</p>
+
+<p>- ajout de la catégorie de forum dans l'envoi de courriel de supervision</p>
+
+<p>- quelques petits bugs mineurs corrigés</p>
+
+<p>- ajout d'une gestion de bannières</p>
+
+<p>- ajout d'une boîte extra (appelée 'boîte libre')</p>
+
+<p>- ajout d'une fenêtre popup 'à propos'</p>
+
+<p>- utilitaire de vérification de l'intégrité de la base de données</p>
+
+<p>- ajout d'une gestion de thème d'icones</p>
+
+<p></p>
+
+<p><strong>v1.8 - 05 février 2003</strong></p>
+
+<p></p>
+
+<p>- ai changé le texte du titre des messages de forum dans l'admin (le texte
+n'était pas correct)</p>
+
+<p>- titre retiré des réponses de forum (n'était pas nécessaire et augmentait
+la taille de la base de données)</p>
+
+<p>- ai corrigé un bug où le résultat d'une recherche vers un thread de forum
+produisait une erreur</p>
+
+<p>- remise des smileys dans admin/inc/img/ qui avaient été enlevés par mégarde
+en version 1.7</p>
+
+<p>- correction d'un bug dans les appels à la fonction eMailTo(), dans boîte
+compteur et publipostage visiteurs</p>
+
+<p>- correction d'un bug selon lequel une modification par l'admin dans le
+forum, les news ou le guestbook affichait ensuite systématiquement l'adresse
+courriel du posteur (même s'il avait coché qu'il ne voulait pas que son
+courriel soit affiché en clair !)</p>
+
+<p>- ajout de sujets de discussion dans le forum</p>
+
+<p>- affichage des news sur la homepage seulement si le nombre de news à
+afficher est supérieur à 0</p>
+
+<p>- ajout de la gestion des charsets (pour les langues comme l'Arabe...)</p>
+
+<p>- amélioration du changement de langue dans l'admin (dans le cas où le
+langage principal est changé et aucune langue alternative n'est choisie)</p>
+
+<p></p>
+
+<p><strong>v1.7 - 28 janvier 2003</strong></p>
+
+<p>- correction du bug page n/m dans le forum où m était faux en version 1.6</p>
+
+<p>- correction d'un bug d'affichage de la colonne de droite des pages</p>
+
+<p>- ajout d'une boîte Recommander à un ami</p>
+
+<p>- ajout du rangement par catégorie pour les liens et téléchargements</p>
+
+<p>- mise à jour du script de migration pour la version 1.7</p>
+
+<p>- ajout de 2 exemples de scripts externes qui s'intègrent à miniPortail
+(file/speed.php et file/mind.php)</p>
+
+<p>- amélioration des liens vers des smileys dans la boîte Spécial et les
+images du pied de page quand les scripts sont exécutés depuis le répertoire
+file/</p>
+
+<p>- correction d'un bug qui faisait que le titre des nouvelles était toujours
+affiché dans la langue principale</p>
+
+<p>- changement de langue sans retourner systématiquement à la page index
+(merci Alex)</p>
+
+<p>- changement de l'appel d'une fonction PHP de façon à rendre miniPortail
+compatible avec PHP version &lt; 4.1.0</p>
+
+<p>- correction d'un bug "invisible" dans la boîte "Recherche"</p>
+
+<p></p>
+
+<p><strong>v1.6 - 23 janvier 2003</strong></p>
+
+<p></p>
+
+<p>- nouvelles traductions : Espagnol et Hollandais</p>
+
+<p>- traduction améliorée : Anglais</p>
+
+<p>- ajout d'une fenêtre popup d'aide au choix des couleurs RGB</p>
+
+<p>- très légère mise à jour du format de courriel de supervision livre d'or</p>
+
+<p>- ajout d'une option de publication des nouvelles vers un site externe
+(merci de vous référer au fichier de script getmpnews.php)</p>
+
+<p>- ajout d'une option d'effet de transition entre pages (pour le navigateur
+IE seulement, sans effet sur les autres navigateurs)</p>
+
+<p>- affiche 10 messages du forum plutôt que 5</p>
+
+<p>- ajout d'une option permettant au posteur de choisir que son adresse
+courriel soit masquée ou affichée sur le site</p>
+
+<p>- correction d'un bug qui faisait que le numéro ICQ n'était pas sauvegardé
+après sa saisie</p>
+
+<p>- ajout de l'information de chronométrage "page chargée en n.nn secondes"</p>
+
+<p>- création d'un script de migration de la version 1.5 à la version 1.6</p>
+
+<p></p>
+
+<p><strong>v1.5 - 10 janvier 2003</strong></p>
+
+<p></p>
+
+<p>- remplacement des navigateurs Lynx et WebTV par iCab et DA</p>
+
+<p>- amélioration du compteur avec création d'une sauvegarde de sa valeur en
+cas d'effacement accidentel du compteur</p>
+
+<p>- remplacement de Hits par Visiteurs dans les Stats</p>
+
+<p>- ouverture dans une nouvelle fenêtre des sites web des posteurs sur le
+livre d'or</p>
+
+<p></p>
+
+<p><strong>v1.4 - 07 janvier 2003</strong></p>
+
+<p></p>
+
+<p>- amélioration du texte des courriels de supervision (stripslashes) pour une
+meilleure lisibilité</p>
+
+<p>- le courriel de supervision du compteur n'est maintenant plus envoyé qu'une
+seule fois</p>
+
+<p>- amélioration du module "Stats" avec création d'une log par heure (afin de
+limiter la perte de données en cas d'effacement accidentel du fichier de
+log)</p>
+
+<p>- correction d'un bug dans la capture des hits</p>
+
+<p></p>
+
+<p><strong>v1.3 - 06 janvier 2003</strong></p>
+
+<p></p>
+
+<p>- correction d'un bug dans le module "Stats" (news, links, photos, poll,
+search et stats étaient comptés comme une page index)</p>
+
+<p>- correction du numéro de version de miniPortail dans l'en-tête du fichier
+readme.txt.</p>
+
+<p>- ajout de services de supervision (envoi de courriels au webmaster par le
+site)</p>
+
+<p>- utilisation des fichiers thread.dtb et forum.dtb introduits avec la v1.2
+pour accélérer le travail de publipostage des discussions de forum</p>
+
+<p></p>
+
+<p><strong>v1.2 - 05 janvier 2003</strong></p>
+
+<p></p>
+
+<p>- amélioration du temps d'affichage de toutes les pages par création d'une
+table intermédiaire contenant les informations nécessaires pour la boîte
+"Articles"</p>
+
+<p>- amélioration de la vitesse d'affichage du module "Forum"</p>
+
+<p>- réécriture complète du module "Statistiques" qui s'avérait bien trop lourd
+pour un site ayant plus d'une dizaine de visiteurs par jour</p>
+
+<p></p>
+
+<p><strong>v1.1 - 02 janvier 2003</strong></p>
+
+<p>- correctif pour éviter que les utilisateurs ajoutent des enregistrements de
+façon simultanée sur les mêmes fichiers (problème principal trouvé dans les
+"Stats")</p>
+
+<p>- le formulaire de postage utilisateurs a été amélioré (le rendu n'était pas
+très beau pour une résolution d'écran inférieure à 1024x768)</p>
+
+<p></p>
+
+<p><strong>v1.0 - 30 décembre 2002</strong></p>
+
+<p></p>
+
+<p>- première version</p>
+
+<p></p>
+
+<p><strong><a href="#Table">Retour au sommaire </a></strong></p>
+
+<p></p>
+
+<p>(c) GuppY Team - Licence CeCILL 2012</p>
+
+<p></p>
+
+<p></p>
+</body>
+</html>

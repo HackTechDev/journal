@@ -1,0 +1,10 @@
+body {
+ margin: 0;
+ padding: 0;
+ text-align: center;
+}
+#page {
+ position: relative;
+ margin: 0 auto;  /* Pour centrer la div */
+ width: 1260px;
+}

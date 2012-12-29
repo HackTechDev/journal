@@ -1,0 +1,17 @@
+/*
+     Plugin PostGuestEditor
+	 Version  : 2.0.2 (2007/01/16)
+	 Compatibility : Guppy v4.5.x
+	 Licence  : GNU Lesser General Public License
+	 Author   : jérôme CROUX (Djchouix)
+     Web site : http://lebrikabrak.info/
+     E-mail   : jchouix@wanadoo.fr
+*/
+
+/**
+ *  CSS pour corriger la mauvaise interprétation de l'overflow sur le block <pre> lorsque la largeur est en pixel
+ * (pas nécessaire pour Firefox et Opera)
+ */
+div.code, div.code pre {
+	width:495px;
+}
